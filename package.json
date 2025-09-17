@@ -1,0 +1,27 @@
+{
+  "name": "ai-chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@heygen/streaming-avatar": "^2.1.0",
+    "@types/node": "^24.5.1",
+    "@vitejs/plugin-react": "^5.0.3",
+    "dotenv": "^17.2.2",
+    "livekit-client": "^2.15.7",
+    "openai": "^5.20.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.5"
+  }
+}
