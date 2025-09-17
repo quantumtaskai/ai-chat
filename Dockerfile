@@ -32,7 +32,6 @@ COPY package*.json ./
 RUN npm ci --omit=dev
 
 # Copy built application from builder stage
-COPY --from=builder /app/dist ./dist
 COPY --from=builder /app/public ./public
 
 # Create non-root user
