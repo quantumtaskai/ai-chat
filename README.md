@@ -13,11 +13,13 @@
 - Responsive design for all devices
 - Professional color scheme
 
-### 💬 **AI-Powered Chat**
-- OpenAI GPT integration
-- Customizable knowledge base
-- Business-specific responses
-- Voice support (optional)
+### 💬 **Real AI Intelligence**
+- **OpenAI GPT-4 Integration** - Professional AI responses, not basic pattern matching
+- **Business Context Awareness** - AI knows your company, industry, and services
+- **Conversation Memory** - Maintains context across entire conversations
+- **Smart Content Suggestions** - Suggests forms, booking, documents intelligently
+- **Industry Optimization** - Specialized for restaurants, healthcare, retail, etc.
+- **Graceful Fallbacks** - Works even when OpenAI API is unavailable
 
 ### 🔧 **Easy Customization**
 - **5-minute setup** for basic configuration
@@ -67,7 +69,7 @@ npm install
 cp .env.example .env
 
 # Add your OpenAI API key to .env
-OPENAI_API_KEY=your_openai_api_key_here
+VITE_OPENAI_API_KEY=your_openai_api_key_here
 ```
 
 ### 4. **Business Configuration**
@@ -106,9 +108,10 @@ Add this script tag to any webpage:
 ### 🎯 **Customization Levels**
 
 #### **Level 1: Basic (5 minutes)**
+- Get OpenAI API key from [OpenAI Platform](https://platform.openai.com/api-keys)
 - Update business name and description
 - Add contact information
-- Set website URL
+- Test with `npm run test:openai`
 
 #### **Level 2: Branding (15 minutes)**
 - Upload your logo to `public/images/company/logo.png`
@@ -167,7 +170,7 @@ npm run docker:run
 
 ### **Required Environment Variables**
 ```env
-OPENAI_API_KEY=your_openai_api_key_here  # Required for AI chat
+VITE_OPENAI_API_KEY=your_openai_api_key_here  # Required for AI chat
 ```
 
 ### **Optional Environment Variables**
