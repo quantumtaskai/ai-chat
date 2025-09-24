@@ -54,7 +54,7 @@ export default {
         'pulse-slow': 'pulse 2s ease-in-out infinite',
         'glass-morphism': 'glassMorphism 0.2s ease-out',
         'float': 'float 4s ease-in-out infinite',
-        'glow': 'glow 1.5s ease-in-out infinite alternate',
+        'fade-in': 'fadeIn 0.2s ease-out',
         'slide-in-right': 'slideInRight 0.3s ease-out',
         'slide-in-left': 'slideInLeft 0.3s ease-out',
         'scale-in': 'scaleIn 0.25s ease-out',
@@ -94,39 +94,38 @@ export default {
           '0%, 100%': { transform: 'translateY(0px)' },
           '50%': { transform: 'translateY(-5px)' },
         },
-        glow: {
-          '0%': { boxShadow: '0 0 5px rgba(59, 130, 246, 0.5)' },
-          '100%': { boxShadow: '0 0 20px rgba(59, 130, 246, 0.8)' },
+        fadeIn: {
+          '0%': { opacity: '0', transform: 'translateY(4px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
         },
       },
       boxShadow: {
-        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
-        'glass-inset': 'inset 0 1px 0 0 rgba(255, 255, 255, 0.05)',
-        'deep': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
-        'glow': '0 0 20px rgba(59, 130, 246, 0.6)',
-        'glow-sm': '0 0 10px rgba(59, 130, 246, 0.4)',
+        'sm': '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
+        'DEFAULT': '0 1px 3px 0 rgba(0, 0, 0, 0.08)',
+        'md': '0 2px 4px -1px rgba(0, 0, 0, 0.08)',
+        'lg': '0 3px 6px -1px rgba(0, 0, 0, 0.08)',
+        'xl': '0 4px 8px -2px rgba(0, 0, 0, 0.08)',
       },
     },
   },
   plugins: [
     function({ addUtilities }) {
       const newUtilities = {
-        '.glass-morphism': {
-          background: 'var(--glass-bg)',
-          backdropFilter: 'var(--backdrop-filter)',
-          border: '1px solid var(--glass-border)',
-          position: 'relative',
+        '.modern-surface': {
+          background: '#ffffff',
+          border: '1px solid rgba(0, 0, 0, 0.08)',
+          borderRadius: '12px',
         },
-        '.glass-dark': {
-          background: 'var(--surface-bg)',
-          backdropFilter: 'var(--backdrop-filter)',
-          border: '1px solid var(--surface-border)',
+        '.modern-card': {
+          background: '#ffffff',
+          border: '1px solid rgba(0, 0, 0, 0.08)',
+          borderRadius: '16px',
+          boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.08)',
         },
-        '.lightning-dark': {
-          background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(30, 41, 59, 0.8) 100%)',
-          backdropFilter: 'blur(8px)',
-          border: '1px solid rgba(99, 102, 241, 0.2)',
-          boxShadow: '0 0 20px rgba(99, 102, 241, 0.08)',
+        '.modern-button': {
+          borderRadius: '8px',
+          fontWeight: '500',
+          transition: 'all 150ms ease-out',
         },
         '.glow-effect': {
           position: 'relative',

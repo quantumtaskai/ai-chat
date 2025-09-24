@@ -1,7 +1,7 @@
 <template>
-  <div class="content-panel h-full flex flex-col bg-white/90 backdrop-blur-md modern-typography">
+  <div class="content-panel h-full flex flex-col bg-white modern-typography">
     <!-- Header -->
-    <div class="content-header px-4 py-3 border-b border-gray-200/30 glass-morphism backdrop-blur-md">
+    <div class="content-header px-4 py-3 border-b border-gray-200 bg-white">
       <div class="flex items-center justify-between">
         <div class="flex items-center space-x-2">
           <button
@@ -192,7 +192,7 @@
         <!-- Schedule Meeting Button -->
         <button
           @click="openMeetingScheduler"
-          class="footer-btn bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white shadow-lg hover:shadow-xl"
+          class="footer-btn bg-primary-600 hover:bg-primary-700 text-white transition-colors duration-150"
         >
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
             <path d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z"/>
@@ -203,7 +203,7 @@
         <!-- Open Calendar Button -->
         <button
           @click="openOSCalendarApp"
-          class="footer-btn bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white shadow-lg hover:shadow-xl"
+          class="footer-btn bg-green-600 hover:bg-green-700 text-white transition-colors duration-150"
         >
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
             <path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"/>

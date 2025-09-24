@@ -42,18 +42,38 @@
     }
   }
 
-  // Optimized card HTML with compressed styles
-  function getCardHTML(name) {
-    const s1 = 'position:fixed;bottom:20px;right:20px;width:280px;height:170px;background:linear-gradient(135deg,#3b82f6,#1e40af,#7c3aed);border-radius:20px;padding:24px;box-shadow:0 6px 12px rgba(59,130,246,.08);cursor:pointer;display:flex;align-items:center;justify-content:center;overflow:hidden;z-index:999999;font-family:Inter,-apple-system,sans-serif;transition:transform .15s ease;will-change:transform;-webkit-font-smoothing:antialiased;transform:translate3d(0,0,0)';
-    const s2 = 'display:flex;flex-direction:column;align-items:center;gap:16px;width:100%;position:relative;z-index:1';
-    const s3 = 'width:48px;height:48px;background:rgba(255,255,255,.2);border-radius:16px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.3);transition:transform .15s ease;will-change:transform;transform:translate3d(0,0,0)';
-    const s4 = 'color:#fff;text-align:center;line-height:1.4';
-    const s5 = 'font-size:15px;font-weight:600;margin-bottom:4px;text-shadow:0 1px 2px rgba(0,0,0,.1)';
-    const s6 = 'font-size:12px;opacity:.92;font-weight:450';
-    const s7 = 'position:absolute;top:-8px;right:-8px;width:12px;height:12px;background:linear-gradient(135deg,#10b981,#34d399);border-radius:50%;border:2px solid rgba(255,255,255,.3);animation:modernPulse 3s infinite;box-shadow:0 0 8px rgba(16,185,129,.2);z-index:2';
-    return `<div id="quantum-chat-card" style="${s1}"><div style="${s2}"><div style="${s3}"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg></div><div style="${s4}"><div style="${s5}">${name||'AI Assistant'}</div><div style="${s6}">Need help? Click to chat</div></div><div style="${s7}"></div></div></div>
+  // Compressed modular components for optimal bundle size
+  const W = {
+    // Optimized SVG icon - compressed path
+    i: s => `<svg width="${s||20}" height="${s||20}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>`,
 
-<style>#quantum-chat-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.1),transparent 50%);border-radius:20px;pointer-events:none;z-index:0}#quantum-chat-card:hover{transform:translateY(-1px);box-shadow:0 6px 12px rgba(59,130,246,.1)}#quantum-chat-card:hover>div>div:first-child{transform:scale(1.02)}#quantum-chat-card:active{transform:translateY(0)}@keyframes modernPulse{0%,100%{transform:scale(1);opacity:1;box-shadow:0 0 6px rgba(16,185,129,.15)}50%{transform:scale(1.02);opacity:.95;box-shadow:0 0 10px rgba(16,185,129,.25)}}@media(prefers-reduced-motion:reduce){#quantum-chat-card,#quantum-chat-card *{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}#quantum-chat-card.paused *{animation-play-state:paused!important}</style>`;
+    // Compressed component builder
+    c: n => `<div id="quantum-chat-card" class="qc-card" role="button" tabindex="0" aria-label="Open AI chat assistant"><div class="qc-content"><div class="qc-icon" aria-hidden="true">${W.i()}</div><div class="qc-text"><div class="qc-title">${n||'AI Assistant'}</div><div class="qc-subtitle">Need help? Click to chat</div></div><div class="qc-status" aria-hidden="true"></div></div></div>`
+  };
+
+  // 2025 Flat Design System - minimal shadows, modern morphism
+  const S = `.qc-card{position:fixed;bottom:1.25rem;right:1.25rem;width:17rem;height:10rem;background:#2563eb;border-radius:1.25rem;padding:1.5rem;box-shadow:0 2px 4px rgba(0,0,0,.08);cursor:pointer;display:flex;align-items:center;justify-content:center;overflow:hidden;z-index:999999;font-family:system-ui,sans-serif;transition:transform .2s cubic-bezier(.4,0,.2,1),box-shadow .2s ease;transform:translate3d(0,0,0);user-select:none;will-change:transform;contain:layout style}
+.qc-content{display:flex;flex-direction:column;align-items:center;gap:1rem;width:100%;position:relative;z-index:1}
+.qc-icon{width:3rem;height:3rem;background:rgba(255,255,255,.15);border-radius:1rem;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.2);transition:transform .2s ease,background-color .2s ease;transform:translate3d(0,0,0);color:#fff;will-change:transform}
+.qc-text{color:#fff;text-align:center;line-height:1.4}
+.qc-title{font-size:1rem;font-weight:700;margin-bottom:.25rem;letter-spacing:-.01em}
+.qc-subtitle{font-size:.8125rem;opacity:.95;font-weight:600;letter-spacing:.005em}
+.qc-status{position:absolute;top:-.5rem;right:-.5rem;width:.75rem;height:.75rem;background:#10b981;border-radius:50%;border:2px solid rgba(255,255,255,.4);animation:qc-pulse 3s infinite;z-index:2;will-change:transform}
+.qc-card::before{content:'';position:absolute;inset:0;background:rgba(255,255,255,.08);border-radius:1.25rem;pointer-events:none;z-index:0}
+.qc-card:hover{transform:translateY(-1px) translate3d(0,0,0);box-shadow:0 4px 8px rgba(0,0,0,.12)}
+.qc-card:hover .qc-icon{transform:scale(1.03) translate3d(0,0,0);background:rgba(255,255,255,.22)}
+.qc-card:active{transform:translateY(-1px) scale(.98) translate3d(0,0,0)}
+.qc-card:focus-visible{outline:2px solid #eff6ff;outline-offset:2px}
+@media(max-width:30rem){.qc-card{width:15rem;bottom:1rem;right:1rem;padding:1.25rem}.qc-icon{width:2.5rem;height:2.5rem}.qc-title{font-size:.875rem}.qc-subtitle{font-size:.6875rem}}
+@media(prefers-reduced-motion:reduce){.qc-card,.qc-card *{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media(prefers-contrast:high){.qc-card{border:2px solid #fff}}
+@media print{.qc-card{display:none!important}}
+@keyframes qc-pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.05);opacity:.95}}
+.qc-card.paused *{animation-play-state:paused!important}`;
+
+  // Optimized widget factory
+  function getCardHTML(name) {
+    return W.c(name) + `<style>${S}</style>`;
   }
 
   // Create simple card that opens iframe popup
@@ -99,26 +119,38 @@
       });
     }
 
-    // Add debounced click handler to prevent double-clicks
+    // Add accessible event handlers with debouncing
     let clickTimeout;
-    card.addEventListener('click', function() {
+
+    function handleActivation() {
       clearTimeout(clickTimeout);
       clickTimeout = setTimeout(() => openPopup(hostUrl), 100);
+    }
+
+    // Click handler
+    card.addEventListener('click', handleActivation);
+
+    // Keyboard handler for accessibility
+    card.addEventListener('keydown', function(event) {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        handleActivation();
+      }
     });
 
-    console.log('✨ AI Receptionist card loaded with performance optimizations');
+    console.log('✨ AI Receptionist v4.1.0-flat2025 loaded with minimal shadows, flat morphism, and bold typography');
   }
 
-  // Simple popup function
+  // Flat design popup function - minimal animations
   function openPopup(hostUrl) {
-    // Smooth hide animation for card
+    // Subtle fade animation for card
     const card = document.getElementById('quantum-chat-card');
-    card.style.transform = 'scale(0.95)';
+    card.style.transform = 'scale(0.98)';
     card.style.opacity = '0';
 
     setTimeout(() => {
       card.style.display = 'none';
-    }, 200);
+    }, 150);
 
     // Create iframe popup with microphone permissions and loading optimization
     const iframe = document.createElement('iframe');
@@ -136,8 +168,8 @@
       border: none;
       z-index: 999999;
       opacity: 0;
-      transition: opacity 0.3s ease;
-      background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+      transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      background: #f8fafc;
     `;
 
     // Enhanced loading with error handling
@@ -174,10 +206,10 @@
         iframe.remove();
         window.removeEventListener('message', messageHandler);
 
-        // Smooth show animation for card
+        // Subtle show animation for card
         card.style.display = 'flex';
         card.style.opacity = '0';
-        card.style.transform = 'scale(0.8)';
+        card.style.transform = 'scale(0.95)';
 
         requestAnimationFrame(() => {
           card.style.opacity = '1';
@@ -198,14 +230,14 @@
 
   // Global reference
   window.QuantumChat = {
-    version: '3.0.0-hybrid',
+    version: '4.1.0-flat2025',
     loaded: true,
     showCard: function() {
       const card = document.getElementById('quantum-chat-card');
       if (card) {
         card.style.display = 'flex';
         card.style.opacity = '0';
-        card.style.transform = 'scale(0.8)';
+        card.style.transform = 'scale(0.95)';
         requestAnimationFrame(() => {
           card.style.opacity = '1';
           card.style.transform = 'scale(1)';
@@ -216,10 +248,10 @@
       const card = document.getElementById('quantum-chat-card');
       if (card) {
         card.style.opacity = '0';
-        card.style.transform = 'scale(0.95)';
+        card.style.transform = 'scale(0.98)';
         setTimeout(() => {
           card.style.display = 'none';
-        }, 200);
+        }, 150);
       }
     }
   };

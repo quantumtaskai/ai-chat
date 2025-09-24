@@ -259,8 +259,8 @@ const containerClasses = computed(() => ({
 
 const minimizedCardClasses = computed(() => ({
   'cursor-pointer': true,
-  'hover:shadow-lg': true,
-  'transition-all duration-300': true
+  'hover:shadow-sm': true,
+  'transition-all duration-200': true
 }))
 
 const minimizedCardStyle = computed(() => ({
@@ -494,23 +494,23 @@ watch(() => props.business, () => {
   width: 280px !important;
 }
 
-/* Card styles */
+/* Card styles - 2025 Flat Design */
 .minimized-card {
   position: relative;
-  background: linear-gradient(135deg, var(--primary-color, #3b82f6) 0%, var(--secondary-color, #1e40af) 100%);
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  background: #2563eb;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
   width: 300px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .expanded-card {
   background: white;
-  border-radius: 16px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
 }
 
@@ -551,10 +551,10 @@ watch(() => props.business, () => {
   transform: scale(0.9) translateY(20px);
 }
 
-/* Hover effects */
+/* Hover effects - 2025 Flat Design */
 .minimized-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px) translateZ(0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
 }
 
 /* Scrollbar */

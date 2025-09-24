@@ -15,7 +15,7 @@
       <div class="message-content max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
         <!-- Message Bubble -->
         <div
-          class="px-5 py-4 rounded-2xl shadow-glass transition-all duration-300 hover:shadow-deep hover:-translate-y-0.5"
+          class="px-5 py-4 rounded-2xl transition-colors duration-150"
           :class="bubbleClasses"
         >
 
@@ -30,7 +30,7 @@
               v-for="attachment in message.attachments"
               :key="attachment.id"
               @click="viewAttachment(attachment)"
-              class="flex items-center space-x-3 p-3 glass-morphism rounded-xl cursor-pointer hover:bg-white/30 transition-all duration-300 border border-white/20 hover:shadow-lg hover:-translate-y-0.5"
+              class="flex items-center space-x-3 p-3 bg-gray-50 rounded-xl cursor-pointer hover:bg-gray-100 transition-colors duration-150 border border-gray-200"
             >
               <div class="flex-shrink-0">
                 <component :is="getAttachmentIcon(attachment.type)" class="w-4 h-4" />
@@ -64,7 +64,7 @@
           <button
             v-if="message.role === 'assistant' && business.settings.enableVoice"
             @click="speakMessage"
-            class="p-2 text-gray-400 hover:text-primary-600 rounded-lg hover:bg-white/20 transition-all duration-300 backdrop-blur-sm border border-white/10 hover:shadow-lg"
+            class="p-2 text-gray-400 hover:text-primary-600 rounded-lg hover:bg-gray-100 transition-colors duration-150 border border-gray-200"
             title="Speak this message"
           >
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -75,7 +75,7 @@
           <!-- Copy Button -->
           <button
             @click="copyMessage"
-            class="p-2 text-gray-400 hover:text-primary-600 rounded-lg hover:bg-white/20 transition-all duration-300 backdrop-blur-sm border border-white/10 hover:shadow-lg"
+            class="p-2 text-gray-400 hover:text-primary-600 rounded-lg hover:bg-gray-100 transition-colors duration-150 border border-gray-200"
             title="Copy message"
           >
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -124,9 +124,9 @@ const flexDirection = computed(() => ({
 
 const avatarClasses = computed(() => {
   if (isUser.value) {
-    return 'bg-gradient-to-br from-primary-500 to-primary-600 shadow-lg'
+    return 'bg-primary-600'
   }
-  return 'bg-gradient-to-br from-purple-500 via-blue-500 to-indigo-600 shadow-lg animate-float'
+  return 'bg-purple-600'
 })
 
 const avatarText = computed(() => {
@@ -137,8 +137,8 @@ const avatarText = computed(() => {
 })
 
 const bubbleClasses = computed(() => ({
-  'bg-gradient-to-r from-primary-500 to-primary-600 text-white shadow-glow-sm': isUser.value,
-  'glass-morphism border border-white/20 text-gray-800 backdrop-blur-md': isAssistant.value,
+  'bg-primary-600 text-white': isUser.value,
+  'bg-white text-gray-900 border border-gray-200': isAssistant.value,
   'rounded-br-lg': isUser.value,
   'rounded-bl-lg': isAssistant.value
 }))

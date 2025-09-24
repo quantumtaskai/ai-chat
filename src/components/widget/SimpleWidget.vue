@@ -198,12 +198,12 @@ onMounted(() => {
   position: relative;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #3b82f6 0%, #1e40af 35%, #7c3aed 100%);
+  background: #2563eb;
   border-radius: 20px;
   padding: 28px 24px;
-  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   width: 280px;
   backdrop-filter: blur(8px);
   height: 180px;
@@ -218,8 +218,8 @@ onMounted(() => {
 }
 
 .minimized-card:hover {
-  transform: translateY(-2px) translateZ(0);
-  box-shadow: 0 12px 30px rgba(59, 130, 246, 0.2);
+  transform: translateY(-1px) translateZ(0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
 }
 
 .minimized-card::before {
@@ -229,7 +229,7 @@ onMounted(() => {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 20px;
   pointer-events: none;
 }
@@ -248,7 +248,7 @@ onMounted(() => {
 .chat-icon {
   width: 56px;
   height: 56px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.1) 100%);
+  background: rgba(255, 255, 255, 0.15);
   border-radius: 18px;
   display: flex;
   align-items: center;
@@ -267,7 +267,7 @@ onMounted(() => {
 .chat-icon svg {
   width: 28px;
   height: 28px;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  /* Removed drop-shadow for 2025 flat design */
 }
 
 .card-text {
@@ -278,21 +278,20 @@ onMounted(() => {
 
 .business-name {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.25;
   margin-bottom: 4px;
-  letter-spacing: -0.025em;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  letter-spacing: -0.01em;
+  /* Removed text-shadow for 2025 flat design */
   font-feature-settings: 'ss01', 'ss02';
 }
 
 .chat-prompt {
   font-size: 13px;
-  opacity: 0.92;
-  font-weight: 450;
+  opacity: 0.95;
+  font-weight: 500;
   line-height: 1.35;
-  letter-spacing: -0.005em;
-  text-shadow: 0 0.5px 2px rgba(0, 0, 0, 0.06);
+  letter-spacing: 0.005em;
 }
 
 .pulse-dot {
@@ -301,10 +300,10 @@ onMounted(() => {
   right: 12px;
   width: 16px;
   height: 16px;
-  background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+  background: #10b981;
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+  /* Removed heavy glow shadow for flat design */
   animation: simplePulse 2s infinite ease-in-out;
   z-index: 2;
 }
@@ -316,7 +315,7 @@ onMounted(() => {
   left: -2px;
   right: -2px;
   bottom: -2px;
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.3) 0%, rgba(52, 211, 153, 0.1) 100%);
+  background: rgba(16, 185, 129, 0.2);
   border-radius: 50%;
   animation: pulseRing 2.5s infinite ease-in-out;
 }
@@ -373,10 +372,7 @@ onMounted(() => {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(8px);
   border-radius: 24px;
-  box-shadow:
-    0 25px 60px rgba(0, 0, 0, 0.08),
-    0 15px 35px rgba(0, 0, 0, 0.05),
-    0 8px 20px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   width: 90vw;
   height: 85vh;
   max-width: 1400px;
@@ -386,7 +382,7 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  animation: expandPopup 0.3s ease-out;
+  animation: expandPopup 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
 
@@ -405,7 +401,7 @@ onMounted(() => {
 
 /* Header - Enhanced Modern Design */
 .card-header {
-  background: linear-gradient(135deg, #3b82f6 0%, #1e40af 35%, #7c3aed 100%);
+  background: #2563eb;
   padding: 20px 24px;
   display: flex;
   align-items: center;
@@ -422,7 +418,7 @@ onMounted(() => {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  background: rgba(255, 255, 255, 0.08);
   pointer-events: none;
 }
 
