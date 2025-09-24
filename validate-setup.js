@@ -5,8 +5,12 @@
  * Checks that all required configuration is properly set
  */
 
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const colors = {
   green: '\x1b[32m',
@@ -155,8 +159,8 @@ function main() {
   }
 }
 
-if (require.main === module) {
+if (import.meta.url === `file://${process.argv[1]}`) {
   main();
 }
 
-module.exports = { validateEnvironment, validateBusinessConfig, validateAssets, validateDependencies };
+export { validateEnvironment, validateBusinessConfig, validateAssets, validateDependencies };

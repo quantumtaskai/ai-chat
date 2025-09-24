@@ -5,8 +5,8 @@
  * Creates customized business.json based on user input
  */
 
-const fs = require('fs');
-const readline = require('readline');
+import fs from 'fs';
+import readline from 'readline';
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -199,8 +199,8 @@ async function main() {
   }
 }
 
-if (require.main === module) {
+if (import.meta.url === `file://${process.argv[1]}`) {
   main();
 }
 
-module.exports = { generateBusinessConfig };
+export { generateBusinessConfig };
