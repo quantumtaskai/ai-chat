@@ -1,24 +1,40 @@
+version: '3.8'
+
 services:
-  quantum-receptionist:
-    build: .
-    expose:
-      - "3000"
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    restart: unless-stopped
+    
+    # Dokploy required network
+    networks:
+      - dokploy-network
+    
+    # Environment variables for production
     environment:
       - NODE_ENV=production
-      - VITE_OPENAI_API_KEY=${VITE_OPENAI_API_KEY}
-      - VITE_HEYGEN_API_KEY=${VITE_HEYGEN_API_KEY}
-    restart: unless-stopped
+      - VITE_API_URL=${VITE_API_URL:-}
+      - DOMAIN=${DOMAIN:-localhost}
+
+    # Traefik labels for domain routing
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.ai-receptionist.rule=Host(`${DOMAIN:-localhost}`)"
+      - "traefik.http.routers.ai-receptionist.entrypoints=websecure"
+      - "traefik.http.routers.ai-receptionist.tls.certResolver=letsencrypt"
+      - "traefik.http.services.ai-receptionist.loadbalancer.server.port=80"
+    
+    # Health check
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:3000/"]
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost/health"]
       interval: 30s
       timeout: 10s
       retries: 3
       start_period: 40s
-    volumes:
-      - ./logs:/app/logs
-    networks:
-      - quantum-network
 
+# External network created by Dokploy
 networks:
-  quantum-network:
-    driver: bridge
+  dokploy-network:
+    external: true

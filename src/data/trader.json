@@ -1,0 +1,5261 @@
+{
+  "traders": [
+    {
+      "id": "atlantic-traders-1",
+      "name": "Atlantic Traders 1",
+      "country": "South Africa",
+      "type": "Importer",
+      "products": [
+        "Cotton",
+        "Synthetic Textiles"
+      ],
+      "contact": {
+        "person": "Maria Singh",
+        "email": "maria.singh@atlantictraders1.com",
+        "phone": "+27 421-618-7",
+        "website": "https://atlantictraders1.com"
+      },
+      "address": "413 Logistics Blvd, Cape Town, South Africa",
+      "yearsInBusiness": 4,
+      "annualVolume": 16900000,
+      "tags": [
+        "south-africa",
+        "africa",
+        "cotton",
+        "textile",
+        "fabric",
+        "synthetic",
+        "textiles",
+        "importer",
+        "import",
+        "medium-volume",
+        "established-company",
+        "growing",
+        "developing"
+      ]
+    },
+    {
+      "id": "silk-logistics-2",
+      "name": "Silk Logistics 2",
+      "country": "China",
+      "type": "Importer",
+      "products": [
+        "Skincare",
+        "Beauty Products"
+      ],
+      "contact": {
+        "person": "James Li",
+        "email": "james.li@silklogistics2.com",
+        "phone": "+86 235-239-507",
+        "website": "https://silklogistics2.com"
+      },
+      "address": "868 Market Lane, Shenzhen, China",
+      "yearsInBusiness": 4,
+      "annualVolume": 28700000,
+      "tags": [
+        "china",
+        "asia",
+        "east-asia",
+        "skincare",
+        "beauty",
+        "products",
+        "cosmetics",
+        "personal-care",
+        "importer",
+        "import",
+        "medium-volume",
+        "established-company",
+        "growing",
+        "developing"
+      ]
+    },
+    {
+      "id": "silk-exports-3",
+      "name": "Silk Exports 3",
+      "country": "South Africa",
+      "type": "Exporter",
+      "products": [
+        "Industrial Chemicals",
+        "Solvents"
+      ],
+      "contact": {
+        "person": "Yara Smith",
+        "email": "yara.smith@silkexports3.com",
+        "phone": "+27 056-963-757",
+        "website": "https://silkexports3.com"
+      },
+      "address": "375 Export Ave, Port Elizabeth, South Africa",
+      "yearsInBusiness": 22,
+      "annualVolume": 38500000,
+      "tags": [
+        "south-africa",
+        "africa",
+        "industrial",
+        "chemicals",
+        "solvents",
+        "exporter",
+        "export",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "sunrise-exports-4",
+      "name": "Sunrise Exports 4",
+      "country": "UK",
+      "type": "Exporter",
+      "products": [
+        "Spare Parts",
+        "Used Vehicles"
+      ],
+      "contact": {
+        "person": "Emma Shah",
+        "email": "emma.shah@sunriseexports4.com",
+        "phone": "+44 325-073-1734",
+        "website": "https://sunriseexports4.com"
+      },
+      "address": "611 Commerce St, Liverpool, UK",
+      "yearsInBusiness": 25,
+      "annualVolume": 41200000,
+      "tags": [
+        "uk",
+        "europe",
+        "spare",
+        "parts",
+        "used",
+        "vehicles",
+        "exporter",
+        "export",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "pacific-merchants-5",
+      "name": "Pacific Merchants 5",
+      "country": "Turkey",
+      "type": "Importer",
+      "products": [
+        "Kitchen",
+        "Home Electronics"
+      ],
+      "contact": {
+        "person": "Raj Li",
+        "email": "raj.li@pacificmerchants5.com",
+        "phone": "+90 200-675-97",
+        "website": "https://pacificmerchants5.com"
+      },
+      "address": "842 Commerce St, Istanbul, Turkey",
+      "yearsInBusiness": 21,
+      "annualVolume": 25800000,
+      "tags": [
+        "turkey",
+        "middle-east",
+        "europe",
+        "kitchen",
+        "home",
+        "electronics",
+        "technology",
+        "devices",
+        "importer",
+        "import",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "orion-traders-6",
+      "name": "Orion Traders 6",
+      "country": "USA",
+      "type": "Both",
+      "products": [
+        "Kitchen",
+        "Home Electronics"
+      ],
+      "contact": {
+        "person": "Hiro Wang",
+        "email": "hiro.wang@oriontraders6.com",
+        "phone": "+1 802-354-9056",
+        "website": "https://oriontraders6.com"
+      },
+      "address": "175 Harbour Rd, Chicago, USA",
+      "yearsInBusiness": 42,
+      "annualVolume": 39200000,
+      "tags": [
+        "usa",
+        "north-america",
+        "kitchen",
+        "home",
+        "electronics",
+        "technology",
+        "devices",
+        "both",
+        "importer",
+        "exporter",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "prime-supplyco-7",
+      "name": "Prime SupplyCo 7",
+      "country": "Mexico",
+      "type": "Both",
+      "products": [
+        "Industrial Machinery",
+        "Spare Parts"
+      ],
+      "contact": {
+        "person": "Lucas Wang",
+        "email": "lucas.wang@primesupplyco7.com",
+        "phone": "+52 179-112-06",
+        "website": "https://primesupplyco7.com"
+      },
+      "address": "495 Logistics Blvd, Guadalajara, Mexico",
+      "yearsInBusiness": 22,
+      "annualVolume": 1700000,
+      "tags": [
+        "mexico",
+        "north-america",
+        "industrial",
+        "machinery",
+        "equipment",
+        "spare",
+        "parts",
+        "both",
+        "importer",
+        "exporter",
+        "small-volume",
+        "growing-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "nova-international-8",
+      "name": "Nova International 8",
+      "country": "Germany",
+      "type": "Exporter",
+      "products": [
+        "Industrial Machinery",
+        "Spare Parts"
+      ],
+      "contact": {
+        "person": "Anna Dubois",
+        "email": "anna.dubois@novainternational8.com",
+        "phone": "+49 931-145-0",
+        "website": "https://novainternational8.com"
+      },
+      "address": "806 Industrial Park, Düsseldorf, Germany",
+      "yearsInBusiness": 19,
+      "annualVolume": 28800000,
+      "tags": [
+        "germany",
+        "europe",
+        "eu",
+        "industrial",
+        "machinery",
+        "equipment",
+        "spare",
+        "parts",
+        "exporter",
+        "export",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "sunrise-commerce-9",
+      "name": "Sunrise Commerce 9",
+      "country": "UK",
+      "type": "Both",
+      "products": [
+        "Cotton",
+        "Synthetic Textiles"
+      ],
+      "contact": {
+        "person": "Yara Wang",
+        "email": "yara.wang@sunrisecommerce9.com",
+        "phone": "+44 260-369-89",
+        "website": "https://sunrisecommerce9.com"
+      },
+      "address": "282 Logistics Blvd, Birmingham, UK",
+      "yearsInBusiness": 42,
+      "annualVolume": 5700000,
+      "tags": [
+        "uk",
+        "europe",
+        "cotton",
+        "textile",
+        "fabric",
+        "synthetic",
+        "textiles",
+        "both",
+        "importer",
+        "exporter",
+        "small-volume",
+        "growing-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "global-commerce-10",
+      "name": "Global Commerce 10",
+      "country": "Brazil",
+      "type": "Exporter",
+      "products": [
+        "Processed Leather",
+        "Bags"
+      ],
+      "contact": {
+        "person": "James Brown",
+        "email": "james.brown@globalcommerce10.com",
+        "phone": "+55 418-157-190",
+        "website": "https://globalcommerce10.com"
+      },
+      "address": "183 Harbour Rd, Curitiba, Brazil",
+      "yearsInBusiness": 22,
+      "annualVolume": 6300000,
+      "tags": [
+        "brazil",
+        "south-america",
+        "processed",
+        "leather",
+        "bags",
+        "exporter",
+        "export",
+        "small-volume",
+        "growing-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "apex-exports-11",
+      "name": "Apex Exports 11",
+      "country": "UK",
+      "type": "Both",
+      "products": [
+        "Frozen Seafood",
+        "Shellfish"
+      ],
+      "contact": {
+        "person": "Emma Wang",
+        "email": "emma.wang@apexexports11.com",
+        "phone": "+44 565-852-6851",
+        "website": "https://apexexports11.com"
+      },
+      "address": "343 Industrial Park, Leeds, UK",
+      "yearsInBusiness": 35,
+      "annualVolume": 2300000,
+      "tags": [
+        "uk",
+        "europe",
+        "frozen",
+        "seafood",
+        "shellfish",
+        "both",
+        "importer",
+        "exporter",
+        "small-volume",
+        "growing-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "atlantic-logistics-12",
+      "name": "Atlantic Logistics 12",
+      "country": "India",
+      "type": "Both",
+      "products": [
+        "Cotton",
+        "Synthetic Textiles"
+      ],
+      "contact": {
+        "person": "Yara Dubois",
+        "email": "yara.dubois@atlanticlogistics12.com",
+        "phone": "+91 067-153-6",
+        "website": "https://atlanticlogistics12.com"
+      },
+      "address": "900 Export Ave, Mumbai, India",
+      "yearsInBusiness": 6,
+      "annualVolume": 45100000,
+      "tags": [
+        "india",
+        "asia",
+        "south-asia",
+        "cotton",
+        "textile",
+        "fabric",
+        "synthetic",
+        "textiles",
+        "both",
+        "importer",
+        "exporter",
+        "high-volume",
+        "large-company",
+        "growing",
+        "developing"
+      ]
+    },
+    {
+      "id": "maple-logistics-13",
+      "name": "Maple Logistics 13",
+      "country": "Netherlands",
+      "type": "Both",
+      "products": [
+        "Home",
+        "Office Furniture"
+      ],
+      "contact": {
+        "person": "Raj Garcia",
+        "email": "raj.garcia@maplelogistics13.com",
+        "phone": "+31 764-728-0",
+        "website": "https://maplelogistics13.com"
+      },
+      "address": "937 Industrial Park, Amsterdam, Netherlands",
+      "yearsInBusiness": 4,
+      "annualVolume": 44200000,
+      "tags": [
+        "netherlands",
+        "europe",
+        "eu",
+        "home",
+        "office",
+        "furniture",
+        "both",
+        "importer",
+        "exporter",
+        "high-volume",
+        "large-company",
+        "growing",
+        "developing"
+      ]
+    },
+    {
+      "id": "prime-exports-14",
+      "name": "Prime Exports 14",
+      "country": "Australia",
+      "type": "Both",
+      "products": [
+        "Kitchen",
+        "Home Electronics"
+      ],
+      "contact": {
+        "person": "Chen Dubois",
+        "email": "chen.dubois@primeexports14.com",
+        "phone": "+61 260-229-865",
+        "website": "https://primeexports14.com"
+      },
+      "address": "111 Export Ave, Sydney, Australia",
+      "yearsInBusiness": 23,
+      "annualVolume": 29300000,
+      "tags": [
+        "australia",
+        "oceania",
+        "kitchen",
+        "home",
+        "electronics",
+        "technology",
+        "devices",
+        "both",
+        "importer",
+        "exporter",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "sunrise-imports-15",
+      "name": "Sunrise Imports 15",
+      "country": "France",
+      "type": "Importer",
+      "products": [
+        "Cotton",
+        "Synthetic Textiles"
+      ],
+      "contact": {
+        "person": "Emma Muller",
+        "email": "emma.muller@sunriseimports15.com",
+        "phone": "+33 140-233-88",
+        "website": "https://sunriseimports15.com"
+      },
+      "address": "179 Export Ave, Marseille, France",
+      "yearsInBusiness": 15,
+      "annualVolume": 19300000,
+      "tags": [
+        "france",
+        "europe",
+        "eu",
+        "cotton",
+        "textile",
+        "fabric",
+        "synthetic",
+        "textiles",
+        "importer",
+        "import",
+        "medium-volume",
+        "established-company",
+        "established",
+        "experienced"
+      ]
+    },
+    {
+      "id": "cedar-logistics-16",
+      "name": "Cedar Logistics 16",
+      "country": "UK",
+      "type": "Both",
+      "products": [
+        "Whole Spices",
+        "Blends"
+      ],
+      "contact": {
+        "person": "Isabella Wang",
+        "email": "isabella.wang@cedarlogistics16.com",
+        "phone": "+44 692-864-70",
+        "website": "https://cedarlogistics16.com"
+      },
+      "address": "895 Logistics Blvd, Manchester, UK",
+      "yearsInBusiness": 9,
+      "annualVolume": 47500000,
+      "tags": [
+        "uk",
+        "europe",
+        "whole",
+        "spices",
+        "blends",
+        "both",
+        "importer",
+        "exporter",
+        "high-volume",
+        "large-company",
+        "established",
+        "experienced"
+      ]
+    },
+    {
+      "id": "apex-merchants-17",
+      "name": "Apex Merchants 17",
+      "country": "United Arab Emirates",
+      "type": "Exporter",
+      "products": [
+        "Bulk APIs",
+        "OTC Medicines"
+      ],
+      "contact": {
+        "person": "Chen Kumar",
+        "email": "chen.kumar@apexmerchants17.com",
+        "phone": "+971 674-707-7446",
+        "website": "https://apexmerchants17.com"
+      },
+      "address": "187 Market Lane, Dubai, United Arab Emirates",
+      "yearsInBusiness": 14,
+      "annualVolume": 11600000,
+      "tags": [
+        "united-arab-emirates",
+        "middle-east",
+        "gulf",
+        "bulk",
+        "apis",
+        "otc",
+        "medicines",
+        "exporter",
+        "export",
+        "medium-volume",
+        "established-company",
+        "established",
+        "experienced"
+      ]
+    },
+    {
+      "id": "sunrise-agro-18",
+      "name": "Sunrise Agro 18",
+      "country": "Turkey",
+      "type": "Both",
+      "products": [
+        "Frozen Seafood",
+        "Shellfish"
+      ],
+      "contact": {
+        "person": "James Schmidt",
+        "email": "james.schmidt@sunriseagro18.com",
+        "phone": "+90 784-245-3",
+        "website": "https://sunriseagro18.com"
+      },
+      "address": "200 Export Ave, Bursa, Turkey",
+      "yearsInBusiness": 44,
+      "annualVolume": 13900000,
+      "tags": [
+        "turkey",
+        "middle-east",
+        "europe",
+        "frozen",
+        "seafood",
+        "shellfish",
+        "both",
+        "importer",
+        "exporter",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "nova-imports-19",
+      "name": "Nova Imports 19",
+      "country": "Brazil",
+      "type": "Exporter",
+      "products": [
+        "Fresh Fruits",
+        "Frozen Vegetables"
+      ],
+      "contact": {
+        "person": "Maya Brown",
+        "email": "maya.brown@novaimports19.com",
+        "phone": "+55 986-387-4",
+        "website": "https://novaimports19.com"
+      },
+      "address": "904 Harbour Rd, Porto Alegre, Brazil",
+      "yearsInBusiness": 43,
+      "annualVolume": 30100000,
+      "tags": [
+        "brazil",
+        "south-america",
+        "fresh",
+        "fruits",
+        "frozen",
+        "vegetables",
+        "exporter",
+        "export",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "nova-logistics-20",
+      "name": "Nova Logistics 20",
+      "country": "Netherlands",
+      "type": "Both",
+      "products": [
+        "Cotton",
+        "Synthetic Textiles"
+      ],
+      "contact": {
+        "person": "Amit Smith",
+        "email": "amit.smith@novalogistics20.com",
+        "phone": "+31 377-239-0603",
+        "website": "https://novalogistics20.com"
+      },
+      "address": "523 Export Ave, The Hague, Netherlands",
+      "yearsInBusiness": 21,
+      "annualVolume": 42000000,
+      "tags": [
+        "netherlands",
+        "europe",
+        "eu",
+        "cotton",
+        "textile",
+        "fabric",
+        "synthetic",
+        "textiles",
+        "both",
+        "importer",
+        "exporter",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "silk-agro-21",
+      "name": "Silk Agro 21",
+      "country": "South Africa",
+      "type": "Importer",
+      "products": [
+        "Skincare",
+        "Beauty Products"
+      ],
+      "contact": {
+        "person": "Anna Dubois",
+        "email": "anna.dubois@silkagro21.com",
+        "phone": "+27 128-627-619",
+        "website": "https://silkagro21.com"
+      },
+      "address": "25 Harbour Rd, Johannesburg, South Africa",
+      "yearsInBusiness": 16,
+      "annualVolume": 8400000,
+      "tags": [
+        "south-africa",
+        "africa",
+        "skincare",
+        "beauty",
+        "products",
+        "cosmetics",
+        "personal-care",
+        "importer",
+        "import",
+        "small-volume",
+        "growing-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "everest-logistics-22",
+      "name": "Everest Logistics 22",
+      "country": "India",
+      "type": "Both",
+      "products": [
+        "Cotton",
+        "Synthetic Textiles"
+      ],
+      "contact": {
+        "person": "James Martinez",
+        "email": "james.martinez@everestlogistics22.com",
+        "phone": "+91 651-112-00",
+        "website": "https://everestlogistics22.com"
+      },
+      "address": "367 Logistics Blvd, Mumbai, India",
+      "yearsInBusiness": 35,
+      "annualVolume": 45600000,
+      "tags": [
+        "india",
+        "asia",
+        "south-asia",
+        "cotton",
+        "textile",
+        "fabric",
+        "synthetic",
+        "textiles",
+        "both",
+        "importer",
+        "exporter",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "cedar-agro-23",
+      "name": "Cedar Agro 23",
+      "country": "Australia",
+      "type": "Importer",
+      "products": [
+        "Home",
+        "Office Furniture"
+      ],
+      "contact": {
+        "person": "Hiro Kumar",
+        "email": "hiro.kumar@cedaragro23.com",
+        "phone": "+61 152-229-0",
+        "website": "https://cedaragro23.com"
+      },
+      "address": "120 Commerce St, Melbourne, Australia",
+      "yearsInBusiness": 40,
+      "annualVolume": 43300000,
+      "tags": [
+        "australia",
+        "oceania",
+        "home",
+        "office",
+        "furniture",
+        "importer",
+        "import",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "oceanic-exports-24",
+      "name": "Oceanic Exports 24",
+      "country": "USA",
+      "type": "Importer",
+      "products": [
+        "Fresh Fruits",
+        "Frozen Vegetables"
+      ],
+      "contact": {
+        "person": "Noah Smith",
+        "email": "noah.smith@oceanicexports24.com",
+        "phone": "+1 872-465-56",
+        "website": "https://oceanicexports24.com"
+      },
+      "address": "875 Harbour Rd, Chicago, USA",
+      "yearsInBusiness": 41,
+      "annualVolume": 32700000,
+      "tags": [
+        "usa",
+        "north-america",
+        "fresh",
+        "fruits",
+        "frozen",
+        "vegetables",
+        "importer",
+        "import",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "orion-exports-25",
+      "name": "Orion Exports 25",
+      "country": "Japan",
+      "type": "Exporter",
+      "products": [
+        "Frozen Seafood",
+        "Shellfish"
+      ],
+      "contact": {
+        "person": "Lucas Brown",
+        "email": "lucas.brown@orionexports25.com",
+        "phone": "+81 028-989-0",
+        "website": "https://orionexports25.com"
+      },
+      "address": "48 Harbour Rd, Fukuoka, Japan",
+      "yearsInBusiness": 21,
+      "annualVolume": 24400000,
+      "tags": [
+        "japan",
+        "asia",
+        "east-asia",
+        "frozen",
+        "seafood",
+        "shellfish",
+        "exporter",
+        "export",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "apex-international-26",
+      "name": "Apex International 26",
+      "country": "Germany",
+      "type": "Exporter",
+      "products": [
+        "Bottled Drinks",
+        "Juices"
+      ],
+      "contact": {
+        "person": "Lucas Muller",
+        "email": "lucas.muller@apexinternational26.com",
+        "phone": "+49 968-453-7",
+        "website": "https://apexinternational26.com"
+      },
+      "address": "895 Export Ave, Munich, Germany",
+      "yearsInBusiness": 9,
+      "annualVolume": 17100000,
+      "tags": [
+        "germany",
+        "europe",
+        "eu",
+        "bottled",
+        "drinks",
+        "juices",
+        "exporter",
+        "export",
+        "medium-volume",
+        "established-company",
+        "established",
+        "experienced"
+      ]
+    },
+    {
+      "id": "prime-commerce-27",
+      "name": "Prime Commerce 27",
+      "country": "United Arab Emirates",
+      "type": "Both",
+      "products": [
+        "Frozen Seafood",
+        "Shellfish"
+      ],
+      "contact": {
+        "person": "Olivera Silva",
+        "email": "olivera.silva@primecommerce27.com",
+        "phone": "+971 142-289-1411",
+        "website": "https://primecommerce27.com"
+      },
+      "address": "377 Harbour Rd, Dubai, United Arab Emirates",
+      "yearsInBusiness": 5,
+      "annualVolume": 1500000,
+      "tags": [
+        "united-arab-emirates",
+        "middle-east",
+        "gulf",
+        "frozen",
+        "seafood",
+        "shellfish",
+        "both",
+        "importer",
+        "exporter",
+        "small-volume",
+        "growing-company",
+        "growing",
+        "developing"
+      ]
+    },
+    {
+      "id": "zenith-agro-28",
+      "name": "Zenith Agro 28",
+      "country": "Netherlands",
+      "type": "Exporter",
+      "products": [
+        "Spare Parts",
+        "Used Vehicles"
+      ],
+      "contact": {
+        "person": "Amit Muller",
+        "email": "amit.muller@zenithagro28.com",
+        "phone": "+31 877-418-65",
+        "website": "https://zenithagro28.com"
+      },
+      "address": "209 Harbour Rd, Eindhoven, Netherlands",
+      "yearsInBusiness": 32,
+      "annualVolume": 1100000,
+      "tags": [
+        "netherlands",
+        "europe",
+        "eu",
+        "spare",
+        "parts",
+        "used",
+        "vehicles",
+        "exporter",
+        "export",
+        "small-volume",
+        "growing-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "nova-merchants-29",
+      "name": "Nova Merchants 29",
+      "country": "India",
+      "type": "Exporter",
+      "products": [
+        "Timber",
+        "Plywood",
+        "Paper Rolls"
+      ],
+      "contact": {
+        "person": "Amit Singh",
+        "email": "amit.singh@novamerchants29.com",
+        "phone": "+91 876-501-9",
+        "website": "https://novamerchants29.com"
+      },
+      "address": "225 Market Lane, Chennai, India",
+      "yearsInBusiness": 5,
+      "annualVolume": 18600000,
+      "tags": [
+        "india",
+        "asia",
+        "south-asia",
+        "timber",
+        "plywood",
+        "paper",
+        "rolls",
+        "exporter",
+        "export",
+        "medium-volume",
+        "established-company",
+        "growing",
+        "developing"
+      ]
+    },
+    {
+      "id": "silk-exports-30",
+      "name": "Silk Exports 30",
+      "country": "South Africa",
+      "type": "Both",
+      "products": [
+        "Consumer Electronics",
+        "Components"
+      ],
+      "contact": {
+        "person": "Liu Kumar",
+        "email": "liu.kumar@silkexports30.com",
+        "phone": "+27 519-512-4114",
+        "website": "https://silkexports30.com"
+      },
+      "address": "934 Commerce St, Pretoria, South Africa",
+      "yearsInBusiness": 24,
+      "annualVolume": 23900000,
+      "tags": [
+        "south-africa",
+        "africa",
+        "consumer",
+        "electronics",
+        "technology",
+        "devices",
+        "components",
+        "both",
+        "importer",
+        "exporter",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "global-imports-31",
+      "name": "Global Imports 31",
+      "country": "Brazil",
+      "type": "Importer",
+      "products": [
+        "Skincare",
+        "Beauty Products"
+      ],
+      "contact": {
+        "person": "Amit Kumar",
+        "email": "amit.kumar@globalimports31.com",
+        "phone": "+55 105-800-4",
+        "website": "https://globalimports31.com"
+      },
+      "address": "108 Commerce St, Porto Alegre, Brazil",
+      "yearsInBusiness": 11,
+      "annualVolume": 15400000,
+      "tags": [
+        "brazil",
+        "south-america",
+        "skincare",
+        "beauty",
+        "products",
+        "cosmetics",
+        "personal-care",
+        "importer",
+        "import",
+        "medium-volume",
+        "established-company",
+        "established",
+        "experienced"
+      ]
+    },
+    {
+      "id": "nova-agro-32",
+      "name": "Nova Agro 32",
+      "country": "Netherlands",
+      "type": "Exporter",
+      "products": [
+        "Whole Spices",
+        "Blends"
+      ],
+      "contact": {
+        "person": "Sofia Li",
+        "email": "sofia.li@novaagro32.com",
+        "phone": "+31 466-257-986",
+        "website": "https://novaagro32.com"
+      },
+      "address": "881 Harbour Rd, Amsterdam, Netherlands",
+      "yearsInBusiness": 43,
+      "annualVolume": 39300000,
+      "tags": [
+        "netherlands",
+        "europe",
+        "eu",
+        "whole",
+        "spices",
+        "blends",
+        "exporter",
+        "export",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "global-traders-33",
+      "name": "Global Traders 33",
+      "country": "United Arab Emirates",
+      "type": "Importer",
+      "products": [
+        "Spare Parts",
+        "Used Vehicles"
+      ],
+      "contact": {
+        "person": "Felipe Martinez",
+        "email": "felipe.martinez@globaltraders33.com",
+        "phone": "+971 650-023-761",
+        "website": "https://globaltraders33.com"
+      },
+      "address": "475 Harbour Rd, Ras Al Khaimah, United Arab Emirates",
+      "yearsInBusiness": 27,
+      "annualVolume": 14600000,
+      "tags": [
+        "united-arab-emirates",
+        "middle-east",
+        "gulf",
+        "spare",
+        "parts",
+        "used",
+        "vehicles",
+        "importer",
+        "import",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "nova-commerce-34",
+      "name": "Nova Commerce 34",
+      "country": "Turkey",
+      "type": "Exporter",
+      "products": [
+        "Home",
+        "Office Furniture"
+      ],
+      "contact": {
+        "person": "Yara Martinez",
+        "email": "yara.martinez@novacommerce34.com",
+        "phone": "+90 688-255-241",
+        "website": "https://novacommerce34.com"
+      },
+      "address": "735 Logistics Blvd, Antalya, Turkey",
+      "yearsInBusiness": 6,
+      "annualVolume": 25400000,
+      "tags": [
+        "turkey",
+        "middle-east",
+        "europe",
+        "home",
+        "office",
+        "furniture",
+        "exporter",
+        "export",
+        "medium-volume",
+        "established-company",
+        "growing",
+        "developing"
+      ]
+    },
+    {
+      "id": "everest-merchants-35",
+      "name": "Everest Merchants 35",
+      "country": "China",
+      "type": "Exporter",
+      "products": [
+        "Industrial Machinery",
+        "Spare Parts"
+      ],
+      "contact": {
+        "person": "Yara Silva",
+        "email": "yara.silva@everestmerchants35.com",
+        "phone": "+86 427-222-506",
+        "website": "https://everestmerchants35.com"
+      },
+      "address": "680 Industrial Park, Shanghai, China",
+      "yearsInBusiness": 44,
+      "annualVolume": 19300000,
+      "tags": [
+        "china",
+        "asia",
+        "east-asia",
+        "industrial",
+        "machinery",
+        "equipment",
+        "spare",
+        "parts",
+        "exporter",
+        "export",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "pacific-supplyco-36",
+      "name": "Pacific SupplyCo 36",
+      "country": "Germany",
+      "type": "Exporter",
+      "products": [
+        "Whole Spices",
+        "Blends"
+      ],
+      "contact": {
+        "person": "Chen Martinez",
+        "email": "chen.martinez@pacificsupplyco36.com",
+        "phone": "+49 798-464-6",
+        "website": "https://pacificsupplyco36.com"
+      },
+      "address": "336 Export Ave, Berlin, Germany",
+      "yearsInBusiness": 40,
+      "annualVolume": 36900000,
+      "tags": [
+        "germany",
+        "europe",
+        "eu",
+        "whole",
+        "spices",
+        "blends",
+        "exporter",
+        "export",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "prime-agro-37",
+      "name": "Prime Agro 37",
+      "country": "India",
+      "type": "Both",
+      "products": [
+        "Spare Parts",
+        "Used Vehicles"
+      ],
+      "contact": {
+        "person": "Oliver Wang",
+        "email": "oliver.wang@primeagro37.com",
+        "phone": "+91 161-469-091",
+        "website": "https://primeagro37.com"
+      },
+      "address": "532 Market Lane, Ahmedabad, India",
+      "yearsInBusiness": 35,
+      "annualVolume": 31000000,
+      "tags": [
+        "india",
+        "asia",
+        "south-asia",
+        "spare",
+        "parts",
+        "used",
+        "vehicles",
+        "both",
+        "importer",
+        "exporter",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "silk-agro-38",
+      "name": "Silk Agro 38",
+      "country": "Netherlands",
+      "type": "Importer",
+      "products": [
+        "Spare Parts",
+        "Used Vehicles"
+      ],
+      "contact": {
+        "person": "Olivera Dubois",
+        "email": "olivera.dubois@silkagro38.com",
+        "phone": "+31 929-689-45",
+        "website": "https://silkagro38.com"
+      },
+      "address": "967 Harbour Rd, The Hague, Netherlands",
+      "yearsInBusiness": 5,
+      "annualVolume": 28200000,
+      "tags": [
+        "netherlands",
+        "europe",
+        "eu",
+        "spare",
+        "parts",
+        "used",
+        "vehicles",
+        "importer",
+        "import",
+        "medium-volume",
+        "established-company",
+        "growing",
+        "developing"
+      ]
+    },
+    {
+      "id": "silk-commerce-39",
+      "name": "Silk Commerce 39",
+      "country": "India",
+      "type": "Both",
+      "products": [
+        "Timber",
+        "Plywood",
+        "Paper Rolls"
+      ],
+      "contact": {
+        "person": "Amit Sato",
+        "email": "amit.sato@silkcommerce39.com",
+        "phone": "+91 105-858-064",
+        "website": "https://silkcommerce39.com"
+      },
+      "address": "189 Harbour Rd, Delhi, India",
+      "yearsInBusiness": 12,
+      "annualVolume": 2600000,
+      "tags": [
+        "india",
+        "asia",
+        "south-asia",
+        "timber",
+        "plywood",
+        "paper",
+        "rolls",
+        "both",
+        "importer",
+        "exporter",
+        "small-volume",
+        "growing-company",
+        "established",
+        "experienced"
+      ]
+    },
+    {
+      "id": "prime-enterprises-40",
+      "name": "Prime Enterprises 40",
+      "country": "China",
+      "type": "Importer",
+      "products": [
+        "Bottled Drinks",
+        "Juices"
+      ],
+      "contact": {
+        "person": "Anna Dubois",
+        "email": "anna.dubois@primeenterprises40.com",
+        "phone": "+86 879-091-02",
+        "website": "https://primeenterprises40.com"
+      },
+      "address": "498 Market Lane, Guangzhou, China",
+      "yearsInBusiness": 44,
+      "annualVolume": 32900000,
+      "tags": [
+        "china",
+        "asia",
+        "east-asia",
+        "bottled",
+        "drinks",
+        "juices",
+        "importer",
+        "import",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "global-imports-41",
+      "name": "Global Imports 41",
+      "country": "Netherlands",
+      "type": "Both",
+      "products": [
+        "Bulk APIs",
+        "OTC Medicines"
+      ],
+      "contact": {
+        "person": "Maya Brown",
+        "email": "maya.brown@globalimports41.com",
+        "phone": "+31 998-163-443",
+        "website": "https://globalimports41.com"
+      },
+      "address": "815 Industrial Park, Rotterdam, Netherlands",
+      "yearsInBusiness": 31,
+      "annualVolume": 28700000,
+      "tags": [
+        "netherlands",
+        "europe",
+        "eu",
+        "bulk",
+        "apis",
+        "otc",
+        "medicines",
+        "both",
+        "importer",
+        "exporter",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "nova-agro-42",
+      "name": "Nova Agro 42",
+      "country": "China",
+      "type": "Importer",
+      "products": [
+        "Bottled Drinks",
+        "Juices"
+      ],
+      "contact": {
+        "person": "Oliver Shah",
+        "email": "oliver.shah@novaagro42.com",
+        "phone": "+86 046-594-5",
+        "website": "https://novaagro42.com"
+      },
+      "address": "428 Harbour Rd, Hangzhou, China",
+      "yearsInBusiness": 4,
+      "annualVolume": 37700000,
+      "tags": [
+        "china",
+        "asia",
+        "east-asia",
+        "bottled",
+        "drinks",
+        "juices",
+        "importer",
+        "import",
+        "high-volume",
+        "large-company",
+        "growing",
+        "developing"
+      ]
+    },
+    {
+      "id": "everest-supplyco-43",
+      "name": "Everest SupplyCo 43",
+      "country": "Australia",
+      "type": "Exporter",
+      "products": [
+        "Kitchen",
+        "Home Electronics"
+      ],
+      "contact": {
+        "person": "Olivera Martinez",
+        "email": "olivera.martinez@everestsupplyco43.com",
+        "phone": "+61 189-432-2",
+        "website": "https://everestsupplyco43.com"
+      },
+      "address": "270 Export Ave, Brisbane, Australia",
+      "yearsInBusiness": 23,
+      "annualVolume": 45200000,
+      "tags": [
+        "australia",
+        "oceania",
+        "kitchen",
+        "home",
+        "electronics",
+        "technology",
+        "devices",
+        "exporter",
+        "export",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "atlantic-enterprises-44",
+      "name": "Atlantic Enterprises 44",
+      "country": "USA",
+      "type": "Both",
+      "products": [
+        "Fresh Fruits",
+        "Frozen Vegetables"
+      ],
+      "contact": {
+        "person": "Hiro Silva",
+        "email": "hiro.silva@atlanticenterprises44.com",
+        "phone": "+1 150-249-4",
+        "website": "https://atlanticenterprises44.com"
+      },
+      "address": "784 Industrial Park, Chicago, USA",
+      "yearsInBusiness": 22,
+      "annualVolume": 17100000,
+      "tags": [
+        "usa",
+        "north-america",
+        "fresh",
+        "fruits",
+        "frozen",
+        "vegetables",
+        "both",
+        "importer",
+        "exporter",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "sunrise-imports-45",
+      "name": "Sunrise Imports 45",
+      "country": "Netherlands",
+      "type": "Exporter",
+      "products": [
+        "Consumer Electronics",
+        "Components"
+      ],
+      "contact": {
+        "person": "Hiro Brown",
+        "email": "hiro.brown@sunriseimports45.com",
+        "phone": "+31 203-716-72",
+        "website": "https://sunriseimports45.com"
+      },
+      "address": "780 Logistics Blvd, Amsterdam, Netherlands",
+      "yearsInBusiness": 26,
+      "annualVolume": 34300000,
+      "tags": [
+        "netherlands",
+        "europe",
+        "eu",
+        "consumer",
+        "electronics",
+        "technology",
+        "devices",
+        "components",
+        "exporter",
+        "export",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "orion-enterprises-46",
+      "name": "Orion Enterprises 46",
+      "country": "Germany",
+      "type": "Exporter",
+      "products": [
+        "Home",
+        "Office Furniture"
+      ],
+      "contact": {
+        "person": "Felipe Sato",
+        "email": "felipe.sato@orionenterprises46.com",
+        "phone": "+49 456-380-47",
+        "website": "https://orionenterprises46.com"
+      },
+      "address": "670 Export Ave, Frankfurt, Germany",
+      "yearsInBusiness": 5,
+      "annualVolume": 45600000,
+      "tags": [
+        "germany",
+        "europe",
+        "eu",
+        "home",
+        "office",
+        "furniture",
+        "exporter",
+        "export",
+        "high-volume",
+        "large-company",
+        "growing",
+        "developing"
+      ]
+    },
+    {
+      "id": "prime-exports-47",
+      "name": "Prime Exports 47",
+      "country": "Japan",
+      "type": "Importer",
+      "products": [
+        "Frozen Seafood",
+        "Shellfish"
+      ],
+      "contact": {
+        "person": "Yara Brown",
+        "email": "yara.brown@primeexports47.com",
+        "phone": "+81 688-631-0094",
+        "website": "https://primeexports47.com"
+      },
+      "address": "55 Market Lane, Yokohama, Japan",
+      "yearsInBusiness": 26,
+      "annualVolume": 18300000,
+      "tags": [
+        "japan",
+        "asia",
+        "east-asia",
+        "frozen",
+        "seafood",
+        "shellfish",
+        "importer",
+        "import",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "sunrise-exports-48",
+      "name": "Sunrise Exports 48",
+      "country": "China",
+      "type": "Both",
+      "products": [
+        "Home",
+        "Office Furniture"
+      ],
+      "contact": {
+        "person": "James Martinez",
+        "email": "james.martinez@sunriseexports48.com",
+        "phone": "+86 821-264-15",
+        "website": "https://sunriseexports48.com"
+      },
+      "address": "512 Commerce St, Shenzhen, China",
+      "yearsInBusiness": 15,
+      "annualVolume": 26500000,
+      "tags": [
+        "china",
+        "asia",
+        "east-asia",
+        "home",
+        "office",
+        "furniture",
+        "both",
+        "importer",
+        "exporter",
+        "medium-volume",
+        "established-company",
+        "established",
+        "experienced"
+      ]
+    },
+    {
+      "id": "universal-commerce-49",
+      "name": "Universal Commerce 49",
+      "country": "USA",
+      "type": "Exporter",
+      "products": [
+        "Bulk APIs",
+        "OTC Medicines"
+      ],
+      "contact": {
+        "person": "Oliver Wang",
+        "email": "oliver.wang@universalcommerce49.com",
+        "phone": "+1 647-866-1703",
+        "website": "https://universalcommerce49.com"
+      },
+      "address": "615 Export Ave, Los Angeles, USA",
+      "yearsInBusiness": 29,
+      "annualVolume": 49300000,
+      "tags": [
+        "usa",
+        "north-america",
+        "bulk",
+        "apis",
+        "otc",
+        "medicines",
+        "exporter",
+        "export",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "sunrise-traders-50",
+      "name": "Sunrise Traders 50",
+      "country": "Turkey",
+      "type": "Both",
+      "products": [
+        "Timber",
+        "Plywood",
+        "Paper Rolls"
+      ],
+      "contact": {
+        "person": "Chen Schmidt",
+        "email": "chen.schmidt@sunrisetraders50.com",
+        "phone": "+90 509-543-950",
+        "website": "https://sunrisetraders50.com"
+      },
+      "address": "495 Harbour Rd, Ankara, Turkey",
+      "yearsInBusiness": 33,
+      "annualVolume": 17200000,
+      "tags": [
+        "turkey",
+        "middle-east",
+        "europe",
+        "timber",
+        "plywood",
+        "paper",
+        "rolls",
+        "both",
+        "importer",
+        "exporter",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "prime-enterprises-51",
+      "name": "Prime Enterprises 51",
+      "country": "China",
+      "type": "Importer",
+      "products": [
+        "Frozen Seafood",
+        "Shellfish"
+      ],
+      "contact": {
+        "person": "Sofia Dubois",
+        "email": "sofia.dubois@primeenterprises51.com",
+        "phone": "+86 570-894-1185",
+        "website": "https://primeenterprises51.com"
+      },
+      "address": "917 Market Lane, Hangzhou, China",
+      "yearsInBusiness": 25,
+      "annualVolume": 7900000,
+      "tags": [
+        "china",
+        "asia",
+        "east-asia",
+        "frozen",
+        "seafood",
+        "shellfish",
+        "importer",
+        "import",
+        "small-volume",
+        "growing-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "global-merchants-52",
+      "name": "Global Merchants 52",
+      "country": "Germany",
+      "type": "Importer",
+      "products": [
+        "Processed Leather",
+        "Bags"
+      ],
+      "contact": {
+        "person": "Sofia Brown",
+        "email": "sofia.brown@globalmerchants52.com",
+        "phone": "+49 489-698-5",
+        "website": "https://globalmerchants52.com"
+      },
+      "address": "412 Industrial Park, Munich, Germany",
+      "yearsInBusiness": 31,
+      "annualVolume": 37700000,
+      "tags": [
+        "germany",
+        "europe",
+        "eu",
+        "processed",
+        "leather",
+        "bags",
+        "importer",
+        "import",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "everest-exports-53",
+      "name": "Everest Exports 53",
+      "country": "Brazil",
+      "type": "Importer",
+      "products": [
+        "Timber",
+        "Plywood",
+        "Paper Rolls"
+      ],
+      "contact": {
+        "person": "Yara Smith",
+        "email": "yara.smith@everestexports53.com",
+        "phone": "+55 039-801-7",
+        "website": "https://everestexports53.com"
+      },
+      "address": "830 Industrial Park, Porto Alegre, Brazil",
+      "yearsInBusiness": 32,
+      "annualVolume": 26400000,
+      "tags": [
+        "brazil",
+        "south-america",
+        "timber",
+        "plywood",
+        "paper",
+        "rolls",
+        "importer",
+        "import",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "everest-international-54",
+      "name": "Everest International 54",
+      "country": "India",
+      "type": "Importer",
+      "products": [
+        "Bulk APIs",
+        "OTC Medicines"
+      ],
+      "contact": {
+        "person": "Emma Brown",
+        "email": "emma.brown@everestinternational54.com",
+        "phone": "+91 050-391-587",
+        "website": "https://everestinternational54.com"
+      },
+      "address": "828 Industrial Park, Ahmedabad, India",
+      "yearsInBusiness": 22,
+      "annualVolume": 20400000,
+      "tags": [
+        "india",
+        "asia",
+        "south-asia",
+        "bulk",
+        "apis",
+        "otc",
+        "medicines",
+        "importer",
+        "import",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "sunrise-agro-55",
+      "name": "Sunrise Agro 55",
+      "country": "USA",
+      "type": "Both",
+      "products": [
+        "Processed Leather",
+        "Bags"
+      ],
+      "contact": {
+        "person": "Felipe Silva",
+        "email": "felipe.silva@sunriseagro55.com",
+        "phone": "+1 478-827-5",
+        "website": "https://sunriseagro55.com"
+      },
+      "address": "942 Harbour Rd, Chicago, USA",
+      "yearsInBusiness": 27,
+      "annualVolume": 8800000,
+      "tags": [
+        "usa",
+        "north-america",
+        "processed",
+        "leather",
+        "bags",
+        "both",
+        "importer",
+        "exporter",
+        "small-volume",
+        "growing-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "oceanic-traders-56",
+      "name": "Oceanic Traders 56",
+      "country": "Mexico",
+      "type": "Both",
+      "products": [
+        "Skincare",
+        "Beauty Products"
+      ],
+      "contact": {
+        "person": "Noah Singh",
+        "email": "noah.singh@oceanictraders56.com",
+        "phone": "+52 105-424-87",
+        "website": "https://oceanictraders56.com"
+      },
+      "address": "910 Industrial Park, Guadalajara, Mexico",
+      "yearsInBusiness": 43,
+      "annualVolume": 24600000,
+      "tags": [
+        "mexico",
+        "north-america",
+        "skincare",
+        "beauty",
+        "products",
+        "cosmetics",
+        "personal-care",
+        "both",
+        "importer",
+        "exporter",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "maple-enterprises-57",
+      "name": "Maple Enterprises 57",
+      "country": "Turkey",
+      "type": "Both",
+      "products": [
+        "Fresh Fruits",
+        "Frozen Vegetables"
+      ],
+      "contact": {
+        "person": "Mohammed Shah",
+        "email": "mohammed.shah@mapleenterprises57.com",
+        "phone": "+90 535-947-575",
+        "website": "https://mapleenterprises57.com"
+      },
+      "address": "503 Harbour Rd, Istanbul, Turkey",
+      "yearsInBusiness": 15,
+      "annualVolume": 36300000,
+      "tags": [
+        "turkey",
+        "middle-east",
+        "europe",
+        "fresh",
+        "fruits",
+        "frozen",
+        "vegetables",
+        "both",
+        "importer",
+        "exporter",
+        "high-volume",
+        "large-company",
+        "established",
+        "experienced"
+      ]
+    },
+    {
+      "id": "pacific-imports-58",
+      "name": "Pacific Imports 58",
+      "country": "USA",
+      "type": "Exporter",
+      "products": [
+        "Cotton",
+        "Synthetic Textiles"
+      ],
+      "contact": {
+        "person": "Maya Muller",
+        "email": "maya.muller@pacificimports58.com",
+        "phone": "+1 482-639-7",
+        "website": "https://pacificimports58.com"
+      },
+      "address": "82 Logistics Blvd, Los Angeles, USA",
+      "yearsInBusiness": 10,
+      "annualVolume": 15900000,
+      "tags": [
+        "usa",
+        "north-america",
+        "cotton",
+        "textile",
+        "fabric",
+        "synthetic",
+        "textiles",
+        "exporter",
+        "export",
+        "medium-volume",
+        "established-company",
+        "established",
+        "experienced"
+      ]
+    },
+    {
+      "id": "sunrise-imports-59",
+      "name": "Sunrise Imports 59",
+      "country": "UK",
+      "type": "Both",
+      "products": [
+        "Processed Leather",
+        "Bags"
+      ],
+      "contact": {
+        "person": "Liu Muller",
+        "email": "liu.muller@sunriseimports59.com",
+        "phone": "+44 022-129-6247",
+        "website": "https://sunriseimports59.com"
+      },
+      "address": "890 Market Lane, Birmingham, UK",
+      "yearsInBusiness": 7,
+      "annualVolume": 47100000,
+      "tags": [
+        "uk",
+        "europe",
+        "processed",
+        "leather",
+        "bags",
+        "both",
+        "importer",
+        "exporter",
+        "high-volume",
+        "large-company",
+        "growing",
+        "developing"
+      ]
+    },
+    {
+      "id": "prime-merchants-60",
+      "name": "Prime Merchants 60",
+      "country": "Turkey",
+      "type": "Exporter",
+      "products": [
+        "Industrial Chemicals",
+        "Solvents"
+      ],
+      "contact": {
+        "person": "Oliver Kumar",
+        "email": "oliver.kumar@primemerchants60.com",
+        "phone": "+90 904-680-9",
+        "website": "https://primemerchants60.com"
+      },
+      "address": "833 Industrial Park, Izmir, Turkey",
+      "yearsInBusiness": 29,
+      "annualVolume": 2100000,
+      "tags": [
+        "turkey",
+        "middle-east",
+        "europe",
+        "industrial",
+        "chemicals",
+        "solvents",
+        "exporter",
+        "export",
+        "small-volume",
+        "growing-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "apex-enterprises-61",
+      "name": "Apex Enterprises 61",
+      "country": "Japan",
+      "type": "Both",
+      "products": [
+        "Timber",
+        "Plywood",
+        "Paper Rolls"
+      ],
+      "contact": {
+        "person": "Chen Martinez",
+        "email": "chen.martinez@apexenterprises61.com",
+        "phone": "+81 666-941-1111",
+        "website": "https://apexenterprises61.com"
+      },
+      "address": "223 Harbour Rd, Fukuoka, Japan",
+      "yearsInBusiness": 12,
+      "annualVolume": 15600000,
+      "tags": [
+        "japan",
+        "asia",
+        "east-asia",
+        "timber",
+        "plywood",
+        "paper",
+        "rolls",
+        "both",
+        "importer",
+        "exporter",
+        "medium-volume",
+        "established-company",
+        "established",
+        "experienced"
+      ]
+    },
+    {
+      "id": "maple-agro-62",
+      "name": "Maple Agro 62",
+      "country": "United Arab Emirates",
+      "type": "Exporter",
+      "products": [
+        "Industrial Machinery",
+        "Spare Parts"
+      ],
+      "contact": {
+        "person": "Noah Kumar",
+        "email": "noah.kumar@mapleagro62.com",
+        "phone": "+971 884-893-6896",
+        "website": "https://mapleagro62.com"
+      },
+      "address": "324 Commerce St, Abu Dhabi, United Arab Emirates",
+      "yearsInBusiness": 38,
+      "annualVolume": 31900000,
+      "tags": [
+        "united-arab-emirates",
+        "middle-east",
+        "gulf",
+        "industrial",
+        "machinery",
+        "equipment",
+        "spare",
+        "parts",
+        "exporter",
+        "export",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "atlantic-international-63",
+      "name": "Atlantic International 63",
+      "country": "Turkey",
+      "type": "Both",
+      "products": [
+        "Industrial Machinery",
+        "Spare Parts"
+      ],
+      "contact": {
+        "person": "Liu Sato",
+        "email": "liu.sato@atlanticinternational63.com",
+        "phone": "+90 900-332-14",
+        "website": "https://atlanticinternational63.com"
+      },
+      "address": "909 Export Ave, Izmir, Turkey",
+      "yearsInBusiness": 23,
+      "annualVolume": 41500000,
+      "tags": [
+        "turkey",
+        "middle-east",
+        "europe",
+        "industrial",
+        "machinery",
+        "equipment",
+        "spare",
+        "parts",
+        "both",
+        "importer",
+        "exporter",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "oceanic-traders-64",
+      "name": "Oceanic Traders 64",
+      "country": "Netherlands",
+      "type": "Exporter",
+      "products": [
+        "Cotton",
+        "Synthetic Textiles"
+      ],
+      "contact": {
+        "person": "Maria Schmidt",
+        "email": "maria.schmidt@oceanictraders64.com",
+        "phone": "+31 074-396-3",
+        "website": "https://oceanictraders64.com"
+      },
+      "address": "192 Export Ave, Utrecht, Netherlands",
+      "yearsInBusiness": 16,
+      "annualVolume": 44600000,
+      "tags": [
+        "netherlands",
+        "europe",
+        "eu",
+        "cotton",
+        "textile",
+        "fabric",
+        "synthetic",
+        "textiles",
+        "exporter",
+        "export",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "sunrise-exports-65",
+      "name": "Sunrise Exports 65",
+      "country": "Canada",
+      "type": "Both",
+      "products": [
+        "Bulk APIs",
+        "OTC Medicines"
+      ],
+      "contact": {
+        "person": "Isabella Garcia",
+        "email": "isabella.garcia@sunriseexports65.com",
+        "phone": "+1 828-391-15",
+        "website": "https://sunriseexports65.com"
+      },
+      "address": "639 Market Lane, Toronto, Canada",
+      "yearsInBusiness": 33,
+      "annualVolume": 15700000,
+      "tags": [
+        "canada",
+        "north-america",
+        "bulk",
+        "apis",
+        "otc",
+        "medicines",
+        "both",
+        "importer",
+        "exporter",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "sunrise-logistics-66",
+      "name": "Sunrise Logistics 66",
+      "country": "UK",
+      "type": "Exporter",
+      "products": [
+        "Kitchen",
+        "Home Electronics"
+      ],
+      "contact": {
+        "person": "James Brown",
+        "email": "james.brown@sunriselogistics66.com",
+        "phone": "+44 488-622-3",
+        "website": "https://sunriselogistics66.com"
+      },
+      "address": "957 Export Ave, Birmingham, UK",
+      "yearsInBusiness": 18,
+      "annualVolume": 3600000,
+      "tags": [
+        "uk",
+        "europe",
+        "kitchen",
+        "home",
+        "electronics",
+        "technology",
+        "devices",
+        "exporter",
+        "export",
+        "small-volume",
+        "growing-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "atlantic-enterprises-67",
+      "name": "Atlantic Enterprises 67",
+      "country": "China",
+      "type": "Both",
+      "products": [
+        "Industrial Chemicals",
+        "Solvents"
+      ],
+      "contact": {
+        "person": "Liam Li",
+        "email": "liam.li@atlanticenterprises67.com",
+        "phone": "+86 219-010-45",
+        "website": "https://atlanticenterprises67.com"
+      },
+      "address": "82 Market Lane, Guangzhou, China",
+      "yearsInBusiness": 13,
+      "annualVolume": 41400000,
+      "tags": [
+        "china",
+        "asia",
+        "east-asia",
+        "industrial",
+        "chemicals",
+        "solvents",
+        "both",
+        "importer",
+        "exporter",
+        "high-volume",
+        "large-company",
+        "established",
+        "experienced"
+      ]
+    },
+    {
+      "id": "everest-commerce-68",
+      "name": "Everest Commerce 68",
+      "country": "China",
+      "type": "Exporter",
+      "products": [
+        "Frozen Seafood",
+        "Shellfish"
+      ],
+      "contact": {
+        "person": "Maya Muller",
+        "email": "maya.muller@everestcommerce68.com",
+        "phone": "+86 412-781-0084",
+        "website": "https://everestcommerce68.com"
+      },
+      "address": "602 Export Ave, Shanghai, China",
+      "yearsInBusiness": 18,
+      "annualVolume": 10300000,
+      "tags": [
+        "china",
+        "asia",
+        "east-asia",
+        "frozen",
+        "seafood",
+        "shellfish",
+        "exporter",
+        "export",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "atlantic-commerce-69",
+      "name": "Atlantic Commerce 69",
+      "country": "France",
+      "type": "Exporter",
+      "products": [
+        "Bottled Drinks",
+        "Juices"
+      ],
+      "contact": {
+        "person": "Amit Wang",
+        "email": "amit.wang@atlanticcommerce69.com",
+        "phone": "+33 048-387-9400",
+        "website": "https://atlanticcommerce69.com"
+      },
+      "address": "207 Harbour Rd, Paris, France",
+      "yearsInBusiness": 16,
+      "annualVolume": 26200000,
+      "tags": [
+        "france",
+        "europe",
+        "eu",
+        "bottled",
+        "drinks",
+        "juices",
+        "exporter",
+        "export",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "silk-international-70",
+      "name": "Silk International 70",
+      "country": "Brazil",
+      "type": "Exporter",
+      "products": [
+        "Consumer Electronics",
+        "Components"
+      ],
+      "contact": {
+        "person": "Felipe Schmidt",
+        "email": "felipe.schmidt@silkinternational70.com",
+        "phone": "+55 434-592-03",
+        "website": "https://silkinternational70.com"
+      },
+      "address": "587 Market Lane, Salvador, Brazil",
+      "yearsInBusiness": 45,
+      "annualVolume": 11100000,
+      "tags": [
+        "brazil",
+        "south-america",
+        "consumer",
+        "electronics",
+        "technology",
+        "devices",
+        "components",
+        "exporter",
+        "export",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "nova-international-71",
+      "name": "Nova International 71",
+      "country": "Netherlands",
+      "type": "Exporter",
+      "products": [
+        "Bottled Drinks",
+        "Juices"
+      ],
+      "contact": {
+        "person": "Isabella Brown",
+        "email": "isabella.brown@novainternational71.com",
+        "phone": "+31 026-440-33",
+        "website": "https://novainternational71.com"
+      },
+      "address": "87 Commerce St, The Hague, Netherlands",
+      "yearsInBusiness": 11,
+      "annualVolume": 22300000,
+      "tags": [
+        "netherlands",
+        "europe",
+        "eu",
+        "bottled",
+        "drinks",
+        "juices",
+        "exporter",
+        "export",
+        "medium-volume",
+        "established-company",
+        "established",
+        "experienced"
+      ]
+    },
+    {
+      "id": "sunrise-logistics-72",
+      "name": "Sunrise Logistics 72",
+      "country": "USA",
+      "type": "Exporter",
+      "products": [
+        "Processed Leather",
+        "Bags"
+      ],
+      "contact": {
+        "person": "Olivera Muller",
+        "email": "olivera.muller@sunriselogistics72.com",
+        "phone": "+1 925-152-9008",
+        "website": "https://sunriselogistics72.com"
+      },
+      "address": "833 Commerce St, Houston, USA",
+      "yearsInBusiness": 37,
+      "annualVolume": 39900000,
+      "tags": [
+        "usa",
+        "north-america",
+        "processed",
+        "leather",
+        "bags",
+        "exporter",
+        "export",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "pacific-exports-73",
+      "name": "Pacific Exports 73",
+      "country": "Mexico",
+      "type": "Exporter",
+      "products": [
+        "Consumer Electronics",
+        "Components"
+      ],
+      "contact": {
+        "person": "Sofia Shah",
+        "email": "sofia.shah@pacificexports73.com",
+        "phone": "+52 068-900-12",
+        "website": "https://pacificexports73.com"
+      },
+      "address": "176 Market Lane, Monterrey, Mexico",
+      "yearsInBusiness": 16,
+      "annualVolume": 40800000,
+      "tags": [
+        "mexico",
+        "north-america",
+        "consumer",
+        "electronics",
+        "technology",
+        "devices",
+        "components",
+        "exporter",
+        "export",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "everest-enterprises-74",
+      "name": "Everest Enterprises 74",
+      "country": "France",
+      "type": "Importer",
+      "products": [
+        "Whole Spices",
+        "Blends"
+      ],
+      "contact": {
+        "person": "Maya Singh",
+        "email": "maya.singh@everestenterprises74.com",
+        "phone": "+33 590-219-4",
+        "website": "https://everestenterprises74.com"
+      },
+      "address": "960 Export Ave, Bordeaux, France",
+      "yearsInBusiness": 16,
+      "annualVolume": 20300000,
+      "tags": [
+        "france",
+        "europe",
+        "eu",
+        "whole",
+        "spices",
+        "blends",
+        "importer",
+        "import",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "pacific-imports-75",
+      "name": "Pacific Imports 75",
+      "country": "Mexico",
+      "type": "Importer",
+      "products": [
+        "Industrial Machinery",
+        "Spare Parts"
+      ],
+      "contact": {
+        "person": "Maria Dubois",
+        "email": "maria.dubois@pacificimports75.com",
+        "phone": "+52 254-700-26",
+        "website": "https://pacificimports75.com"
+      },
+      "address": "967 Logistics Blvd, Tijuana, Mexico",
+      "yearsInBusiness": 20,
+      "annualVolume": 8700000,
+      "tags": [
+        "mexico",
+        "north-america",
+        "industrial",
+        "machinery",
+        "equipment",
+        "spare",
+        "parts",
+        "importer",
+        "import",
+        "small-volume",
+        "growing-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "oceanic-exports-76",
+      "name": "Oceanic Exports 76",
+      "country": "Canada",
+      "type": "Importer",
+      "products": [
+        "Frozen Seafood",
+        "Shellfish"
+      ],
+      "contact": {
+        "person": "Mohammed Singh",
+        "email": "mohammed.singh@oceanicexports76.com",
+        "phone": "+1 292-140-20",
+        "website": "https://oceanicexports76.com"
+      },
+      "address": "246 Market Lane, Toronto, Canada",
+      "yearsInBusiness": 34,
+      "annualVolume": 39200000,
+      "tags": [
+        "canada",
+        "north-america",
+        "frozen",
+        "seafood",
+        "shellfish",
+        "importer",
+        "import",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "zenith-exports-77",
+      "name": "Zenith Exports 77",
+      "country": "Australia",
+      "type": "Importer",
+      "products": [
+        "Skincare",
+        "Beauty Products"
+      ],
+      "contact": {
+        "person": "Anna Martinez",
+        "email": "anna.martinez@zenithexports77.com",
+        "phone": "+61 174-532-15",
+        "website": "https://zenithexports77.com"
+      },
+      "address": "443 Logistics Blvd, Melbourne, Australia",
+      "yearsInBusiness": 16,
+      "annualVolume": 35200000,
+      "tags": [
+        "australia",
+        "oceania",
+        "skincare",
+        "beauty",
+        "products",
+        "cosmetics",
+        "personal-care",
+        "importer",
+        "import",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "apex-agro-78",
+      "name": "Apex Agro 78",
+      "country": "India",
+      "type": "Importer",
+      "products": [
+        "Bulk APIs",
+        "OTC Medicines"
+      ],
+      "contact": {
+        "person": "Yara Smith",
+        "email": "yara.smith@apexagro78.com",
+        "phone": "+91 653-294-15",
+        "website": "https://apexagro78.com"
+      },
+      "address": "207 Market Lane, Chennai, India",
+      "yearsInBusiness": 28,
+      "annualVolume": 26800000,
+      "tags": [
+        "india",
+        "asia",
+        "south-asia",
+        "bulk",
+        "apis",
+        "otc",
+        "medicines",
+        "importer",
+        "import",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "prime-supplyco-79",
+      "name": "Prime SupplyCo 79",
+      "country": "China",
+      "type": "Both",
+      "products": [
+        "Industrial Chemicals",
+        "Solvents"
+      ],
+      "contact": {
+        "person": "James Muller",
+        "email": "james.muller@primesupplyco79.com",
+        "phone": "+86 122-215-6",
+        "website": "https://primesupplyco79.com"
+      },
+      "address": "660 Harbour Rd, Shenzhen, China",
+      "yearsInBusiness": 5,
+      "annualVolume": 39100000,
+      "tags": [
+        "china",
+        "asia",
+        "east-asia",
+        "industrial",
+        "chemicals",
+        "solvents",
+        "both",
+        "importer",
+        "exporter",
+        "high-volume",
+        "large-company",
+        "growing",
+        "developing"
+      ]
+    },
+    {
+      "id": "cedar-international-80",
+      "name": "Cedar International 80",
+      "country": "Australia",
+      "type": "Exporter",
+      "products": [
+        "Cotton",
+        "Synthetic Textiles"
+      ],
+      "contact": {
+        "person": "Noah Brown",
+        "email": "noah.brown@cedarinternational80.com",
+        "phone": "+61 777-573-878",
+        "website": "https://cedarinternational80.com"
+      },
+      "address": "470 Commerce St, Brisbane, Australia",
+      "yearsInBusiness": 21,
+      "annualVolume": 38800000,
+      "tags": [
+        "australia",
+        "oceania",
+        "cotton",
+        "textile",
+        "fabric",
+        "synthetic",
+        "textiles",
+        "exporter",
+        "export",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "silk-imports-81",
+      "name": "Silk Imports 81",
+      "country": "Mexico",
+      "type": "Importer",
+      "products": [
+        "Skincare",
+        "Beauty Products"
+      ],
+      "contact": {
+        "person": "James Brown",
+        "email": "james.brown@silkimports81.com",
+        "phone": "+52 889-050-1",
+        "website": "https://silkimports81.com"
+      },
+      "address": "227 Harbour Rd, Tijuana, Mexico",
+      "yearsInBusiness": 23,
+      "annualVolume": 3300000,
+      "tags": [
+        "mexico",
+        "north-america",
+        "skincare",
+        "beauty",
+        "products",
+        "cosmetics",
+        "personal-care",
+        "importer",
+        "import",
+        "small-volume",
+        "growing-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "apex-traders-82",
+      "name": "Apex Traders 82",
+      "country": "Japan",
+      "type": "Importer",
+      "products": [
+        "Spare Parts",
+        "Used Vehicles"
+      ],
+      "contact": {
+        "person": "Amit Shah",
+        "email": "amit.shah@apextraders82.com",
+        "phone": "+81 818-289-106",
+        "website": "https://apextraders82.com"
+      },
+      "address": "455 Commerce St, Tokyo, Japan",
+      "yearsInBusiness": 26,
+      "annualVolume": 30000000,
+      "tags": [
+        "japan",
+        "asia",
+        "east-asia",
+        "spare",
+        "parts",
+        "used",
+        "vehicles",
+        "importer",
+        "import",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "sunrise-supplyco-83",
+      "name": "Sunrise SupplyCo 83",
+      "country": "USA",
+      "type": "Both",
+      "products": [
+        "Fresh Fruits",
+        "Frozen Vegetables"
+      ],
+      "contact": {
+        "person": "Raj Martinez",
+        "email": "raj.martinez@sunrisesupplyco83.com",
+        "phone": "+1 107-845-57",
+        "website": "https://sunrisesupplyco83.com"
+      },
+      "address": "922 Commerce St, New York, USA",
+      "yearsInBusiness": 42,
+      "annualVolume": 11700000,
+      "tags": [
+        "usa",
+        "north-america",
+        "fresh",
+        "fruits",
+        "frozen",
+        "vegetables",
+        "both",
+        "importer",
+        "exporter",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "cedar-exports-84",
+      "name": "Cedar Exports 84",
+      "country": "United Arab Emirates",
+      "type": "Both",
+      "products": [
+        "Consumer Electronics",
+        "Components"
+      ],
+      "contact": {
+        "person": "Raj Li",
+        "email": "raj.li@cedarexports84.com",
+        "phone": "+971 613-100-6",
+        "website": "https://cedarexports84.com"
+      },
+      "address": "966 Commerce St, Ras Al Khaimah, United Arab Emirates",
+      "yearsInBusiness": 27,
+      "annualVolume": 16600000,
+      "tags": [
+        "united-arab-emirates",
+        "middle-east",
+        "gulf",
+        "consumer",
+        "electronics",
+        "technology",
+        "devices",
+        "components",
+        "both",
+        "importer",
+        "exporter",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "orion-international-85",
+      "name": "Orion International 85",
+      "country": "Brazil",
+      "type": "Exporter",
+      "products": [
+        "Bottled Drinks",
+        "Juices"
+      ],
+      "contact": {
+        "person": "Emma Brown",
+        "email": "emma.brown@orioninternational85.com",
+        "phone": "+55 432-933-2742",
+        "website": "https://orioninternational85.com"
+      },
+      "address": "813 Export Ave, Sao Paulo, Brazil",
+      "yearsInBusiness": 29,
+      "annualVolume": 19600000,
+      "tags": [
+        "brazil",
+        "south-america",
+        "bottled",
+        "drinks",
+        "juices",
+        "exporter",
+        "export",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "universal-agro-86",
+      "name": "Universal Agro 86",
+      "country": "United Arab Emirates",
+      "type": "Exporter",
+      "products": [
+        "Home",
+        "Office Furniture"
+      ],
+      "contact": {
+        "person": "Amit Wang",
+        "email": "amit.wang@universalagro86.com",
+        "phone": "+971 960-497-3",
+        "website": "https://universalagro86.com"
+      },
+      "address": "206 Commerce St, Abu Dhabi, United Arab Emirates",
+      "yearsInBusiness": 8,
+      "annualVolume": 19100000,
+      "tags": [
+        "united-arab-emirates",
+        "middle-east",
+        "gulf",
+        "home",
+        "office",
+        "furniture",
+        "exporter",
+        "export",
+        "medium-volume",
+        "established-company",
+        "growing",
+        "developing"
+      ]
+    },
+    {
+      "id": "everest-commerce-87",
+      "name": "Everest Commerce 87",
+      "country": "Germany",
+      "type": "Both",
+      "products": [
+        "Skincare",
+        "Beauty Products"
+      ],
+      "contact": {
+        "person": "Yara Kumar",
+        "email": "yara.kumar@everestcommerce87.com",
+        "phone": "+49 480-712-2328",
+        "website": "https://everestcommerce87.com"
+      },
+      "address": "727 Market Lane, Berlin, Germany",
+      "yearsInBusiness": 30,
+      "annualVolume": 48000000,
+      "tags": [
+        "germany",
+        "europe",
+        "eu",
+        "skincare",
+        "beauty",
+        "products",
+        "cosmetics",
+        "personal-care",
+        "both",
+        "importer",
+        "exporter",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "global-logistics-88",
+      "name": "Global Logistics 88",
+      "country": "UK",
+      "type": "Both",
+      "products": [
+        "Kitchen",
+        "Home Electronics"
+      ],
+      "contact": {
+        "person": "Yara Dubois",
+        "email": "yara.dubois@globallogistics88.com",
+        "phone": "+44 199-058-4882",
+        "website": "https://globallogistics88.com"
+      },
+      "address": "523 Market Lane, Manchester, UK",
+      "yearsInBusiness": 8,
+      "annualVolume": 37500000,
+      "tags": [
+        "uk",
+        "europe",
+        "kitchen",
+        "home",
+        "electronics",
+        "technology",
+        "devices",
+        "both",
+        "importer",
+        "exporter",
+        "high-volume",
+        "large-company",
+        "growing",
+        "developing"
+      ]
+    },
+    {
+      "id": "maple-commerce-89",
+      "name": "Maple Commerce 89",
+      "country": "Mexico",
+      "type": "Importer",
+      "products": [
+        "Frozen Seafood",
+        "Shellfish"
+      ],
+      "contact": {
+        "person": "Maya Silva",
+        "email": "maya.silva@maplecommerce89.com",
+        "phone": "+52 026-919-84",
+        "website": "https://maplecommerce89.com"
+      },
+      "address": "341 Logistics Blvd, Tijuana, Mexico",
+      "yearsInBusiness": 20,
+      "annualVolume": 5200000,
+      "tags": [
+        "mexico",
+        "north-america",
+        "frozen",
+        "seafood",
+        "shellfish",
+        "importer",
+        "import",
+        "small-volume",
+        "growing-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "orion-commerce-90",
+      "name": "Orion Commerce 90",
+      "country": "Netherlands",
+      "type": "Importer",
+      "products": [
+        "Whole Spices",
+        "Blends"
+      ],
+      "contact": {
+        "person": "Amit Muller",
+        "email": "amit.muller@orioncommerce90.com",
+        "phone": "+31 904-018-7507",
+        "website": "https://orioncommerce90.com"
+      },
+      "address": "113 Market Lane, Amsterdam, Netherlands",
+      "yearsInBusiness": 4,
+      "annualVolume": 35100000,
+      "tags": [
+        "netherlands",
+        "europe",
+        "eu",
+        "whole",
+        "spices",
+        "blends",
+        "importer",
+        "import",
+        "high-volume",
+        "large-company",
+        "growing",
+        "developing"
+      ]
+    },
+    {
+      "id": "silk-imports-91",
+      "name": "Silk Imports 91",
+      "country": "United Arab Emirates",
+      "type": "Importer",
+      "products": [
+        "Spare Parts",
+        "Used Vehicles"
+      ],
+      "contact": {
+        "person": "Raj Brown",
+        "email": "raj.brown@silkimports91.com",
+        "phone": "+971 082-739-6903",
+        "website": "https://silkimports91.com"
+      },
+      "address": "926 Industrial Park, Sharjah, United Arab Emirates",
+      "yearsInBusiness": 34,
+      "annualVolume": 3800000,
+      "tags": [
+        "united-arab-emirates",
+        "middle-east",
+        "gulf",
+        "spare",
+        "parts",
+        "used",
+        "vehicles",
+        "importer",
+        "import",
+        "small-volume",
+        "growing-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "everest-supplyco-92",
+      "name": "Everest SupplyCo 92",
+      "country": "Japan",
+      "type": "Exporter",
+      "products": [
+        "Timber",
+        "Plywood",
+        "Paper Rolls"
+      ],
+      "contact": {
+        "person": "Lucas Smith",
+        "email": "lucas.smith@everestsupplyco92.com",
+        "phone": "+81 912-568-893",
+        "website": "https://everestsupplyco92.com"
+      },
+      "address": "760 Market Lane, Fukuoka, Japan",
+      "yearsInBusiness": 17,
+      "annualVolume": 39300000,
+      "tags": [
+        "japan",
+        "asia",
+        "east-asia",
+        "timber",
+        "plywood",
+        "paper",
+        "rolls",
+        "exporter",
+        "export",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "maple-exports-93",
+      "name": "Maple Exports 93",
+      "country": "Australia",
+      "type": "Both",
+      "products": [
+        "Skincare",
+        "Beauty Products"
+      ],
+      "contact": {
+        "person": "Amit Brown",
+        "email": "amit.brown@mapleexports93.com",
+        "phone": "+61 285-831-1",
+        "website": "https://mapleexports93.com"
+      },
+      "address": "543 Industrial Park, Melbourne, Australia",
+      "yearsInBusiness": 33,
+      "annualVolume": 43200000,
+      "tags": [
+        "australia",
+        "oceania",
+        "skincare",
+        "beauty",
+        "products",
+        "cosmetics",
+        "personal-care",
+        "both",
+        "importer",
+        "exporter",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "maple-international-94",
+      "name": "Maple International 94",
+      "country": "China",
+      "type": "Importer",
+      "products": [
+        "Bottled Drinks",
+        "Juices"
+      ],
+      "contact": {
+        "person": "Chen Silva",
+        "email": "chen.silva@mapleinternational94.com",
+        "phone": "+86 790-553-3",
+        "website": "https://mapleinternational94.com"
+      },
+      "address": "495 Market Lane, Guangzhou, China",
+      "yearsInBusiness": 13,
+      "annualVolume": 30700000,
+      "tags": [
+        "china",
+        "asia",
+        "east-asia",
+        "bottled",
+        "drinks",
+        "juices",
+        "importer",
+        "import",
+        "high-volume",
+        "large-company",
+        "established",
+        "experienced"
+      ]
+    },
+    {
+      "id": "global-agro-95",
+      "name": "Global Agro 95",
+      "country": "Mexico",
+      "type": "Importer",
+      "products": [
+        "Bulk APIs",
+        "OTC Medicines"
+      ],
+      "contact": {
+        "person": "Hiro Silva",
+        "email": "hiro.silva@globalagro95.com",
+        "phone": "+52 017-060-57",
+        "website": "https://globalagro95.com"
+      },
+      "address": "871 Industrial Park, Tijuana, Mexico",
+      "yearsInBusiness": 34,
+      "annualVolume": 49900000,
+      "tags": [
+        "mexico",
+        "north-america",
+        "bulk",
+        "apis",
+        "otc",
+        "medicines",
+        "importer",
+        "import",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "apex-merchants-96",
+      "name": "Apex Merchants 96",
+      "country": "Mexico",
+      "type": "Both",
+      "products": [
+        "Timber",
+        "Plywood",
+        "Paper Rolls"
+      ],
+      "contact": {
+        "person": "Liu Schmidt",
+        "email": "liu.schmidt@apexmerchants96.com",
+        "phone": "+52 295-158-62",
+        "website": "https://apexmerchants96.com"
+      },
+      "address": "400 Market Lane, Mexico City, Mexico",
+      "yearsInBusiness": 3,
+      "annualVolume": 22400000,
+      "tags": [
+        "mexico",
+        "north-america",
+        "timber",
+        "plywood",
+        "paper",
+        "rolls",
+        "both",
+        "importer",
+        "exporter",
+        "medium-volume",
+        "established-company",
+        "new",
+        "startup"
+      ]
+    },
+    {
+      "id": "nova-supplyco-97",
+      "name": "Nova SupplyCo 97",
+      "country": "France",
+      "type": "Importer",
+      "products": [
+        "Timber",
+        "Plywood",
+        "Paper Rolls"
+      ],
+      "contact": {
+        "person": "Anna Martinez",
+        "email": "anna.martinez@novasupplyco97.com",
+        "phone": "+33 112-300-9",
+        "website": "https://novasupplyco97.com"
+      },
+      "address": "564 Market Lane, Lille, France",
+      "yearsInBusiness": 44,
+      "annualVolume": 1800000,
+      "tags": [
+        "france",
+        "europe",
+        "eu",
+        "timber",
+        "plywood",
+        "paper",
+        "rolls",
+        "importer",
+        "import",
+        "small-volume",
+        "growing-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "maple-enterprises-98",
+      "name": "Maple Enterprises 98",
+      "country": "Australia",
+      "type": "Exporter",
+      "products": [
+        "Skincare",
+        "Beauty Products"
+      ],
+      "contact": {
+        "person": "Oliver Li",
+        "email": "oliver.li@mapleenterprises98.com",
+        "phone": "+61 468-944-28",
+        "website": "https://mapleenterprises98.com"
+      },
+      "address": "460 Harbour Rd, Sydney, Australia",
+      "yearsInBusiness": 4,
+      "annualVolume": 1500000,
+      "tags": [
+        "australia",
+        "oceania",
+        "skincare",
+        "beauty",
+        "products",
+        "cosmetics",
+        "personal-care",
+        "exporter",
+        "export",
+        "small-volume",
+        "growing-company",
+        "growing",
+        "developing"
+      ]
+    },
+    {
+      "id": "apex-logistics-99",
+      "name": "Apex Logistics 99",
+      "country": "India",
+      "type": "Exporter",
+      "products": [
+        "Consumer Electronics",
+        "Components"
+      ],
+      "contact": {
+        "person": "Noah Muller",
+        "email": "noah.muller@apexlogistics99.com",
+        "phone": "+91 564-054-6",
+        "website": "https://apexlogistics99.com"
+      },
+      "address": "686 Export Ave, Delhi, India",
+      "yearsInBusiness": 4,
+      "annualVolume": 1700000,
+      "tags": [
+        "india",
+        "asia",
+        "south-asia",
+        "consumer",
+        "electronics",
+        "technology",
+        "devices",
+        "components",
+        "exporter",
+        "export",
+        "small-volume",
+        "growing-company",
+        "growing",
+        "developing"
+      ]
+    },
+    {
+      "id": "nova-enterprises-100",
+      "name": "Nova Enterprises 100",
+      "country": "China",
+      "type": "Exporter",
+      "products": [
+        "Processed Leather",
+        "Bags"
+      ],
+      "contact": {
+        "person": "Liam Silva",
+        "email": "liam.silva@novaenterprises100.com",
+        "phone": "+86 419-847-5834",
+        "website": "https://novaenterprises100.com"
+      },
+      "address": "866 Commerce St, Shanghai, China",
+      "yearsInBusiness": 33,
+      "annualVolume": 4000000,
+      "tags": [
+        "china",
+        "asia",
+        "east-asia",
+        "processed",
+        "leather",
+        "bags",
+        "exporter",
+        "export",
+        "small-volume",
+        "growing-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "zenith-imports-101",
+      "name": "Zenith Imports 101",
+      "country": "Turkey",
+      "type": "Exporter",
+      "products": [
+        "Skincare",
+        "Beauty Products"
+      ],
+      "contact": {
+        "person": "Raj Sato",
+        "email": "raj.sato@zenithimports101.com",
+        "phone": "+90 009-269-7506",
+        "website": "https://zenithimports101.com"
+      },
+      "address": "379 Industrial Park, Ankara, Turkey",
+      "yearsInBusiness": 21,
+      "annualVolume": 39800000,
+      "tags": [
+        "turkey",
+        "middle-east",
+        "europe",
+        "skincare",
+        "beauty",
+        "products",
+        "cosmetics",
+        "personal-care",
+        "exporter",
+        "export",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "zenith-enterprises-102",
+      "name": "Zenith Enterprises 102",
+      "country": "Australia",
+      "type": "Both",
+      "products": [
+        "Consumer Electronics",
+        "Components"
+      ],
+      "contact": {
+        "person": "Olivera Kumar",
+        "email": "olivera.kumar@zenithenterprises102.com",
+        "phone": "+61 610-626-298",
+        "website": "https://zenithenterprises102.com"
+      },
+      "address": "620 Industrial Park, Melbourne, Australia",
+      "yearsInBusiness": 44,
+      "annualVolume": 28200000,
+      "tags": [
+        "australia",
+        "oceania",
+        "consumer",
+        "electronics",
+        "technology",
+        "devices",
+        "components",
+        "both",
+        "importer",
+        "exporter",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "maple-logistics-103",
+      "name": "Maple Logistics 103",
+      "country": "Netherlands",
+      "type": "Exporter",
+      "products": [
+        "Skincare",
+        "Beauty Products"
+      ],
+      "contact": {
+        "person": "Liam Smith",
+        "email": "liam.smith@maplelogistics103.com",
+        "phone": "+31 236-741-07",
+        "website": "https://maplelogistics103.com"
+      },
+      "address": "868 Logistics Blvd, The Hague, Netherlands",
+      "yearsInBusiness": 8,
+      "annualVolume": 44600000,
+      "tags": [
+        "netherlands",
+        "europe",
+        "eu",
+        "skincare",
+        "beauty",
+        "products",
+        "cosmetics",
+        "personal-care",
+        "exporter",
+        "export",
+        "high-volume",
+        "large-company",
+        "growing",
+        "developing"
+      ]
+    },
+    {
+      "id": "universal-merchants-104",
+      "name": "Universal Merchants 104",
+      "country": "South Africa",
+      "type": "Importer",
+      "products": [
+        "Bulk APIs",
+        "OTC Medicines"
+      ],
+      "contact": {
+        "person": "Isabella Garcia",
+        "email": "isabella.garcia@universalmerchants104.com",
+        "phone": "+27 821-276-21",
+        "website": "https://universalmerchants104.com"
+      },
+      "address": "147 Market Lane, Cape Town, South Africa",
+      "yearsInBusiness": 29,
+      "annualVolume": 34700000,
+      "tags": [
+        "south-africa",
+        "africa",
+        "bulk",
+        "apis",
+        "otc",
+        "medicines",
+        "importer",
+        "import",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "apex-agro-105",
+      "name": "Apex Agro 105",
+      "country": "United Arab Emirates",
+      "type": "Exporter",
+      "products": [
+        "Industrial Chemicals",
+        "Solvents"
+      ],
+      "contact": {
+        "person": "Emma Brown",
+        "email": "emma.brown@apexagro105.com",
+        "phone": "+971 692-383-7",
+        "website": "https://apexagro105.com"
+      },
+      "address": "776 Market Lane, Ajman, United Arab Emirates",
+      "yearsInBusiness": 35,
+      "annualVolume": 42200000,
+      "tags": [
+        "united-arab-emirates",
+        "middle-east",
+        "gulf",
+        "industrial",
+        "chemicals",
+        "solvents",
+        "exporter",
+        "export",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "global-merchants-106",
+      "name": "Global Merchants 106",
+      "country": "Brazil",
+      "type": "Both",
+      "products": [
+        "Home",
+        "Office Furniture"
+      ],
+      "contact": {
+        "person": "James Li",
+        "email": "james.li@globalmerchants106.com",
+        "phone": "+55 408-576-9",
+        "website": "https://globalmerchants106.com"
+      },
+      "address": "375 Export Ave, Curitiba, Brazil",
+      "yearsInBusiness": 19,
+      "annualVolume": 21200000,
+      "tags": [
+        "brazil",
+        "south-america",
+        "home",
+        "office",
+        "furniture",
+        "both",
+        "importer",
+        "exporter",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "maple-imports-107",
+      "name": "Maple Imports 107",
+      "country": "Germany",
+      "type": "Both",
+      "products": [
+        "Cotton",
+        "Synthetic Textiles"
+      ],
+      "contact": {
+        "person": "Amit Singh",
+        "email": "amit.singh@mapleimports107.com",
+        "phone": "+49 742-673-168",
+        "website": "https://mapleimports107.com"
+      },
+      "address": "521 Commerce St, Berlin, Germany",
+      "yearsInBusiness": 16,
+      "annualVolume": 30700000,
+      "tags": [
+        "germany",
+        "europe",
+        "eu",
+        "cotton",
+        "textile",
+        "fabric",
+        "synthetic",
+        "textiles",
+        "both",
+        "importer",
+        "exporter",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "universal-commerce-108",
+      "name": "Universal Commerce 108",
+      "country": "Netherlands",
+      "type": "Both",
+      "products": [
+        "Industrial Chemicals",
+        "Solvents"
+      ],
+      "contact": {
+        "person": "Noah Muller",
+        "email": "noah.muller@universalcommerce108.com",
+        "phone": "+31 622-947-430",
+        "website": "https://universalcommerce108.com"
+      },
+      "address": "860 Harbour Rd, Eindhoven, Netherlands",
+      "yearsInBusiness": 37,
+      "annualVolume": 17000000,
+      "tags": [
+        "netherlands",
+        "europe",
+        "eu",
+        "industrial",
+        "chemicals",
+        "solvents",
+        "both",
+        "importer",
+        "exporter",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "zenith-enterprises-109",
+      "name": "Zenith Enterprises 109",
+      "country": "Australia",
+      "type": "Both",
+      "products": [
+        "Industrial Chemicals",
+        "Solvents"
+      ],
+      "contact": {
+        "person": "Maya Silva",
+        "email": "maya.silva@zenithenterprises109.com",
+        "phone": "+61 813-068-5",
+        "website": "https://zenithenterprises109.com"
+      },
+      "address": "912 Commerce St, Melbourne, Australia",
+      "yearsInBusiness": 15,
+      "annualVolume": 29400000,
+      "tags": [
+        "australia",
+        "oceania",
+        "industrial",
+        "chemicals",
+        "solvents",
+        "both",
+        "importer",
+        "exporter",
+        "medium-volume",
+        "established-company",
+        "established",
+        "experienced"
+      ]
+    },
+    {
+      "id": "pacific-merchants-110",
+      "name": "Pacific Merchants 110",
+      "country": "France",
+      "type": "Importer",
+      "products": [
+        "Kitchen",
+        "Home Electronics"
+      ],
+      "contact": {
+        "person": "Maya Muller",
+        "email": "maya.muller@pacificmerchants110.com",
+        "phone": "+33 593-222-4588",
+        "website": "https://pacificmerchants110.com"
+      },
+      "address": "456 Harbour Rd, Paris, France",
+      "yearsInBusiness": 44,
+      "annualVolume": 41500000,
+      "tags": [
+        "france",
+        "europe",
+        "eu",
+        "kitchen",
+        "home",
+        "electronics",
+        "technology",
+        "devices",
+        "importer",
+        "import",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "zenith-exports-111",
+      "name": "Zenith Exports 111",
+      "country": "France",
+      "type": "Both",
+      "products": [
+        "Industrial Chemicals",
+        "Solvents"
+      ],
+      "contact": {
+        "person": "Liam Kumar",
+        "email": "liam.kumar@zenithexports111.com",
+        "phone": "+33 415-848-11",
+        "website": "https://zenithexports111.com"
+      },
+      "address": "371 Harbour Rd, Marseille, France",
+      "yearsInBusiness": 32,
+      "annualVolume": 13900000,
+      "tags": [
+        "france",
+        "europe",
+        "eu",
+        "industrial",
+        "chemicals",
+        "solvents",
+        "both",
+        "importer",
+        "exporter",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "oceanic-commerce-112",
+      "name": "Oceanic Commerce 112",
+      "country": "Germany",
+      "type": "Both",
+      "products": [
+        "Timber",
+        "Plywood",
+        "Paper Rolls"
+      ],
+      "contact": {
+        "person": "Olivera Dubois",
+        "email": "olivera.dubois@oceaniccommerce112.com",
+        "phone": "+49 025-170-91",
+        "website": "https://oceaniccommerce112.com"
+      },
+      "address": "308 Market Lane, Munich, Germany",
+      "yearsInBusiness": 33,
+      "annualVolume": 2400000,
+      "tags": [
+        "germany",
+        "europe",
+        "eu",
+        "timber",
+        "plywood",
+        "paper",
+        "rolls",
+        "both",
+        "importer",
+        "exporter",
+        "small-volume",
+        "growing-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "nova-international-113",
+      "name": "Nova International 113",
+      "country": "Turkey",
+      "type": "Importer",
+      "products": [
+        "Spare Parts",
+        "Used Vehicles"
+      ],
+      "contact": {
+        "person": "Felipe Brown",
+        "email": "felipe.brown@novainternational113.com",
+        "phone": "+90 067-190-635",
+        "website": "https://novainternational113.com"
+      },
+      "address": "288 Market Lane, Antalya, Turkey",
+      "yearsInBusiness": 12,
+      "annualVolume": 10300000,
+      "tags": [
+        "turkey",
+        "middle-east",
+        "europe",
+        "spare",
+        "parts",
+        "used",
+        "vehicles",
+        "importer",
+        "import",
+        "medium-volume",
+        "established-company",
+        "established",
+        "experienced"
+      ]
+    },
+    {
+      "id": "everest-supplyco-114",
+      "name": "Everest SupplyCo 114",
+      "country": "Japan",
+      "type": "Exporter",
+      "products": [
+        "Whole Spices",
+        "Blends"
+      ],
+      "contact": {
+        "person": "Anna Shah",
+        "email": "anna.shah@everestsupplyco114.com",
+        "phone": "+81 655-273-53",
+        "website": "https://everestsupplyco114.com"
+      },
+      "address": "398 Harbour Rd, Fukuoka, Japan",
+      "yearsInBusiness": 28,
+      "annualVolume": 35000000,
+      "tags": [
+        "japan",
+        "asia",
+        "east-asia",
+        "whole",
+        "spices",
+        "blends",
+        "exporter",
+        "export",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "pacific-agro-115",
+      "name": "Pacific Agro 115",
+      "country": "Mexico",
+      "type": "Exporter",
+      "products": [
+        "Cotton",
+        "Synthetic Textiles"
+      ],
+      "contact": {
+        "person": "Chen Singh",
+        "email": "chen.singh@pacificagro115.com",
+        "phone": "+52 585-948-019",
+        "website": "https://pacificagro115.com"
+      },
+      "address": "470 Harbour Rd, Tijuana, Mexico",
+      "yearsInBusiness": 36,
+      "annualVolume": 5900000,
+      "tags": [
+        "mexico",
+        "north-america",
+        "cotton",
+        "textile",
+        "fabric",
+        "synthetic",
+        "textiles",
+        "exporter",
+        "export",
+        "small-volume",
+        "growing-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "universal-supplyco-116",
+      "name": "Universal SupplyCo 116",
+      "country": "Brazil",
+      "type": "Exporter",
+      "products": [
+        "Kitchen",
+        "Home Electronics"
+      ],
+      "contact": {
+        "person": "Isabella Dubois",
+        "email": "isabella.dubois@universalsupplyco116.com",
+        "phone": "+55 842-646-4097",
+        "website": "https://universalsupplyco116.com"
+      },
+      "address": "935 Industrial Park, Curitiba, Brazil",
+      "yearsInBusiness": 24,
+      "annualVolume": 15900000,
+      "tags": [
+        "brazil",
+        "south-america",
+        "kitchen",
+        "home",
+        "electronics",
+        "technology",
+        "devices",
+        "exporter",
+        "export",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "maple-logistics-117",
+      "name": "Maple Logistics 117",
+      "country": "United Arab Emirates",
+      "type": "Importer",
+      "products": [
+        "Timber",
+        "Plywood",
+        "Paper Rolls"
+      ],
+      "contact": {
+        "person": "Noah Dubois",
+        "email": "noah.dubois@maplelogistics117.com",
+        "phone": "+971 644-445-0",
+        "website": "https://maplelogistics117.com"
+      },
+      "address": "765 Logistics Blvd, Ras Al Khaimah, United Arab Emirates",
+      "yearsInBusiness": 17,
+      "annualVolume": 5000000,
+      "tags": [
+        "united-arab-emirates",
+        "middle-east",
+        "gulf",
+        "timber",
+        "plywood",
+        "paper",
+        "rolls",
+        "importer",
+        "import",
+        "small-volume",
+        "growing-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "atlantic-agro-118",
+      "name": "Atlantic Agro 118",
+      "country": "South Africa",
+      "type": "Importer",
+      "products": [
+        "Industrial Chemicals",
+        "Solvents"
+      ],
+      "contact": {
+        "person": "Yara Brown",
+        "email": "yara.brown@atlanticagro118.com",
+        "phone": "+27 187-792-0136",
+        "website": "https://atlanticagro118.com"
+      },
+      "address": "237 Logistics Blvd, Durban, South Africa",
+      "yearsInBusiness": 20,
+      "annualVolume": 10700000,
+      "tags": [
+        "south-africa",
+        "africa",
+        "industrial",
+        "chemicals",
+        "solvents",
+        "importer",
+        "import",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "atlantic-merchants-119",
+      "name": "Atlantic Merchants 119",
+      "country": "UK",
+      "type": "Importer",
+      "products": [
+        "Processed Leather",
+        "Bags"
+      ],
+      "contact": {
+        "person": "Maria Brown",
+        "email": "maria.brown@atlanticmerchants119.com",
+        "phone": "+44 291-784-15",
+        "website": "https://atlanticmerchants119.com"
+      },
+      "address": "400 Market Lane, Leeds, UK",
+      "yearsInBusiness": 22,
+      "annualVolume": 18500000,
+      "tags": [
+        "uk",
+        "europe",
+        "processed",
+        "leather",
+        "bags",
+        "importer",
+        "import",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "cedar-commerce-120",
+      "name": "Cedar Commerce 120",
+      "country": "India",
+      "type": "Exporter",
+      "products": [
+        "Timber",
+        "Plywood",
+        "Paper Rolls"
+      ],
+      "contact": {
+        "person": "Lucas Brown",
+        "email": "lucas.brown@cedarcommerce120.com",
+        "phone": "+91 803-339-4634",
+        "website": "https://cedarcommerce120.com"
+      },
+      "address": "855 Industrial Park, Mumbai, India",
+      "yearsInBusiness": 35,
+      "annualVolume": 46800000,
+      "tags": [
+        "india",
+        "asia",
+        "south-asia",
+        "timber",
+        "plywood",
+        "paper",
+        "rolls",
+        "exporter",
+        "export",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "nova-imports-121",
+      "name": "Nova Imports 121",
+      "country": "Brazil",
+      "type": "Both",
+      "products": [
+        "Skincare",
+        "Beauty Products"
+      ],
+      "contact": {
+        "person": "Amit Smith",
+        "email": "amit.smith@novaimports121.com",
+        "phone": "+55 843-699-18",
+        "website": "https://novaimports121.com"
+      },
+      "address": "843 Industrial Park, Salvador, Brazil",
+      "yearsInBusiness": 2,
+      "annualVolume": 49900000,
+      "tags": [
+        "brazil",
+        "south-america",
+        "skincare",
+        "beauty",
+        "products",
+        "cosmetics",
+        "personal-care",
+        "both",
+        "importer",
+        "exporter",
+        "high-volume",
+        "large-company",
+        "new",
+        "startup"
+      ]
+    },
+    {
+      "id": "sunrise-traders-122",
+      "name": "Sunrise Traders 122",
+      "country": "Germany",
+      "type": "Exporter",
+      "products": [
+        "Bottled Drinks",
+        "Juices"
+      ],
+      "contact": {
+        "person": "Amit Muller",
+        "email": "amit.muller@sunrisetraders122.com",
+        "phone": "+49 162-519-6173",
+        "website": "https://sunrisetraders122.com"
+      },
+      "address": "690 Harbour Rd, Hamburg, Germany",
+      "yearsInBusiness": 27,
+      "annualVolume": 43500000,
+      "tags": [
+        "germany",
+        "europe",
+        "eu",
+        "bottled",
+        "drinks",
+        "juices",
+        "exporter",
+        "export",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "silk-international-123",
+      "name": "Silk International 123",
+      "country": "USA",
+      "type": "Importer",
+      "products": [
+        "Processed Leather",
+        "Bags"
+      ],
+      "contact": {
+        "person": "Mohammed Schmidt",
+        "email": "mohammed.schmidt@silkinternational123.com",
+        "phone": "+1 997-479-666",
+        "website": "https://silkinternational123.com"
+      },
+      "address": "553 Commerce St, Chicago, USA",
+      "yearsInBusiness": 23,
+      "annualVolume": 31700000,
+      "tags": [
+        "usa",
+        "north-america",
+        "processed",
+        "leather",
+        "bags",
+        "importer",
+        "import",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "apex-enterprises-124",
+      "name": "Apex Enterprises 124",
+      "country": "UK",
+      "type": "Importer",
+      "products": [
+        "Cotton",
+        "Synthetic Textiles"
+      ],
+      "contact": {
+        "person": "Isabella Sato",
+        "email": "isabella.sato@apexenterprises124.com",
+        "phone": "+44 801-006-9",
+        "website": "https://apexenterprises124.com"
+      },
+      "address": "232 Market Lane, Liverpool, UK",
+      "yearsInBusiness": 36,
+      "annualVolume": 2100000,
+      "tags": [
+        "uk",
+        "europe",
+        "cotton",
+        "textile",
+        "fabric",
+        "synthetic",
+        "textiles",
+        "importer",
+        "import",
+        "small-volume",
+        "growing-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "global-imports-125",
+      "name": "Global Imports 125",
+      "country": "UK",
+      "type": "Exporter",
+      "products": [
+        "Frozen Seafood",
+        "Shellfish"
+      ],
+      "contact": {
+        "person": "Amit Shah",
+        "email": "amit.shah@globalimports125.com",
+        "phone": "+44 711-448-0067",
+        "website": "https://globalimports125.com"
+      },
+      "address": "862 Logistics Blvd, London, UK",
+      "yearsInBusiness": 45,
+      "annualVolume": 25700000,
+      "tags": [
+        "uk",
+        "europe",
+        "frozen",
+        "seafood",
+        "shellfish",
+        "exporter",
+        "export",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "nova-supplyco-126",
+      "name": "Nova SupplyCo 126",
+      "country": "Netherlands",
+      "type": "Exporter",
+      "products": [
+        "Cotton",
+        "Synthetic Textiles"
+      ],
+      "contact": {
+        "person": "Sofia Singh",
+        "email": "sofia.singh@novasupplyco126.com",
+        "phone": "+31 754-490-44",
+        "website": "https://novasupplyco126.com"
+      },
+      "address": "559 Commerce St, Rotterdam, Netherlands",
+      "yearsInBusiness": 5,
+      "annualVolume": 10600000,
+      "tags": [
+        "netherlands",
+        "europe",
+        "eu",
+        "cotton",
+        "textile",
+        "fabric",
+        "synthetic",
+        "textiles",
+        "exporter",
+        "export",
+        "medium-volume",
+        "established-company",
+        "growing",
+        "developing"
+      ]
+    },
+    {
+      "id": "oceanic-imports-127",
+      "name": "Oceanic Imports 127",
+      "country": "Netherlands",
+      "type": "Both",
+      "products": [
+        "Bulk APIs",
+        "OTC Medicines"
+      ],
+      "contact": {
+        "person": "Amit Dubois",
+        "email": "amit.dubois@oceanicimports127.com",
+        "phone": "+31 049-654-528",
+        "website": "https://oceanicimports127.com"
+      },
+      "address": "924 Commerce St, Utrecht, Netherlands",
+      "yearsInBusiness": 45,
+      "annualVolume": 22800000,
+      "tags": [
+        "netherlands",
+        "europe",
+        "eu",
+        "bulk",
+        "apis",
+        "otc",
+        "medicines",
+        "both",
+        "importer",
+        "exporter",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "zenith-logistics-128",
+      "name": "Zenith Logistics 128",
+      "country": "Australia",
+      "type": "Exporter",
+      "products": [
+        "Industrial Chemicals",
+        "Solvents"
+      ],
+      "contact": {
+        "person": "Amit Silva",
+        "email": "amit.silva@zenithlogistics128.com",
+        "phone": "+61 469-502-17",
+        "website": "https://zenithlogistics128.com"
+      },
+      "address": "343 Industrial Park, Brisbane, Australia",
+      "yearsInBusiness": 7,
+      "annualVolume": 38500000,
+      "tags": [
+        "australia",
+        "oceania",
+        "industrial",
+        "chemicals",
+        "solvents",
+        "exporter",
+        "export",
+        "high-volume",
+        "large-company",
+        "growing",
+        "developing"
+      ]
+    },
+    {
+      "id": "pacific-international-129",
+      "name": "Pacific International 129",
+      "country": "Mexico",
+      "type": "Exporter",
+      "products": [
+        "Bulk APIs",
+        "OTC Medicines"
+      ],
+      "contact": {
+        "person": "Mohammed Kumar",
+        "email": "mohammed.kumar@pacificinternational129.com",
+        "phone": "+52 160-096-5409",
+        "website": "https://pacificinternational129.com"
+      },
+      "address": "597 Industrial Park, Tijuana, Mexico",
+      "yearsInBusiness": 5,
+      "annualVolume": 33000000,
+      "tags": [
+        "mexico",
+        "north-america",
+        "bulk",
+        "apis",
+        "otc",
+        "medicines",
+        "exporter",
+        "export",
+        "high-volume",
+        "large-company",
+        "growing",
+        "developing"
+      ]
+    },
+    {
+      "id": "orion-supplyco-130",
+      "name": "Orion SupplyCo 130",
+      "country": "France",
+      "type": "Both",
+      "products": [
+        "Home",
+        "Office Furniture"
+      ],
+      "contact": {
+        "person": "Sofia Smith",
+        "email": "sofia.smith@orionsupplyco130.com",
+        "phone": "+33 411-723-3521",
+        "website": "https://orionsupplyco130.com"
+      },
+      "address": "864 Logistics Blvd, Bordeaux, France",
+      "yearsInBusiness": 45,
+      "annualVolume": 25500000,
+      "tags": [
+        "france",
+        "europe",
+        "eu",
+        "home",
+        "office",
+        "furniture",
+        "both",
+        "importer",
+        "exporter",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "orion-logistics-131",
+      "name": "Orion Logistics 131",
+      "country": "Canada",
+      "type": "Exporter",
+      "products": [
+        "Processed Leather",
+        "Bags"
+      ],
+      "contact": {
+        "person": "Maya Kumar",
+        "email": "maya.kumar@orionlogistics131.com",
+        "phone": "+1 354-800-7338",
+        "website": "https://orionlogistics131.com"
+      },
+      "address": "164 Commerce St, Halifax, Canada",
+      "yearsInBusiness": 25,
+      "annualVolume": 26600000,
+      "tags": [
+        "canada",
+        "north-america",
+        "processed",
+        "leather",
+        "bags",
+        "exporter",
+        "export",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "nova-exports-132",
+      "name": "Nova Exports 132",
+      "country": "Japan",
+      "type": "Both",
+      "products": [
+        "Industrial Chemicals",
+        "Solvents"
+      ],
+      "contact": {
+        "person": "Raj Dubois",
+        "email": "raj.dubois@novaexports132.com",
+        "phone": "+81 807-627-05",
+        "website": "https://novaexports132.com"
+      },
+      "address": "578 Industrial Park, Osaka, Japan",
+      "yearsInBusiness": 12,
+      "annualVolume": 48700000,
+      "tags": [
+        "japan",
+        "asia",
+        "east-asia",
+        "industrial",
+        "chemicals",
+        "solvents",
+        "both",
+        "importer",
+        "exporter",
+        "high-volume",
+        "large-company",
+        "established",
+        "experienced"
+      ]
+    },
+    {
+      "id": "atlantic-supplyco-133",
+      "name": "Atlantic SupplyCo 133",
+      "country": "Germany",
+      "type": "Importer",
+      "products": [
+        "Spare Parts",
+        "Used Vehicles"
+      ],
+      "contact": {
+        "person": "Isabella Wang",
+        "email": "isabella.wang@atlanticsupplyco133.com",
+        "phone": "+49 107-082-1844",
+        "website": "https://atlanticsupplyco133.com"
+      },
+      "address": "765 Harbour Rd, Berlin, Germany",
+      "yearsInBusiness": 36,
+      "annualVolume": 44300000,
+      "tags": [
+        "germany",
+        "europe",
+        "eu",
+        "spare",
+        "parts",
+        "used",
+        "vehicles",
+        "importer",
+        "import",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "pacific-imports-134",
+      "name": "Pacific Imports 134",
+      "country": "UK",
+      "type": "Importer",
+      "products": [
+        "Industrial Machinery",
+        "Spare Parts"
+      ],
+      "contact": {
+        "person": "Noah Dubois",
+        "email": "noah.dubois@pacificimports134.com",
+        "phone": "+44 765-050-335",
+        "website": "https://pacificimports134.com"
+      },
+      "address": "472 Market Lane, Manchester, UK",
+      "yearsInBusiness": 3,
+      "annualVolume": 2800000,
+      "tags": [
+        "uk",
+        "europe",
+        "industrial",
+        "machinery",
+        "equipment",
+        "spare",
+        "parts",
+        "importer",
+        "import",
+        "small-volume",
+        "growing-company",
+        "new",
+        "startup"
+      ]
+    },
+    {
+      "id": "global-traders-135",
+      "name": "Global Traders 135",
+      "country": "Mexico",
+      "type": "Exporter",
+      "products": [
+        "Processed Leather",
+        "Bags"
+      ],
+      "contact": {
+        "person": "Oliver Silva",
+        "email": "oliver.silva@globaltraders135.com",
+        "phone": "+52 420-372-9",
+        "website": "https://globaltraders135.com"
+      },
+      "address": "758 Industrial Park, Guadalajara, Mexico",
+      "yearsInBusiness": 44,
+      "annualVolume": 17700000,
+      "tags": [
+        "mexico",
+        "north-america",
+        "processed",
+        "leather",
+        "bags",
+        "exporter",
+        "export",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "silk-agro-136",
+      "name": "Silk Agro 136",
+      "country": "USA",
+      "type": "Importer",
+      "products": [
+        "Skincare",
+        "Beauty Products"
+      ],
+      "contact": {
+        "person": "Raj Singh",
+        "email": "raj.singh@silkagro136.com",
+        "phone": "+1 265-002-61",
+        "website": "https://silkagro136.com"
+      },
+      "address": "13 Export Ave, Los Angeles, USA",
+      "yearsInBusiness": 37,
+      "annualVolume": 34300000,
+      "tags": [
+        "usa",
+        "north-america",
+        "skincare",
+        "beauty",
+        "products",
+        "cosmetics",
+        "personal-care",
+        "importer",
+        "import",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "orion-international-137",
+      "name": "Orion International 137",
+      "country": "United Arab Emirates",
+      "type": "Both",
+      "products": [
+        "Spare Parts",
+        "Used Vehicles"
+      ],
+      "contact": {
+        "person": "Chen Singh",
+        "email": "chen.singh@orioninternational137.com",
+        "phone": "+971 290-920-769",
+        "website": "https://orioninternational137.com"
+      },
+      "address": "763 Logistics Blvd, Ras Al Khaimah, United Arab Emirates",
+      "yearsInBusiness": 39,
+      "annualVolume": 10000000,
+      "tags": [
+        "united-arab-emirates",
+        "middle-east",
+        "gulf",
+        "spare",
+        "parts",
+        "used",
+        "vehicles",
+        "both",
+        "importer",
+        "exporter",
+        "small-volume",
+        "growing-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "oceanic-supplyco-138",
+      "name": "Oceanic SupplyCo 138",
+      "country": "South Africa",
+      "type": "Exporter",
+      "products": [
+        "Fresh Fruits",
+        "Frozen Vegetables"
+      ],
+      "contact": {
+        "person": "Maria Martinez",
+        "email": "maria.martinez@oceanicsupplyco138.com",
+        "phone": "+27 416-812-939",
+        "website": "https://oceanicsupplyco138.com"
+      },
+      "address": "313 Market Lane, Port Elizabeth, South Africa",
+      "yearsInBusiness": 32,
+      "annualVolume": 29600000,
+      "tags": [
+        "south-africa",
+        "africa",
+        "fresh",
+        "fruits",
+        "frozen",
+        "vegetables",
+        "exporter",
+        "export",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "apex-logistics-139",
+      "name": "Apex Logistics 139",
+      "country": "India",
+      "type": "Exporter",
+      "products": [
+        "Timber",
+        "Plywood",
+        "Paper Rolls"
+      ],
+      "contact": {
+        "person": "Liu Dubois",
+        "email": "liu.dubois@apexlogistics139.com",
+        "phone": "+91 408-206-1",
+        "website": "https://apexlogistics139.com"
+      },
+      "address": "94 Industrial Park, Delhi, India",
+      "yearsInBusiness": 24,
+      "annualVolume": 46900000,
+      "tags": [
+        "india",
+        "asia",
+        "south-asia",
+        "timber",
+        "plywood",
+        "paper",
+        "rolls",
+        "exporter",
+        "export",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "oceanic-supplyco-140",
+      "name": "Oceanic SupplyCo 140",
+      "country": "Turkey",
+      "type": "Importer",
+      "products": [
+        "Bulk APIs",
+        "OTC Medicines"
+      ],
+      "contact": {
+        "person": "Maya Brown",
+        "email": "maya.brown@oceanicsupplyco140.com",
+        "phone": "+90 735-520-0",
+        "website": "https://oceanicsupplyco140.com"
+      },
+      "address": "868 Industrial Park, Izmir, Turkey",
+      "yearsInBusiness": 39,
+      "annualVolume": 49000000,
+      "tags": [
+        "turkey",
+        "middle-east",
+        "europe",
+        "bulk",
+        "apis",
+        "otc",
+        "medicines",
+        "importer",
+        "import",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "global-traders-141",
+      "name": "Global Traders 141",
+      "country": "Netherlands",
+      "type": "Exporter",
+      "products": [
+        "Industrial Chemicals",
+        "Solvents"
+      ],
+      "contact": {
+        "person": "Isabella Martinez",
+        "email": "isabella.martinez@globaltraders141.com",
+        "phone": "+31 643-697-6289",
+        "website": "https://globaltraders141.com"
+      },
+      "address": "244 Harbour Rd, Utrecht, Netherlands",
+      "yearsInBusiness": 30,
+      "annualVolume": 46400000,
+      "tags": [
+        "netherlands",
+        "europe",
+        "eu",
+        "industrial",
+        "chemicals",
+        "solvents",
+        "exporter",
+        "export",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "pacific-agro-142",
+      "name": "Pacific Agro 142",
+      "country": "Japan",
+      "type": "Importer",
+      "products": [
+        "Fresh Fruits",
+        "Frozen Vegetables"
+      ],
+      "contact": {
+        "person": "Felipe Singh",
+        "email": "felipe.singh@pacificagro142.com",
+        "phone": "+81 308-563-1961",
+        "website": "https://pacificagro142.com"
+      },
+      "address": "448 Market Lane, Nagoya, Japan",
+      "yearsInBusiness": 20,
+      "annualVolume": 42300000,
+      "tags": [
+        "japan",
+        "asia",
+        "east-asia",
+        "fresh",
+        "fruits",
+        "frozen",
+        "vegetables",
+        "importer",
+        "import",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "universal-agro-143",
+      "name": "Universal Agro 143",
+      "country": "Germany",
+      "type": "Exporter",
+      "products": [
+        "Kitchen",
+        "Home Electronics"
+      ],
+      "contact": {
+        "person": "Noah Brown",
+        "email": "noah.brown@universalagro143.com",
+        "phone": "+49 935-846-31",
+        "website": "https://universalagro143.com"
+      },
+      "address": "989 Export Ave, Hamburg, Germany",
+      "yearsInBusiness": 30,
+      "annualVolume": 34200000,
+      "tags": [
+        "germany",
+        "europe",
+        "eu",
+        "kitchen",
+        "home",
+        "electronics",
+        "technology",
+        "devices",
+        "exporter",
+        "export",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "apex-agro-144",
+      "name": "Apex Agro 144",
+      "country": "United Arab Emirates",
+      "type": "Exporter",
+      "products": [
+        "Skincare",
+        "Beauty Products"
+      ],
+      "contact": {
+        "person": "Anna Dubois",
+        "email": "anna.dubois@apexagro144.com",
+        "phone": "+971 731-377-2",
+        "website": "https://apexagro144.com"
+      },
+      "address": "431 Commerce St, Ajman, United Arab Emirates",
+      "yearsInBusiness": 44,
+      "annualVolume": 35900000,
+      "tags": [
+        "united-arab-emirates",
+        "middle-east",
+        "gulf",
+        "skincare",
+        "beauty",
+        "products",
+        "cosmetics",
+        "personal-care",
+        "exporter",
+        "export",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "cedar-commerce-145",
+      "name": "Cedar Commerce 145",
+      "country": "United Arab Emirates",
+      "type": "Both",
+      "products": [
+        "Processed Leather",
+        "Bags"
+      ],
+      "contact": {
+        "person": "Emma Dubois",
+        "email": "emma.dubois@cedarcommerce145.com",
+        "phone": "+971 369-489-6207",
+        "website": "https://cedarcommerce145.com"
+      },
+      "address": "445 Commerce St, Sharjah, United Arab Emirates",
+      "yearsInBusiness": 19,
+      "annualVolume": 34300000,
+      "tags": [
+        "united-arab-emirates",
+        "middle-east",
+        "gulf",
+        "processed",
+        "leather",
+        "bags",
+        "both",
+        "importer",
+        "exporter",
+        "high-volume",
+        "large-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "cedar-logistics-146",
+      "name": "Cedar Logistics 146",
+      "country": "UK",
+      "type": "Importer",
+      "products": [
+        "Whole Spices",
+        "Blends"
+      ],
+      "contact": {
+        "person": "Mohammed Brown",
+        "email": "mohammed.brown@cedarlogistics146.com",
+        "phone": "+44 639-811-852",
+        "website": "https://cedarlogistics146.com"
+      },
+      "address": "664 Market Lane, Liverpool, UK",
+      "yearsInBusiness": 23,
+      "annualVolume": 9100000,
+      "tags": [
+        "uk",
+        "europe",
+        "whole",
+        "spices",
+        "blends",
+        "importer",
+        "import",
+        "small-volume",
+        "growing-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "nova-supplyco-147",
+      "name": "Nova SupplyCo 147",
+      "country": "Mexico",
+      "type": "Importer",
+      "products": [
+        "Cotton",
+        "Synthetic Textiles"
+      ],
+      "contact": {
+        "person": "Amit Li",
+        "email": "amit.li@novasupplyco147.com",
+        "phone": "+52 845-636-170",
+        "website": "https://novasupplyco147.com"
+      },
+      "address": "707 Export Ave, Guadalajara, Mexico",
+      "yearsInBusiness": 12,
+      "annualVolume": 7500000,
+      "tags": [
+        "mexico",
+        "north-america",
+        "cotton",
+        "textile",
+        "fabric",
+        "synthetic",
+        "textiles",
+        "importer",
+        "import",
+        "small-volume",
+        "growing-company",
+        "established",
+        "experienced"
+      ]
+    },
+    {
+      "id": "nova-international-148",
+      "name": "Nova International 148",
+      "country": "USA",
+      "type": "Importer",
+      "products": [
+        "Frozen Seafood",
+        "Shellfish"
+      ],
+      "contact": {
+        "person": "James Martinez",
+        "email": "james.martinez@novainternational148.com",
+        "phone": "+1 276-491-4514",
+        "website": "https://novainternational148.com"
+      },
+      "address": "454 Export Ave, Los Angeles, USA",
+      "yearsInBusiness": 45,
+      "annualVolume": 27900000,
+      "tags": [
+        "usa",
+        "north-america",
+        "frozen",
+        "seafood",
+        "shellfish",
+        "importer",
+        "import",
+        "medium-volume",
+        "established-company",
+        "experienced",
+        "veteran",
+        "trusted"
+      ]
+    },
+    {
+      "id": "apex-imports-149",
+      "name": "Apex Imports 149",
+      "country": "Japan",
+      "type": "Both",
+      "products": [
+        "Spare Parts",
+        "Used Vehicles"
+      ],
+      "contact": {
+        "person": "Olivera Wang",
+        "email": "olivera.wang@apeximports149.com",
+        "phone": "+81 941-877-9",
+        "website": "https://apeximports149.com"
+      },
+      "address": "774 Commerce St, Osaka, Japan",
+      "yearsInBusiness": 8,
+      "annualVolume": 40200000,
+      "tags": [
+        "japan",
+        "asia",
+        "east-asia",
+        "spare",
+        "parts",
+        "used",
+        "vehicles",
+        "both",
+        "importer",
+        "exporter",
+        "high-volume",
+        "large-company",
+        "growing",
+        "developing"
+      ]
+    },
+    {
+      "id": "orion-exports-150",
+      "name": "Orion Exports 150",
+      "country": "Turkey",
+      "type": "Importer",
+      "products": [
+        "Cotton",
+        "Synthetic Textiles"
+      ],
+      "contact": {
+        "person": "Raj Singh",
+        "email": "raj.singh@orionexports150.com",
+        "phone": "+90 701-393-644",
+        "website": "https://orionexports150.com"
+      },
+      "address": "674 Commerce St, Istanbul, Turkey",
+      "yearsInBusiness": 4,
+      "annualVolume": 9100000,
+      "tags": [
+        "turkey",
+        "middle-east",
+        "europe",
+        "cotton",
+        "textile",
+        "fabric",
+        "synthetic",
+        "textiles",
+        "importer",
+        "import",
+        "small-volume",
+        "growing-company",
+        "growing",
+        "developing"
+      ]
+    }
+  ],
+  "metadata": {
+    "totalTraders": 150,
+    "countries": [
+      "Australia",
+      "Brazil",
+      "Canada",
+      "China",
+      "France",
+      "Germany",
+      "India",
+      "Japan",
+      "Mexico",
+      "Netherlands",
+      "South Africa",
+      "Turkey",
+      "UK",
+      "USA",
+      "United Arab Emirates"
+    ],
+    "productCategories": [
+      "Bags",
+      "Beauty Products",
+      "Blends",
+      "Bottled Drinks",
+      "Bulk APIs",
+      "Components",
+      "Consumer Electronics",
+      "Cotton",
+      "Fresh Fruits",
+      "Frozen Seafood",
+      "Frozen Vegetables",
+      "Home",
+      "Home Electronics",
+      "Industrial Chemicals",
+      "Industrial Machinery",
+      "Juices",
+      "Kitchen",
+      "OTC Medicines",
+      "Office Furniture",
+      "Paper Rolls",
+      "Plywood",
+      "Processed Leather",
+      "Shellfish",
+      "Skincare",
+      "Solvents",
+      "Spare Parts",
+      "Synthetic Textiles",
+      "Timber",
+      "Used Vehicles",
+      "Whole Spices"
+    ],
+    "tradeTypes": [
+      "Both",
+      "Exporter",
+      "Importer"
+    ],
+    "lastUpdated": "2025-09-22T02:45:41.931Z",
+    "dataVersion": "1.0"
+  }
+}

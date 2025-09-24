@@ -1,0 +1,303 @@
+{
+  "id": "farway-company",
+  "name": "FAR WAY",
+  "description": "Global FMCG import, export, and distribution company established in 2001. Trusted leader operating in 40+ countries with 500+ global brands, specializing in beverages, confectionaries, snacks, cleaning & household, personal care, and beauty equipment.",
+  "industry": "FMCG Import/Export/Distribution",
+  "website": "https://farwaycompany.com",
+  "branding": {
+    "primaryColor": "#4260C6",
+    "secondaryColor": "#1A2754",
+    "accentColor": "#FECD29",
+    "logo": "/images/company/farway-logo.png",
+    "font": "Inter"
+  },
+  "scrapingConfig": {
+    "enabled": true,
+    "website": "https://farwaycompany.com",
+    "selectors": {
+      "about": "main, .main-content, .hero, .about",
+      "services": ".services, .products, .categories, .offerings",
+      "contact": ".contact, .reach-us, footer",
+      "brands": ".brands, .partners, .portfolio"
+    },
+    "contentPriority": ["about", "services", "brands", "contact"],
+    "updateSchedule": "weekly",
+    "excludeSelectors": ["nav", "header", ".navigation", "script", "style", ".cookie-banner"]
+  },
+  "content": [
+    {
+      "id": "homepage-overview",
+      "type": "live-content",
+      "title": "Far Way Company Homepage",
+      "description": "Live overview of our homepage with key statistics and services",
+      "url": "https://farwaycompany.com",
+      "tags": ["homepage", "overview", "company", "statistics", "live"],
+      "category": "company"
+    },
+    {
+      "id": "company-overview",
+      "type": "live-content",
+      "title": "About Far Way Company",
+      "description": "Live extracted content from our company information page",
+      "url": "https://farwaycompany.com/about-us/",
+      "tags": ["overview", "company", "about", "live"],
+      "category": "company"
+    },
+    {
+      "id": "product-categories",
+      "type": "product-category",
+      "title": "Product Categories",
+      "description": "Explore our diverse range of FMCG products across multiple categories",
+      "url": "https://farwaycompany.com",
+      "tags": ["products", "categories", "beverages", "snacks", "personal care"],
+      "category": "products"
+    },
+    {
+      "id": "business-inquiry-form",
+      "type": "form",
+      "title": "Business Inquiry",
+      "description": "Connect with us for import/export opportunities",
+      "data": {
+        "fields": [
+          {"name": "name", "type": "text", "label": "Full Name", "required": true},
+          {"name": "company", "type": "text", "label": "Company Name", "required": true},
+          {"name": "email", "type": "email", "label": "Email Address", "required": true},
+          {"name": "phone", "type": "tel", "label": "Phone Number", "required": true},
+          {"name": "country", "type": "text", "label": "Country/Region", "required": true},
+          {"name": "product_interest", "type": "select", "label": "Product Category Interest", "options": ["Beverages", "Confectionaries", "Snacks", "Cleaning & Household", "Personal Care", "Beauty Equipment", "Multiple Categories"], "required": true},
+          {"name": "business_type", "type": "select", "label": "Business Type", "options": ["Importer", "Exporter", "Distributor", "Retailer", "Wholesaler", "Other"], "required": true},
+          {"name": "quantity_requirements", "type": "textarea", "label": "Quantity Requirements & Additional Details"},
+          {"name": "message", "type": "textarea", "label": "Message"}
+        ]
+      },
+      "tags": ["contact", "form", "business", "import", "export"],
+      "category": "contact"
+    },
+    {
+      "id": "schedule-meeting",
+      "type": "booking",
+      "title": "Schedule Business Meeting",
+      "description": "Book a meeting with our trade experts to discuss your FMCG import/export needs",
+      "data": {
+        "services": [
+          "Product Sourcing Consultation",
+          "Export/Import Strategy Meeting",
+          "Market Entry Discussion",
+          "Partnership Opportunities",
+          "Private Label Services",
+          "Quality Assurance Review",
+          "Supply Chain Planning",
+          "Pricing and Terms Discussion"
+        ]
+      },
+      "tags": ["meeting", "consultation", "appointment", "business", "trade"],
+      "category": "contact"
+    },
+    {
+      "id": "global-reach",
+      "type": "website",
+      "title": "Global Presence",
+      "description": "Our operations across 40+ countries worldwide",
+      "url": "https://farwaycompany.com",
+      "tags": ["global", "countries", "reach", "international"],
+      "category": "company"
+    },
+    {
+      "id": "certifications",
+      "type": "website",
+      "title": "Quality Certifications",
+      "description": "Our HACCP-certified warehouses and quality standards",
+      "url": "https://farwaycompany.com",
+      "tags": ["haccp", "certified", "quality", "standards"],
+      "category": "quality"
+    }
+  ],
+  "knowledgeBase": [
+    {
+      "id": "kb-1",
+      "question": "What services does Far Way Company offer?",
+      "answer": "Far Way Company is a leading FMCG import, export, and distribution company. We specialize in beverages, confectionaries, snacks, cleaning & household products, personal care, and beauty equipment. We operate in 40+ countries and work with 500+ global brands.",
+      "tags": ["services", "offerings", "fmcg", "import", "export"],
+      "contentIds": ["product-categories"],
+      "priority": 10
+    },
+    {
+      "id": "kb-2",
+      "question": "What product categories do you handle?",
+      "answer": "We handle a wide range of FMCG categories: Beverages, Confectionaries, Snacks, Cleaning & Household products, Personal Care items, and Beauty Equipment. Each category includes hundreds of international brands.",
+      "tags": ["products", "categories", "beverages", "snacks", "personal care"],
+      "contentIds": ["product-categories"],
+      "priority": 10
+    },
+    {
+      "id": "kb-3",
+      "question": "What countries do you operate in?",
+      "answer": "Far Way Company operates in 40+ countries worldwide. We have established trade relationships globally and can facilitate connections across all major markets including USA, Europe, Asia, and the Middle East.",
+      "tags": ["countries", "global", "international", "operations"],
+      "contentIds": ["global-reach"],
+      "priority": 8
+    },
+    {
+      "id": "kb-4",
+      "question": "How can I contact Far Way Company?",
+      "answer": "You can reach us through multiple channels: WhatsApp at +971 52 76 76 100, email at contact@farwaycompany.com, or fill out our business inquiry form. We're based in Dubai, UAE and are available during business hours.",
+      "tags": ["contact", "reach", "whatsapp", "email", "dubai"],
+      "contentIds": ["business-inquiry-form"],
+      "priority": 9
+    },
+    {
+      "id": "kb-5",
+      "question": "Are you certified?",
+      "answer": "Yes! Far Way Company operates with HACCP-certified warehouses ensuring the highest quality standards for all our FMCG products. We maintain strict quality control throughout our supply chain.",
+      "tags": ["haccp", "certified", "quality", "standards"],
+      "contentIds": ["certifications"],
+      "priority": 7
+    },
+    {
+      "id": "kb-6",
+      "question": "How long have you been in business?",
+      "answer": "Far Way Company was established in 2001, giving us over 23 years of experience in the FMCG import/export industry. We've built strong relationships with suppliers and buyers worldwide.",
+      "tags": ["experience", "established", "2001", "years"],
+      "contentIds": ["company-overview"],
+      "priority": 6
+    },
+    {
+      "id": "kb-7",
+      "question": "What are your pricing details?",
+      "answer": "Our pricing varies by product category, quantity, and destination. We work with competitive rates for FMCG import/export. For detailed pricing information, please contact us with your specific requirements including product type, quantity, and destination country.",
+      "tags": ["pricing", "price", "cost", "rates", "quote", "competitive"],
+      "contentIds": ["business-inquiry-form"],
+      "priority": 8
+    },
+    {
+      "id": "kb-8",
+      "question": "What is your minimum order quantity?",
+      "answer": "Minimum order quantities vary by product category and supplier requirements. Generally, for FMCG products, we work with container loads (FCL) or less than container loads (LCL) depending on your needs. Contact us with your specific requirements for detailed MOQ information.",
+      "tags": ["moq", "minimum order", "quantity", "container", "fcl", "lcl"],
+      "contentIds": ["business-inquiry-form"],
+      "priority": 7
+    },
+    {
+      "id": "kb-9",
+      "question": "Do you provide private label services?",
+      "answer": "Yes, we work with manufacturers who can provide private label and OEM services for various FMCG categories. This includes custom packaging, branding, and product specifications according to your requirements.",
+      "tags": ["private label", "oem", "custom", "branding", "packaging"],
+      "contentIds": ["business-inquiry-form"],
+      "priority": 6
+    },
+    {
+      "id": "kb-10",
+      "question": "How do you ensure product quality?",
+      "answer": "Quality assurance is paramount at Far Way Company. We maintain HACCP-certified warehouses, conduct pre-shipment inspections, work only with verified suppliers, and ensure all products meet international quality standards and destination country regulations.",
+      "tags": ["quality", "assurance", "haccp", "inspection", "standards", "compliance"],
+      "contentIds": ["certifications"],
+      "priority": 8
+    },
+    {
+      "id": "kb-11",
+      "question": "Can I see a demo?",
+      "answer": "I'd be happy to show you information about our company and services. Let me pull up our company overview and global presence information.",
+      "tags": ["demo", "show", "demonstration", "overview"],
+      "contentIds": ["company-overview"],
+      "priority": 7
+    },
+    {
+      "id": "kb-12",
+      "question": "Tell me about your company",
+      "answer": "Far Way Company is a trusted FMCG trading partner with over 23 years of experience. We operate in 40+ countries and maintain the highest quality standards through our HACCP-certified facilities.",
+      "tags": ["about", "company", "information", "overview"],
+      "contentIds": ["company-overview"],
+      "priority": 8
+    },
+    {
+      "id": "kb-13",
+      "question": "Can you help me find traders?",
+      "answer": "Absolutely! I have access to our extensive network of 150+ verified international traders across 15 countries. I can help you find importers, exporters, and trading companies based on your specific needs - whether you're looking for textile traders in Turkey, electronics suppliers in China, or any other FMCG category worldwide.",
+      "tags": ["traders", "network", "find", "connect", "suppliers", "importers", "exporters"],
+      "contentIds": ["trader-search"],
+      "priority": 9
+    },
+    {
+      "id": "kb-14",
+      "question": "What traders do you have in your network?",
+      "answer": "Our trader network includes 150+ verified companies across 15 countries including China, UAE, Germany, UK, USA, Turkey, and more. They specialize in various FMCG categories like textiles, electronics, chemicals, machinery, food products, and beauty items. Annual trading volumes range from $1M to $50M.",
+      "tags": ["trader", "network", "countries", "categories", "volume"],
+      "contentIds": ["trader-search"],
+      "priority": 8
+    },
+    {
+      "id": "kb-15",
+      "question": "How can I connect with traders?",
+      "answer": "I can help you find and connect with relevant traders instantly. Just tell me what you're looking for - like 'find textile exporters in Turkey' or 'show me electronics importers in China'. I'll present you with matching traders including their contact details, business information, and direct connection options via WhatsApp and email.",
+      "tags": ["connect", "traders", "contact", "whatsapp", "email", "search"],
+      "contentIds": ["trader-search"],
+      "priority": 9
+    },
+    {
+      "id": "kb-16",
+      "question": "Show me spice traders",
+      "answer": "I can show you spice traders from our network! We have traders specializing in whole spices across multiple countries. Let me search our database for spice traders and present you with detailed profiles including their contact information and business details.",
+      "tags": ["spice", "traders", "food", "import", "export"],
+      "contentIds": ["trader-search"],
+      "priority": 7
+    },
+    {
+      "id": "kb-17",
+      "question": "Can I schedule a meeting?",
+      "answer": "Absolutely! I can help you schedule a business meeting with our trade experts. We offer various types of consultations including product sourcing, export/import strategy, market entry discussions, and partnership opportunities. You can book a meeting at your preferred time during our business hours.",
+      "tags": ["meeting", "schedule", "appointment", "consultation", "book"],
+      "contentIds": ["schedule-meeting"],
+      "priority": 9
+    },
+    {
+      "id": "kb-18",
+      "question": "Book an appointment",
+      "answer": "I'd be happy to help you book an appointment with our team. We offer consultations for product sourcing, export/import strategy, market entry planning, and more. Let me show you our meeting scheduler where you can select your preferred service, date, and time.",
+      "tags": ["appointment", "book", "meeting", "schedule", "consultation"],
+      "contentIds": ["schedule-meeting"],
+      "priority": 9
+    },
+    {
+      "id": "kb-19",
+      "question": "What meeting types do you offer?",
+      "answer": "We offer various business consultations: Product Sourcing Consultation, Export/Import Strategy Meeting, Market Entry Discussion, Partnership Opportunities, Private Label Services, Quality Assurance Review, Supply Chain Planning, and Pricing & Terms Discussion. All meetings are conducted by our experienced trade experts.",
+      "tags": ["meeting", "types", "consultation", "services", "business"],
+      "contentIds": ["schedule-meeting"],
+      "priority": 8
+    },
+    {
+      "id": "kb-20",
+      "question": "When are you available for meetings?",
+      "answer": "We're available for meetings during our business hours: Monday to Friday 9:00 AM - 6:00 PM, Saturday 10:00 AM - 3:00 PM (Dubai time). You can schedule meetings up to 60 days in advance with 30-minute or hourly slots available. Our team will send you a confirmation email with meeting details.",
+      "tags": ["availability", "hours", "meeting", "schedule", "time"],
+      "contentIds": ["schedule-meeting"],
+      "priority": 7
+    }
+  ],
+  "settings": {
+    "welcomeMessage": "Hello! I'm your AI assistant at Far Way Company. I can help you explore our global FMCG trading services, connect you with verified suppliers and buyers, and assist with your import/export needs. How can I help you today?",
+    "aiPersonality": "professional B2B focused, knowledgeable about international trade",
+    "enableVoice": true,
+    "enableLeadCapture": true,
+    "operatingHours": {
+      "enabled": true,
+      "timezone": "Asia/Dubai",
+      "hours": {
+        "monday": {"open": "09:00", "close": "18:00"},
+        "tuesday": {"open": "09:00", "close": "18:00"},
+        "wednesday": {"open": "09:00", "close": "18:00"},
+        "thursday": {"open": "09:00", "close": "18:00"},
+        "friday": {"open": "09:00", "close": "18:00"},
+        "saturday": {"open": "10:00", "close": "15:00"},
+        "sunday": {"open": "closed", "close": "closed"}
+      }
+    },
+    "contactInfo": {
+      "whatsapp": "+971 52 76 76 100",
+      "whatsappBeauty": "+971 50 67 62 217",
+      "email": "contact@farwaycompany.com",
+      "phone": "+971 42 289501",
+      "address": "Office No. 507, New Century City Tower, Deira, Dubai, UAE"
+    }
+  }
+}
