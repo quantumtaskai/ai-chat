@@ -1,7 +1,7 @@
 {
-  "name": "ai-business-receptionist",
+  "name": "ai-chat-template",
   "version": "1.0.0",
-  "description": "AI-powered business receptionist with intelligent chat and dynamic content delivery",
+  "description": "Professional AI Chat Template - Modern 2025 UI/UX with embeddable widget for any business website",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -15,7 +15,10 @@
     "docker:compose:build": "docker-compose up -d --build",
     "docker:logs": "docker-compose logs -f app",
     "clean": "rm -rf dist node_modules package-lock.json",
-    "install:clean": "npm run clean && npm install"
+    "install:clean": "npm run clean && npm install",
+    "setup": "node generate-config.js",
+    "validate": "node validate-setup.js",
+    "template:setup": "./setup.sh"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.0",

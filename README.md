@@ -1,316 +1,205 @@
-# AI Business Receptionist
+# 🤖 AI Chat Template
 
-A modern, Vue.js-based AI receptionist application that provides intelligent chat assistance and dynamic content delivery for businesses. Each deployment is dedicated to a single business, providing a focused and personalized experience.
+> **Professional AI Chat Template with Modern 2025 UI/UX**
+> Ready-to-deploy AI chat system with embeddable widget for any business website.
+
+![AI Chat Template](https://img.shields.io/badge/Template-Ready-brightgreen) ![Vue 3](https://img.shields.io/badge/Vue-3.x-4FC08D) ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.x-06B6D4)
 
 ## ✨ Features
 
-- **🤖 AI-Powered Chat**: Intelligent conversational AI with business-specific knowledge base
-- **📋 Dynamic Content Panel**: Displays relevant content (PDFs, videos, forms, booking widgets) based on chat context
-- **🔧 Website Scraping**: Automatically scrapes and indexes business website content for up-to-date information
-- **📱 Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
-- **🎨 Customizable Branding**: Business-specific colors, logos, and styling
-- **🗣️ Voice Support**: Text-to-speech capabilities for accessibility
-- **📊 Lead Capture**: Built-in forms for capturing customer information
-- **⚡ Real-time Content Suggestions**: AI suggests relevant content during conversations
+### 🎨 **Modern 2025 Design**
+- Clean, flat UI design following 2025 standards
+- Minimal shadows and gradients
+- Responsive design for all devices
+- Professional color scheme
 
-## 🏗️ Architecture
+### 💬 **AI-Powered Chat**
+- OpenAI GPT integration
+- Customizable knowledge base
+- Business-specific responses
+- Voice support (optional)
 
-This application uses a **single-business deployment model** where:
-- Each deployment serves exactly one business
-- Configuration is simplified and focused
-- No multi-tenant complexity
-- Easy to clone and customize per client
+### 🔧 **Easy Customization**
+- **5-minute setup** for basic configuration
+- Complete branding control (colors, logo, fonts)
+- Industry-specific templates
+- No coding required for basic use
 
-### Tech Stack
+### 📱 **Embeddable Widget**
+- Single script tag integration
+- Works on any website
+- Mobile-optimized
+- Cross-origin support
 
-- **Frontend**: Vue 3 + TypeScript + Composition API
-- **State Management**: Pinia
-- **Styling**: Tailwind CSS
-- **Build Tool**: Vite
-- **Deployment**: Docker + Nginx
+### 📋 **Business Features**
+- Contact forms
+- Appointment booking
+- Content management
+- Knowledge base system
+- Live website scraping
+
+### 🚀 **Deployment Ready**
+- Docker support
+- Vercel/Netlify ready
+- VPS deployment scripts
+- Environment configuration
 
 ## 🚀 Quick Start
 
-### Prerequisites
-
-- Node.js 18+
-- npm or yarn
-- Docker (optional, for containerized deployment)
-
-### Local Development
-
-1. **Clone and Install**
-   ```bash
-   git clone <repository-url>
-   cd aichat-17092025
-   npm install
-   ```
-
-2. **Configure Business**
-   ```bash
-   cp .env.example .env.local
-   # Edit .env.local with your settings
-   ```
-
-3. **Customize Business Configuration**
-   Edit `src/data/business.json` with your business details:
-   ```json
-   {
-     "id": "your-business",
-     "name": "Your Business Name",
-     "description": "Your business description",
-     "industry": "Your Industry",
-     "website": "https://yourbusiness.com",
-     "branding": {
-       "primaryColor": "#3b82f6",
-       "secondaryColor": "#1e40af"
-     },
-     "settings": {
-       "welcomeMessage": "Hello! How can I help you today?"
-     }
-   }
-   ```
-
-4. **Start Development Server**
-   ```bash
-   npm run dev
-   ```
-
-5. **Open Application**
-   Navigate to `http://localhost:3000`
-
-## 📁 Project Structure
-
-```
-src/
-├── components/          # Vue components
-│   ├── chat/           # Chat interface components
-│   ├── content/        # Content display components
-│   └── layout/         # Layout components
-├── stores/             # Pinia stores (state management)
-│   ├── app.ts         # Application state
-│   ├── chat.ts        # Chat functionality
-│   ├── content.ts     # Content management
-│   └── knowledge.ts   # Knowledge base & scraping
-├── services/           # Business logic services
-│   ├── businessScraper.ts    # Website scraping
-│   └── contentScheduler.ts  # Automated content updates
-├── types/              # TypeScript type definitions
-├── data/               # Static configuration
-│   └── business.json  # Single business configuration
-└── assets/            # Static assets
-```
-
-## ⚙️ Configuration
-
-### Business Configuration (`src/data/business.json`)
-
-The main configuration file contains all business-specific settings:
-
-```json
-{
-  "id": "unique-business-id",
-  "name": "Business Name",
-  "description": "Business description for AI responses",
-  "industry": "Industry category",
-  "website": "https://business-website.com",
-  "branding": {
-    "primaryColor": "#3b82f6",
-    "secondaryColor": "#1e40af",
-    "logo": "/path/to/logo.svg",
-    "font": "Inter"
-  },
-  "scrapingConfig": {
-    "enabled": true,
-    "website": "https://business-website.com",
-    "selectors": {
-      "about": "main, .main-content",
-      "services": ".services, .offerings",
-      "pricing": ".pricing, .plans",
-      "contact": ".contact, footer"
-    },
-    "contentPriority": ["about", "services", "pricing", "contact"],
-    "updateSchedule": "weekly"
-  },
-  "content": [
-    // Static content items (PDFs, videos, forms, etc.)
-  ],
-  "knowledgeBase": [
-    // Predefined Q&A pairs
-  ],
-  "settings": {
-    "welcomeMessage": "Welcome message text",
-    "aiPersonality": "professional and helpful",
-    "enableVoice": true,
-    "enableLeadCapture": true
-  }
-}
-```
-
-### Environment Variables (`.env.local`)
-
+### 1. **Clone Template**
 ```bash
-# API URL for external business configuration (optional)
-VITE_API_URL=
+# Use GitHub template (recommended)
+# Click "Use this template" button above
 
-# OpenAI API configuration (for future AI integration)
-VITE_OPENAI_API_URL=https://api.openai.com/v1
-VITE_OPENAI_API_KEY=
-
-# Application settings
-VITE_APP_TITLE=AI Business Receptionist
-VITE_APP_VERSION=1.0.0
+# Or clone directly
+git clone https://github.com/YOUR-USERNAME/ai-chat-template.git my-business-chat
+cd my-business-chat
 ```
 
-## 🔄 Website Scraping
+### 2. **Install Dependencies**
+```bash
+npm install
+```
 
-The application can automatically scrape and index content from your business website:
+### 3. **Environment Setup**
+```bash
+# Copy environment template
+cp .env.example .env
 
-### Configuration
+# Add your OpenAI API key to .env
+OPENAI_API_KEY=your_openai_api_key_here
+```
 
+### 4. **Business Configuration**
+Edit `src/data/business.json` with your business information:
 ```json
 {
-  "scrapingConfig": {
-    "enabled": true,
-    "website": "https://yourbusiness.com",
-    "selectors": {
-      "about": "main, .hero, .about",
-      "services": ".services, .products",
-      "pricing": ".pricing, .plans",
-      "contact": ".contact, footer"
-    },
-    "contentPriority": ["about", "services", "pricing", "contact"],
-    "updateSchedule": "weekly",
-    "excludeSelectors": ["nav", "header", "script", "style"]
+  "name": "Your Business Name",
+  "description": "Your business description",
+  "website": "https://your-website.com",
+  "branding": {
+    "primaryColor": "#your-brand-color"
   }
 }
 ```
 
-### Update Schedules
+### 5. **Run Development Server**
+```bash
+npm run dev
+```
+Visit `http://localhost:3000` to see your chat interface.
 
-- `"manual"` - No automatic updates
-- `"daily"` - Update every 24 hours
-- `"weekly"` - Update every 7 days
-- `"monthly"` - Update every 30 days
+### 6. **Deploy to Production**
+```bash
+npm run build
+# Deploy the dist/ folder to your hosting service
+```
 
-## 🎨 Customization
+### 7. **Embed on Your Website**
+Add this script tag to any webpage:
+```html
+<script src="https://your-domain.com/widget-loader.js"></script>
+```
 
-### Branding
+## 📖 Detailed Setup Guide
 
-Update the business configuration to match your brand:
+### 🎯 **Customization Levels**
 
+#### **Level 1: Basic (5 minutes)**
+- Update business name and description
+- Add contact information
+- Set website URL
+
+#### **Level 2: Branding (15 minutes)**
+- Upload your logo to `public/images/company/logo.png`
+- Update brand colors in `business.json`
+- Customize welcome message
+
+#### **Level 3: Content (30 minutes)**
+- Add knowledge base questions & answers
+- Configure contact forms
+- Set up appointment booking
+
+#### **Level 4: Advanced (1 hour)**
+- Custom integrations
+- Multi-language support
+- Advanced styling
+
+### 🎨 **Branding Customization**
+
+Update colors in `src/data/business.json`:
 ```json
 {
   "branding": {
-    "primaryColor": "#your-brand-color",
-    "secondaryColor": "#your-secondary-color",
-    "logo": "/assets/your-logo.svg",
-    "font": "Your-Font-Family"
+    "primaryColor": "#3b82f6",    // Main brand color
+    "secondaryColor": "#1e40af",  // Secondary color
+    "accentColor": "#f59e0b",     // Accent color
+    "logo": "/images/company/logo.png",
+    "font": "Inter"               // Google Font name
   }
 }
 ```
 
-### Content Types
+## 🚀 Deployment Options
 
-The application supports various content types:
+### **Vercel (Recommended)**
+1. Push to GitHub
+2. Connect to Vercel
+3. Add environment variables in Vercel dashboard
+4. Deploy automatically
 
-- **PDF Documents**: Display PDFs inline
-- **Videos**: Embed YouTube or direct video links
-- **Images**: Show image galleries
-- **Forms**: Lead capture and contact forms
-- **Booking Widgets**: Appointment scheduling
-- **Website Links**: Direct links to external pages
+### **Netlify**
+1. Push to GitHub
+2. Connect to Netlify
+3. Build command: `npm run build`
+4. Publish directory: `dist`
 
-## 🚢 Deployment
+### **Docker**
+```bash
+# Build container
+npm run docker:build
 
-### Docker Deployment (Recommended)
+# Run container
+npm run docker:run
+```
 
-1. **Build Docker Image**
-   ```bash
-   npm run docker:build
-   ```
+## 🔧 Configuration
 
-2. **Run Container**
-   ```bash
-   npm run docker:run
-   ```
+### **Required Environment Variables**
+```env
+OPENAI_API_KEY=your_openai_api_key_here  # Required for AI chat
+```
 
-3. **Using Docker Compose**
-   ```bash
-   npm run docker:compose
-   ```
+### **Optional Environment Variables**
+```env
+HEYGEN_API_KEY=your_heygen_key          # For avatar features
+VITE_API_URL=https://api.yourdomain.com # External config API
+```
 
-### Production Build
+## 📱 Widget Integration
 
-1. **Build for Production**
-   ```bash
-   npm run build:prod
-   ```
+### **Basic Integration**
+```html
+<!-- Add before closing </body> tag -->
+<script src="https://your-domain.com/widget-loader.js"></script>
+```
 
-2. **Serve Static Files**
-   Deploy the `dist/` folder to any static hosting service (Nginx, Apache, Netlify, Vercel, etc.)
+## 🛠 Development
 
-### VPS Deployment
-
-The project includes complete Docker configuration for VPS deployment with:
-- Nginx reverse proxy
-- SSL/TLS support
-- Health checks
-- Logging
-
-## 🔧 Development
-
-### Available Scripts
-
+### **Development Commands**
 ```bash
 npm run dev          # Start development server
 npm run build        # Build for production
-npm run build:prod   # Build with production optimizations
 npm run preview      # Preview production build
-npm run type-check   # Run TypeScript type checking
+npm run type-check   # TypeScript validation
 ```
-
-### Adding Content Types
-
-1. Create a new component in `src/components/content/`
-2. Add the component to the content type map in `ContentPanel.vue`
-3. Update the TypeScript types in `src/types/index.ts`
-
-### Extending the Knowledge Base
-
-Add new Q&A pairs to the `knowledgeBase` array in `business.json`:
-
-```json
-{
-  "id": "kb-new",
-  "question": "Your question",
-  "answer": "AI response",
-  "tags": ["relevant", "keywords"],
-  "contentIds": ["related-content-id"],
-  "priority": 10
-}
-```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
 
 ## 📄 License
 
-This project is proprietary software. All rights reserved.
-
-## 🆘 Support
-
-For support and questions:
-- Check the documentation
-- Review the configuration examples
-- Test with the demo business configuration
-- Contact the development team
+MIT License - Use freely for personal and commercial projects.
 
 ---
 
-**Note**: This application is designed for single-business deployments. Each client should have their own instance with customized configuration.
+**Ready to launch your AI chat in 5 minutes?** 🚀
+
+*Built with ❤️ using Vue 3, TypeScript, and Modern 2025 UI/UX Design Standards*
