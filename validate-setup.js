@@ -44,7 +44,7 @@ function validateEnvironment() {
   }
 
   const envContent = fs.readFileSync(envPath, 'utf8');
-  const requiredVars = ['VITE_OPENAI_API_KEY', 'VITE_BUSINESS_NAME'];
+  const requiredVars = ['VITE_OPENAI_API_KEY'];
   let allSet = true;
 
   requiredVars.forEach(varName => {

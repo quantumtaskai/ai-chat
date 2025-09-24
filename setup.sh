@@ -65,10 +65,10 @@ if [[ -n "$openai_key" ]]; then
     # Update .env file
     if [[ "$OSTYPE" == "darwin"* ]]; then
         # macOS
-        sed -i '' "s/OPENAI_API_KEY=.*/OPENAI_API_KEY=$openai_key/" .env
+        sed -i '' "s/VITE_OPENAI_API_KEY=.*/VITE_OPENAI_API_KEY=$openai_key/" .env
     else
         # Linux
-        sed -i "s/OPENAI_API_KEY=.*/OPENAI_API_KEY=$openai_key/" .env
+        sed -i "s/VITE_OPENAI_API_KEY=.*/VITE_OPENAI_API_KEY=$openai_key/" .env
     fi
     echo -e "${GREEN}✓ OpenAI API key configured${NC}"
 else

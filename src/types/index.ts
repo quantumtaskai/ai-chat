@@ -102,6 +102,11 @@ export interface BusinessConfig {
       timezone: string
       hours: { [key: string]: { open: string; close: string } }
     }
+    contactInfo?: {
+      phone?: string
+      email?: string
+      address?: string
+    }
   }
 }
 
@@ -159,6 +164,11 @@ export interface AIResponse {
   intent?: string
   confidence?: number
   followUpQuestions?: string[]
+  functionCall?: {
+    name: string
+    arguments: any
+  }
+  error?: string
 }
 
 // Analytics events

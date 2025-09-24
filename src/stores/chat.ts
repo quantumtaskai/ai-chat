@@ -1,10 +1,11 @@
 import { defineStore } from 'pinia'
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import type { Message, ChatState, AIResponse } from '@/types'
 import { useKnowledgeStore } from '@/stores/knowledge'
 import { useAppStore } from '@/stores/app'
 import { useContentStore } from '@/stores/content'
 import { traderService } from '@/services/traderService'
+import { openaiService } from '@/services/openaiService'
 
 export const useChatStore = defineStore('chat', () => {
   // State
@@ -13,6 +14,8 @@ export const useChatStore = defineStore('chat', () => {
   const isListening = ref(false)
   const isMuted = ref(false)
   const sessionId = ref(generateSessionId())
+  const isAIInitialized = ref(false)
+  const aiError = ref<string | null>(null)
 
   // Getters
   const chatState = computed<ChatState>(() => ({
@@ -109,165 +112,140 @@ export const useChatStore = defineStore('chat', () => {
     const appStore = useAppStore()
     const contentStore = useContentStore()
     const business = appStore.currentBusiness
-    const lowerMessage = message.toLowerCase()
 
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        let response = ''
-        let suggestedContent: string[] = []
-        let intent = 'general_inquiry'
-        let confidence = 0.7
-
-        // Check for meeting/scheduling queries FIRST
-        if (lowerMessage.includes('schedule') || lowerMessage.includes('meeting') || lowerMessage.includes('appointment') ||
-            lowerMessage.includes('book') || lowerMessage.includes('consultation') || lowerMessage.includes('meet') ||
-            lowerMessage.includes('calendar') || lowerMessage.includes('available') && (lowerMessage.includes('time') || lowerMessage.includes('when'))) {
-          response = 'I can help you schedule a business meeting with our trade experts. We offer consultations for product sourcing, export/import strategy, market entry discussions, and partnership opportunities.'
-          intent = 'meeting_inquiry'
-          suggestedContent = ['schedule-meeting']
-          confidence = 0.95
-          console.log('Meeting/scheduling intent detected directly')
+    try {
+      // Initialize OpenAI service if not already done
+      if (!isAIInitialized.value && !aiError.value) {
+        console.log('Initializing OpenAI service...')
+        const initialized = await openaiService.initialize()
+        isAIInitialized.value = initialized
+        if (!initialized) {
+          aiError.value = 'OpenAI service initialization failed'
         }
-        // Check for trader-related queries SECOND (before knowledge base)
-        else if (traderService.isTraderQuery(message)) {
-          console.log(`Detected trader query: "${message}"`)
+      }
 
-          try {
-            const searchQuery = traderService.parseQuery(message)
-            console.log('Parsed search query:', searchQuery)
+      // Check for trader-related queries FIRST (preserve existing business logic)
+      if (traderService.isTraderQuery(message)) {
+        console.log(`Detected trader query: "${message}"`)
 
-            const searchResults = traderService.searchTraders(searchQuery)
-            console.log('Search results:', searchResults.totalCount, 'traders found')
+        try {
+          const searchQuery = traderService.parseQuery(message)
+          console.log('Parsed search query:', searchQuery)
 
-            response = traderService.generateTraderResponse(searchResults, searchQuery)
-            intent = 'trader_discovery'
-            confidence = 0.9
+          const searchResults = traderService.searchTraders(searchQuery)
+          console.log('Search results:', searchResults.totalCount, 'traders found')
 
-            // Show trader search results in left panel
-            if (searchResults.traders.length > 0) {
-              // Directly show the search results using content store
-              contentStore.showTraderSearchResults(searchResults, searchQuery, response)
+          const response = traderService.generateTraderResponse(searchResults, searchQuery)
 
-              // Still emit content suggestion for the event system
-              suggestedContent = ['trader-search-results']
+          // Show trader search results in content panel
+          if (searchResults.traders.length > 0) {
+            contentStore.showTraderSearchResults(searchResults, searchQuery, response)
+          }
 
-              console.log('Directly updated content store with new trader search results')
-            }
-          } catch (error) {
-            console.error('Error processing trader query:', error)
-            response = "I'm having trouble searching our trader network right now. Please try again."
-            intent = 'trader_error'
-            confidence = 0.3
+          return {
+            message: response,
+            suggestedContent: searchResults.traders.length > 0 ? ['trader-search-results'] : [],
+            intent: 'trader_discovery',
+            confidence: 0.9
+          }
+        } catch (error) {
+          console.error('Error processing trader query:', error)
+          return {
+            message: "I'm having trouble searching our trader network right now. Please try again.",
+            suggestedContent: [],
+            intent: 'trader_error',
+            confidence: 0.3
           }
         }
+      }
 
-        // Check for company/about queries specifically
-        else if (lowerMessage.includes('about') && (lowerMessage.includes('far') || lowerMessage.includes('company') || lowerMessage.includes('farway'))) {
-          response = 'Far Way Company is a trusted FMCG trading partner with over 23 years of experience. We operate in 40+ countries and maintain the highest quality standards through our HACCP-certified facilities.'
-          intent = 'company_inquiry'
-          suggestedContent = ['company-overview']
-          confidence = 0.95
-          console.log('Company/about intent detected directly')
-        }
-        // Check for product/category queries specifically
-        else if (lowerMessage.includes('product') || lowerMessage.includes('categor') || lowerMessage.includes('what do you sell') || lowerMessage.includes('beverage') || lowerMessage.includes('snack') || lowerMessage.includes('confection')) {
-          response = 'We handle a wide range of FMCG categories: Beverages, Confectionaries, Snacks, Cleaning & Household products, Personal Care items, and Beauty Equipment. Each category includes hundreds of international brands.'
-          intent = 'product_inquiry'
-          suggestedContent = ['product-categories']
-          confidence = 0.95
-          console.log('Product/categories intent detected directly')
+      // Search knowledge base for relevant context
+      const knowledgeResults = business ? knowledgeStore.searchKnowledge(message) : []
+      console.log(`Knowledge search results:`, knowledgeResults)
+
+      // If OpenAI is available, use it for intelligent responses
+      if (isAIInitialized.value && openaiService.isAvailable()) {
+        console.log('Using OpenAI for response generation...')
+
+        const conversationContext = {
+          messages: messages.value,
+          businessContext: business,
+          sessionId: sessionId.value
         }
 
-        // Search knowledge base (only if no other response)
-        if (!response && business) {
-          console.log(`Searching knowledge for message: "${message}"`)
-          const knowledgeResults = knowledgeStore.searchKnowledge(message)
-          console.log(`Knowledge search results:`, knowledgeResults)
+        const aiResponse = await openaiService.generateResponse(message, conversationContext, knowledgeResults)
 
-          if (knowledgeResults.length > 0) {
-            const bestMatch = knowledgeResults[0]
+        // Handle function calls (like trader search)
+        if (aiResponse.functionCall?.name === 'search_traders') {
+          const searchArgs = aiResponse.functionCall.arguments
+          const searchResults = traderService.searchTraders(searchArgs)
 
-            // Use knowledge base answer directly (it's already well-formatted)
-            response = bestMatch.answer
-            intent = 'knowledge_base'
-            confidence = 0.9
+          if (searchResults.traders.length > 0) {
+            const traderResponse = traderService.generateTraderResponse(searchResults, searchArgs)
+            contentStore.showTraderSearchResults(searchResults, searchArgs, traderResponse)
 
-            // Suggest content from knowledge base if available
-            if (bestMatch.contentIds && bestMatch.contentIds.length > 0) {
-              suggestedContent = bestMatch.contentIds
-              console.log(`Suggesting content from knowledge base:`, suggestedContent)
+            return {
+              message: traderResponse,
+              suggestedContent: ['trader-search-results'],
+              intent: 'trader_discovery',
+              confidence: 0.9
             }
           }
         }
 
+        console.log('OpenAI response:', aiResponse)
+        return aiResponse
 
-        // Fallback to pattern-based responses if no knowledge found
-        if (!response) {
-          console.log(`No knowledge base response found, using pattern-based responses for: "${lowerMessage}"`)
-          if (lowerMessage.includes('service') || lowerMessage.includes('what do you do') || lowerMessage.includes('product') || lowerMessage.includes('trade')) {
-            response = 'Far Way Company is a leading FMCG import, export, and distribution company. We specialize in beverages, confectionaries, snacks, cleaning & household products, personal care, and beauty equipment. We operate in 40+ countries and work with 500+ global brands.'
-            intent = 'services_inquiry'
-            suggestedContent = ['product-categories']
-            confidence = 0.8
+      } else {
+        console.log('OpenAI not available, using fallback knowledge base responses...')
 
-          } else if (lowerMessage.includes('company') || lowerMessage.includes('business') || lowerMessage.includes('about') || lowerMessage.includes('who are you') || lowerMessage.includes('tell me') && lowerMessage.includes('far')) {
-            response = 'Far Way Company is a trusted FMCG trading partner established in 2001 with over 23 years of experience. We operate in 40+ countries and maintain the highest quality standards through our HACCP-certified facilities.'
-            intent = 'company_overview'
-            suggestedContent = ['company-overview']
-            confidence = 0.9
-            
-          } else if (lowerMessage.includes('price') || lowerMessage.includes('cost') || lowerMessage.includes('pricing')) {
-            response = 'Our pricing varies by product category, quantity, and destination. We work with competitive rates for FMCG import/export. For detailed pricing information, please contact us with your specific requirements including product type, quantity, and destination country.'
-            intent = 'pricing_inquiry'
-            suggestedContent = ['business-inquiry-form']
-            confidence = 0.8
-            
-          } else if (lowerMessage.includes('hour') || lowerMessage.includes('open') || lowerMessage.includes('close')) {
-            response = 'We\'re available for business inquiries Monday to Friday 9:00 AM - 6:00 PM, Saturday 10:00 AM - 3:00 PM (Dubai time). Sunday we\'re closed.'
-            intent = 'hours_inquiry'
-            confidence = 0.9
-            
-          } else if (lowerMessage.includes('contact') || lowerMessage.includes('reach') || lowerMessage.includes('phone') || lowerMessage.includes('email')) {
-            response = 'You can reach us through multiple channels: WhatsApp at +971 52 76 76 100, email at contact@farwaycompany.com, or fill out our business inquiry form. We\'re based in Dubai, UAE and are available during business hours.'
-            intent = 'contact_inquiry'
-            suggestedContent = ['business-inquiry-form']
-            confidence = 0.9
-            
-          } else if (lowerMessage.includes('location') || lowerMessage.includes('address') || lowerMessage.includes('where')) {
-            response = 'We\'re located at Office No. 507, New Century City Tower, Deira, Dubai, UAE. You can reach us via WhatsApp at +971 52 76 76 100 or email at contact@farwaycompany.com.'
-            intent = 'location_inquiry'
-            confidence = 0.9
-            
-          } else if (lowerMessage.includes('demo') || lowerMessage.includes('show') || lowerMessage.includes('see')) {
-            response = 'I can show you information about our product categories and global trading network!'
-            intent = 'demo_inquiry'
-            suggestedContent = ['product-categories'] // Suggest product categories
-            confidence = 0.8
-
-          } else {
-            // Generic response with business context
-            const businessName = business?.name || 'our company'
-            response = `I'm here to help you learn about ${businessName}! You can ask me about our services, pricing, hours, location, or how to get in touch with us.`
-            intent = 'general_help'
-            confidence = 0.5
+        // Fallback to knowledge base if OpenAI is not available
+        if (knowledgeResults.length > 0) {
+          const bestMatch = knowledgeResults[0]
+          return {
+            message: bestMatch.answer,
+            suggestedContent: bestMatch.contentIds || [],
+            intent: 'knowledge_base',
+            confidence: 0.8
           }
         }
 
-        console.log(`Final AI response:`, {
-          message: response,
-          suggestedContent,
-          intent,
-          confidence
-        })
-        
-        resolve({
-          message: response,
-          suggestedContent,
-          intent,
-          confidence
-        })
-      }, 500 + Math.random() * 800) // Simulate processing time
-    })
+        // Ultimate fallback with business context
+        const businessName = business?.name || 'our company'
+        return {
+          message: `I'm here to help you learn about ${businessName}! You can ask me about our services, pricing, hours, location, or how to get in touch with us.`,
+          suggestedContent: [],
+          intent: 'general_help',
+          confidence: 0.5
+        }
+      }
+
+    } catch (error) {
+      console.error('Error in AI service:', error)
+      aiError.value = error instanceof Error ? error.message : 'Unknown AI error'
+
+      // Fallback to knowledge base on error
+      const knowledgeResults = business ? knowledgeStore.searchKnowledge(message) : []
+      if (knowledgeResults.length > 0) {
+        const bestMatch = knowledgeResults[0]
+        return {
+          message: bestMatch.answer,
+          suggestedContent: bestMatch.contentIds || [],
+          intent: 'knowledge_base',
+          confidence: 0.7
+        }
+      }
+
+      // Final error fallback
+      const businessName = business?.name || 'our team'
+      return {
+        message: `I'm currently having trouble processing your request. Please contact ${businessName} directly for assistance, or try again in a moment.`,
+        suggestedContent: ['contact-form'],
+        intent: 'error_fallback',
+        confidence: 0.3,
+        error: aiError.value
+      }
+    }
   }
 
   function setTyping(typing: boolean) {
@@ -305,6 +283,8 @@ export const useChatStore = defineStore('chat', () => {
     isListening,
     isMuted,
     sessionId,
+    isAIInitialized,
+    aiError,
     
     // Getters
     chatState,
