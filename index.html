@@ -11,27 +11,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Inter', system-ui, sans-serif;
       background: transparent !important;
       margin: 0;
       padding: 0;
+      overflow: hidden;
     }
+
     html {
       background: transparent !important;
     }
-    .loading-spinner {
-      border: 2px solid #f3f4f6;
-      border-top: 2px solid #3b82f6;
-      border-radius: 50%;
-      width: 20px;
-      height: 20px;
-      animation: spin 1s linear infinite;
-    }
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
+
+    /* Removed old loading spinner - Vue app handles loading now */
   </style>
 </head>
 <body>

@@ -4,7 +4,6 @@ import type { Message, ChatState, AIResponse } from '@/types'
 import { useKnowledgeStore } from '@/stores/knowledge'
 import { useAppStore } from '@/stores/app'
 import { useContentStore } from '@/stores/content'
-import { traderService } from '@/services/traderService'
 import { openaiService } from '@/services/openaiService'
 
 export const useChatStore = defineStore('chat', () => {
@@ -124,40 +123,6 @@ export const useChatStore = defineStore('chat', () => {
         }
       }
 
-      // Check for trader-related queries FIRST (preserve existing business logic)
-      if (traderService.isTraderQuery(message)) {
-        console.log(`Detected trader query: "${message}"`)
-
-        try {
-          const searchQuery = traderService.parseQuery(message)
-          console.log('Parsed search query:', searchQuery)
-
-          const searchResults = traderService.searchTraders(searchQuery)
-          console.log('Search results:', searchResults.totalCount, 'traders found')
-
-          const response = traderService.generateTraderResponse(searchResults, searchQuery)
-
-          // Show trader search results in content panel
-          if (searchResults.traders.length > 0) {
-            contentStore.showTraderSearchResults(searchResults, searchQuery, response)
-          }
-
-          return {
-            message: response,
-            suggestedContent: searchResults.traders.length > 0 ? ['trader-search-results'] : [],
-            intent: 'trader_discovery',
-            confidence: 0.9
-          }
-        } catch (error) {
-          console.error('Error processing trader query:', error)
-          return {
-            message: "I'm having trouble searching our trader network right now. Please try again.",
-            suggestedContent: [],
-            intent: 'trader_error',
-            confidence: 0.3
-          }
-        }
-      }
 
       // Search knowledge base for relevant context
       const knowledgeResults = business ? knowledgeStore.searchKnowledge(message) : []
@@ -175,23 +140,8 @@ export const useChatStore = defineStore('chat', () => {
 
         const aiResponse = await openaiService.generateResponse(message, conversationContext, knowledgeResults)
 
-        // Handle function calls (like trader search)
-        if (aiResponse.functionCall?.name === 'search_traders') {
-          const searchArgs = aiResponse.functionCall.arguments
-          const searchResults = traderService.searchTraders(searchArgs)
-
-          if (searchResults.traders.length > 0) {
-            const traderResponse = traderService.generateTraderResponse(searchResults, searchArgs)
-            contentStore.showTraderSearchResults(searchResults, searchArgs, traderResponse)
-
-            return {
-              message: traderResponse,
-              suggestedContent: ['trader-search-results'],
-              intent: 'trader_discovery',
-              confidence: 0.9
-            }
-          }
-        }
+        // Handle function calls if any exist
+        // (Currently no function calls implemented after trader removal)
 
         console.log('OpenAI response:', aiResponse)
         return aiResponse

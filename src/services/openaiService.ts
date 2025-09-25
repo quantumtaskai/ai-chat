@@ -19,6 +19,10 @@ export class OpenAIService {
   private client: OpenAI | null = null
   private config: OpenAIConfig
   private isInitialized = false
+  private responseCache = new Map<string, { response: AIResponse; timestamp: number }>()
+  private apiCallCount = 0
+  private localResponseCount = 0
+  private cachedResponseCount = 0
 
   constructor() {
     this.config = {
@@ -92,6 +96,23 @@ export class OpenAIService {
         throw new Error('OpenAI service not initialized')
       }
 
+      // Cost optimization: Check for simple patterns that don't need AI
+      const localResponse = this.tryLocalResponse(userMessage, context.businessContext)
+      if (localResponse) {
+        this.localResponseCount++
+        console.log('Using local response to save API costs:', userMessage)
+        return localResponse
+      }
+
+      // Check cache for recent similar responses (within 10 minutes)
+      const cacheKey = this.generateCacheKey(userMessage, context.businessContext)
+      const cachedResponse = this.getCachedResponse(cacheKey)
+      if (cachedResponse) {
+        this.cachedResponseCount++
+        console.log('Using cached response to save API costs:', userMessage)
+        return cachedResponse
+      }
+
       // Build system prompt with business context
       const systemPrompt = this.buildSystemPrompt(context.businessContext, knowledgeBaseResults)
 
@@ -113,13 +134,21 @@ export class OpenAIService {
         throw new Error('No response from OpenAI')
       }
 
+      // Track API call
+      this.apiCallCount++
+      console.log(`OpenAI API call #${this.apiCallCount} for: "${userMessage}"`)
+
       // Process function calls if present
       if (assistantMessage.function_call) {
-        return await this.processFunctionCall(assistantMessage.function_call, context)
+        const result = await this.processFunctionCall(assistantMessage.function_call, context)
+        this.setCachedResponse(cacheKey, result)
+        return result
       }
 
       // Regular text response
-      return this.processTextResponse(assistantMessage.content || '', context)
+      const result = this.processTextResponse(assistantMessage.content || '', context)
+      this.setCachedResponse(cacheKey, result)
+      return result
 
     } catch (error) {
       console.error('OpenAI API error:', error)
@@ -133,6 +162,141 @@ export class OpenAIService {
         error: error instanceof Error ? error.message : 'Unknown error'
       }
     }
+  }
+
+  /**
+   * Try to provide local responses for simple queries to save API costs
+   */
+  private tryLocalResponse(userMessage: string, business: BusinessConfig | null): AIResponse | null {
+    const message = userMessage.toLowerCase().trim()
+    const businessName = business?.name || 'our business'
+
+    // Greetings
+    const greetings = ['hello', 'hi', 'hey', 'good morning', 'good afternoon', 'good evening']
+    if (greetings.some(greeting => message === greeting || message.startsWith(greeting + ' ') || message.startsWith(greeting + ','))) {
+      const responses = [
+        `Hello! Welcome to ${businessName}. How can I help you today?`,
+        `Hi there! I'm here to help you learn about ${businessName}. What would you like to know?`,
+        `Welcome to ${businessName}! I'm your AI assistant. How may I assist you today?`
+      ]
+      return {
+        message: responses[Math.floor(Math.random() * responses.length)],
+        suggestedContent: ['company-overview'],
+        intent: 'greeting',
+        confidence: 0.9
+      }
+    }
+
+    // Thanks/appreciation
+    const thanks = ['thank you', 'thanks', 'thank u', 'thx', 'ty', 'appreciate', 'awesome', 'great', 'perfect']
+    if (thanks.some(thank => message.includes(thank))) {
+      const responses = [
+        `You're welcome! Is there anything else I can help you with about ${businessName}?`,
+        `Happy to help! Feel free to ask if you need more information about our services.`,
+        `Glad I could assist! Let me know if you have any other questions.`
+      ]
+      return {
+        message: responses[Math.floor(Math.random() * responses.length)],
+        suggestedContent: ['contact-form'],
+        intent: 'appreciation',
+        confidence: 0.8
+      }
+    }
+
+    // Simple questions about hours
+    if (message.includes('open') || message.includes('hours') || message.includes('close')) {
+      if (business?.settings?.operatingHours?.enabled) {
+        const hours = business.settings.operatingHours.hours
+        if (hours) {
+          let hoursText = `Here are our operating hours:\n`
+          Object.entries(hours).forEach(([day, schedule]: [string, any]) => {
+            const dayCapitalized = day.charAt(0).toUpperCase() + day.slice(1)
+            const timeInfo = schedule.open === 'closed' ? 'Closed' : `${schedule.open} - ${schedule.close}`
+            hoursText += `• ${dayCapitalized}: ${timeInfo}\n`
+          })
+          return {
+            message: hoursText.trim(),
+            suggestedContent: ['contact-form'],
+            intent: 'hours_inquiry',
+            confidence: 0.9
+          }
+        }
+      }
+      return {
+        message: `Please contact ${businessName} directly for our current operating hours.`,
+        suggestedContent: ['contact-form'],
+        intent: 'hours_inquiry',
+        confidence: 0.7
+      }
+    }
+
+    // Contact information queries
+    if (message.includes('contact') || message.includes('phone') || message.includes('email') || message.includes('address')) {
+      const phone = business?.phone || business?.settings?.contactInfo?.phone
+      const email = business?.email || business?.settings?.contactInfo?.email
+      const address = business?.address || business?.settings?.contactInfo?.address
+
+      let contactText = `Here's how you can reach ${businessName}:\n`
+      if (phone) contactText += `📞 Phone: ${phone}\n`
+      if (email) contactText += `📧 Email: ${email}\n`
+      if (address) contactText += `📍 Address: ${address}\n`
+
+      if (!phone && !email && !address) {
+        contactText = `Please use our contact form to get in touch with ${businessName}.`
+      }
+
+      return {
+        message: contactText.trim(),
+        suggestedContent: ['contact-form'],
+        intent: 'contact_inquiry',
+        confidence: 0.9
+      }
+    }
+
+    return null // No local response available, use AI
+  }
+
+  /**
+   * Generate cache key for response caching
+   */
+  private generateCacheKey(userMessage: string, business: BusinessConfig | null): string {
+    const businessId = business?.id || 'default'
+    const messageHash = userMessage.toLowerCase().trim().replace(/\s+/g, ' ')
+    return `${businessId}:${messageHash}`
+  }
+
+  /**
+   * Get cached response if available and not expired (10 minutes)
+   */
+  private getCachedResponse(cacheKey: string): AIResponse | null {
+    const cached = this.responseCache.get(cacheKey)
+    if (!cached) return null
+
+    const CACHE_DURATION = 10 * 60 * 1000 // 10 minutes
+    const isExpired = Date.now() - cached.timestamp > CACHE_DURATION
+
+    if (isExpired) {
+      this.responseCache.delete(cacheKey)
+      return null
+    }
+
+    return cached.response
+  }
+
+  /**
+   * Cache a response for future use
+   */
+  private setCachedResponse(cacheKey: string, response: AIResponse): void {
+    // Limit cache size to prevent memory issues
+    if (this.responseCache.size > 100) {
+      const firstKey = this.responseCache.keys().next().value
+      this.responseCache.delete(firstKey)
+    }
+
+    this.responseCache.set(cacheKey, {
+      response,
+      timestamp: Date.now()
+    })
   }
 
   /**
@@ -164,14 +328,65 @@ CORE RESPONSIBILITIES:
 
 BUSINESS DETAILS:`
 
-    // Add contact information
-    if (business.settings?.contactInfo) {
-      const contact = business.settings.contactInfo
-      systemPrompt += `\n• Phone: ${contact.phone || 'Contact via form'}`
-      systemPrompt += `\n• Email: ${contact.email || 'Available via contact form'}`
-      if (contact.address) {
-        systemPrompt += `\n• Address: ${contact.address}`
-      }
+    // Add core business information
+    if (business.tagline) {
+      systemPrompt += `\n• Tagline: ${business.tagline}`
+    }
+    if (business.founded) {
+      systemPrompt += `\n• Founded: ${business.founded}`
+    }
+    if (business.mission) {
+      systemPrompt += `\n• Mission: ${business.mission}`
+    }
+    if (business.vision) {
+      systemPrompt += `\n• Vision: ${business.vision}`
+    }
+    if (business.certification) {
+      systemPrompt += `\n• Certification: ${business.certification}`
+    }
+
+    // Add contact information (prioritize direct fields over settings)
+    const phone = business.phone || business.settings?.contactInfo?.phone
+    const email = business.email || business.settings?.contactInfo?.email
+    const address = business.address || business.settings?.contactInfo?.address
+
+    if (phone) systemPrompt += `\n• Phone: ${phone}`
+    if (email) systemPrompt += `\n• Email: ${email}`
+    if (address) systemPrompt += `\n• Address: ${address}`
+
+    // Add services information
+    if (business.services && business.services.length > 0) {
+      systemPrompt += '\n\nSERVICES OFFERED:'
+      business.services.forEach(service => {
+        systemPrompt += `\n• ${service.name}`
+        if (service.description) systemPrompt += `: ${service.description}`
+        if (service.price) systemPrompt += ` (${service.price})`
+        if (service.duration) systemPrompt += ` [Duration: ${service.duration}]`
+      })
+    }
+
+    // Add specialties and categories
+    if (business.specialties && business.specialties.length > 0) {
+      systemPrompt += `\n\nSPECIALTIES: ${business.specialties.join(', ')}`
+    }
+    if (business.categories && business.categories.length > 0) {
+      systemPrompt += `\n\nCATEGORIES: ${business.categories.join(', ')}`
+    }
+
+    // Add service areas/locations
+    if (business.serviceAreas && business.serviceAreas.length > 0) {
+      systemPrompt += `\n\nSERVICE AREAS: ${business.serviceAreas.join(', ')}`
+    }
+    if (business.locations && business.locations.length > 0) {
+      systemPrompt += `\n\nLOCATIONS: ${business.locations.join(', ')}`
+    }
+
+    // Add business statistics
+    if (business.statistics && business.statistics.length > 0) {
+      systemPrompt += '\n\nKEY STATISTICS:'
+      business.statistics.forEach(stat => {
+        systemPrompt += `\n• ${stat.label}: ${stat.value}`
+      })
     }
 
     // Add operating hours with current day context
@@ -219,7 +434,6 @@ AVAILABLE ACTIONS TO SUGGEST:
 
 FUNCTION CALLING:
 Use the suggest_content function when users need forms, booking, or specific information pages.
-Use the search_traders function only for B2B trading partner inquiries.
 
 Remember: You represent ${businessName}. Be helpful, accurate, and always act in the business's best interest while serving the customer's needs.`
 
@@ -313,34 +527,6 @@ Remember: You represent ${businessName}. Be helpful, accurate, and always act in
           required: ['contentIds', 'intent', 'confidence']
         }
       },
-      {
-        name: 'search_traders',
-        description: 'Search for business trading partners',
-        parameters: {
-          type: 'object',
-          properties: {
-            query: {
-              type: 'string',
-              description: 'Search query for traders'
-            },
-            country: {
-              type: 'string',
-              description: 'Country filter'
-            },
-            products: {
-              type: 'array',
-              items: { type: 'string' },
-              description: 'Product categories'
-            },
-            type: {
-              type: 'string',
-              enum: ['Importer', 'Exporter', 'Both'],
-              description: 'Trader type'
-            }
-          },
-          required: ['query']
-        }
-      }
     ]
   }
 
@@ -363,17 +549,7 @@ Remember: You represent ${businessName}. Be helpful, accurate, and always act in
             confidence: functionArgs.confidence || 0.8
           }
 
-        case 'search_traders':
-          return {
-            message: 'I found some relevant trading partners for you.',
-            suggestedContent: ['trader-search-results'],
-            intent: 'trader_discovery',
-            confidence: 0.9,
-            functionCall: {
-              name: 'search_traders',
-              arguments: functionArgs
-            }
-          }
+        // search_traders case removed for generic template
 
         default:
           return this.processTextResponse('I can help you with that.', context)
@@ -468,6 +644,39 @@ Remember: You represent ${businessName}. Be helpful, accurate, and always act in
     if (newConfig.apiKey && newConfig.apiKey !== this.config.apiKey) {
       this.initialize()
     }
+  }
+
+  /**
+   * Get cost optimization statistics
+   */
+  getCostOptimizationStats(): {
+    totalRequests: number
+    apiCalls: number
+    localResponses: number
+    cachedResponses: number
+    costSavingsPercent: number
+  } {
+    const totalRequests = this.apiCallCount + this.localResponseCount + this.cachedResponseCount
+    const costSavingsPercent = totalRequests > 0
+      ? Math.round(((this.localResponseCount + this.cachedResponseCount) / totalRequests) * 100)
+      : 0
+
+    return {
+      totalRequests,
+      apiCalls: this.apiCallCount,
+      localResponses: this.localResponseCount,
+      cachedResponses: this.cachedResponseCount,
+      costSavingsPercent
+    }
+  }
+
+  /**
+   * Reset cost optimization counters
+   */
+  resetCostStats(): void {
+    this.apiCallCount = 0
+    this.localResponseCount = 0
+    this.cachedResponseCount = 0
   }
 }
 

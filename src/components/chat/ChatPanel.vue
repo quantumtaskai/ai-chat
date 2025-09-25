@@ -236,10 +236,10 @@ const virtualizer = useVirtualizer({
 
 // Quick action suggestions
 const quickActions = computed(() => [
-  { id: 'services', label: 'What FMCG products do you trade?', message: 'What FMCG products do you trade?' },
+  { id: 'services', label: 'What services do you offer?', message: 'What services do you offer?' },
   { id: 'meeting', label: 'Schedule Meeting', message: 'Can I schedule a meeting?' },
-  { id: 'contact', label: 'Connect with traders', message: 'Can you help me connect with traders?' },
-  { id: 'demo', label: 'Find textile exporters in Turkey', message: 'Find textile exporters in Turkey' },
+  { id: 'contact', label: 'Contact Business', message: 'How can I get in touch with you?' },
+  { id: 'demo', label: 'Tell me about your business', message: 'Tell me about your business' },
 ])
 
 // Computed properties

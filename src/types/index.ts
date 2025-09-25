@@ -11,7 +11,7 @@ export interface Message {
 // Content types
 export interface ContentItem {
   id: string
-  type: 'pdf' | 'video' | 'image' | 'form' | 'calculator' | 'booking' | 'website' | 'trader' | 'trader-search'
+  type: 'pdf' | 'video' | 'image' | 'form' | 'calculator' | 'booking' | 'website'
   title: string
   description?: string
   url?: string
@@ -20,61 +20,8 @@ export interface ContentItem {
   category: string
 }
 
-// Trader types
-export interface TraderContact {
-  person: string
-  email: string
-  phone: string
-  website: string
-}
+// Trader types removed for generic template
 
-export interface TraderItem {
-  id: string
-  name: string
-  country: string
-  type: 'Importer' | 'Exporter' | 'Both'
-  products: string[]
-  contact: TraderContact
-  address: string
-  yearsInBusiness: number
-  annualVolume: number
-  tags: string[]
-}
-
-export interface TraderSearchQuery {
-  query?: string
-  country?: string
-  type?: 'Importer' | 'Exporter' | 'Both'
-  products?: string[]
-  minVolume?: number
-  maxVolume?: number
-  minYears?: number
-  tags?: string[]
-}
-
-export interface TraderSearchResult {
-  traders: TraderItem[]
-  totalCount: number
-  filters: {
-    countries: string[]
-    products: string[]
-    types: string[]
-    volumeRange: { min: number; max: number }
-    yearsRange: { min: number; max: number }
-  }
-}
-
-export interface TraderData {
-  traders: TraderItem[]
-  metadata: {
-    totalTraders: number
-    countries: string[]
-    productCategories: string[]
-    tradeTypes: string[]
-    lastUpdated: string
-    dataVersion: string
-  }
-}
 
 // Business configuration
 export interface BusinessConfig {
@@ -83,12 +30,34 @@ export interface BusinessConfig {
   description: string
   industry: string
   website?: string
+  tagline?: string
+  founded?: string
+  mission?: string
+  vision?: string
+  certification?: string
+  address?: string
+  phone?: string
+  email?: string
   branding: {
     primaryColor: string
     secondaryColor: string
     logo?: string
     font?: string
   }
+  services?: Array<{
+    name: string
+    description?: string
+    price?: string
+    duration?: string
+  }>
+  specialties?: string[]
+  categories?: string[]
+  locations?: string[]
+  serviceAreas?: string[]
+  statistics?: Array<{
+    label: string
+    value: string
+  }>
   content: ContentItem[]
   knowledgeBase: KnowledgeItem[]
   scrapingConfig?: ScrapingConfig

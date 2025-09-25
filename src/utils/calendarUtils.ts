@@ -156,7 +156,7 @@ export function generateICSFile(event: CalendarEvent, options: ICSOptions = {}):
   const icsContent = [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
-    'PRODID:-//Far Way Company//Meeting Scheduler//EN',
+    'PRODID:-//AI Chat Template//Meeting Scheduler//EN',
     `METHOD:${options.method || 'REQUEST'}`,
     'BEGIN:VEVENT',
     `UID:${generateUID()}`,
@@ -359,7 +359,7 @@ export function generateCalendarURLs(event: CalendarEvent): Record<string, strin
  * Helper functions
  */
 function generateUID(): string {
-  return `${Date.now()}-${Math.random().toString(36).substr(2, 9)}@farwaycompany.com`
+  return `${Date.now()}-${Math.random().toString(36).substr(2, 9)}@aichattemplate.com`
 }
 
 function escapeICSText(text: string): string {
@@ -372,7 +372,7 @@ function escapeICSText(text: string): string {
 }
 
 /**
- * Default calendar configuration for Far Way Company
+ * Default calendar configuration template
  */
 export const defaultCalendarConfig: CalendarConfig = {
   businessHours: {

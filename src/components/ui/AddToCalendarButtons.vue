@@ -78,11 +78,11 @@ const meetingDetails = computed((): CalendarEvent => {
     description: `Business consultation meeting for ${props.service} with ${props.businessName}.\n\nAttendee: ${props.contactInfo.name}\nEmail: ${props.contactInfo.email}${props.contactInfo.phone ? `\nPhone: ${props.contactInfo.phone}` : ''}`,
     startDate,
     endDate,
-    location: 'Office No. 507, New Century City Tower, Deira, Dubai, UAE',
+    location: 'Business Location (to be confirmed)',
     attendees: [props.contactInfo.email],
     organizer: {
       name: props.businessName,
-      email: 'contact@farwaycompany.com'
+      email: props.contactInfo.email || 'contact@yourbusiness.com'
     }
   }
 })

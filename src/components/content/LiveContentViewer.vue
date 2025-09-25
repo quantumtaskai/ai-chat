@@ -224,25 +224,26 @@ const hasError = ref(false)
 // Computed
 const isHomepage = computed(() => {
   const url = props.content.url || ''
-  return url === 'https://farwaycompany.com' || url.endsWith('farwaycompany.com')
+  const businessWebsite = props.business.website || ''
+  return url === businessWebsite || (businessWebsite && url.includes(new URL(businessWebsite).hostname))
 })
 
 // Content data based on page type
 const extractedContent = ref<ExtractedContent>({
-  companyName: "FAR WAY",
-  tagline: "Global FMCG import, export, and distribution company",
-  location: "Dubai, UAE",
-  founded: "2001",
-  certification: "ISO 9001:2015",
-  mission: "We are committed to be your reliable source for authentic products.",
-  vision: "To enhance the lives of human beings by picking the best products from this planet hence creating a better world.",
+  companyName: props.business.name || "Business Name",
+  tagline: props.business.description || "Professional business services",
+  location: props.business.address || "Business Location",
+  founded: props.business.founded || "Est. 2024",
+  certification: props.business.certification,
+  mission: props.business.mission,
+  vision: props.business.vision,
   statistics: [],
   globalPresence: [],
   services: [],
   contact: {
-    address: "Office No: 507, New Century City Tower, Deira, Dubai, UAE",
-    phone: "+971 42 289501",
-    email: "Contact@farwaycompany.com"
+    address: props.business.address,
+    phone: props.business.phone,
+    email: props.business.email
   }
 })
 
@@ -250,68 +251,38 @@ const extractedContent = ref<ExtractedContent>({
 function loadContentForPage() {
   const url = props.content.url || ''
 
-  // Base content structure
+  // Base content structure from business config
   const baseContent = {
-    companyName: "FAR WAY",
-    location: "Dubai, UAE",
-    founded: "2001",
+    companyName: props.business.name || "Business Name",
+    location: props.business.address || "Business Location",
+    founded: props.business.founded || "Est. 2024",
     contact: {
-      address: "Office No: 507, New Century City Tower, Deira, Dubai, UAE",
-      phone: "+971 42 289501",
-      email: "Contact@farwaycompany.com"
+      address: props.business.address,
+      phone: props.business.phone,
+      email: props.business.email
     }
   }
 
-  if (url.includes('/about-us')) {
+  if (url.includes('/about') || url.includes('about-us')) {
     // About page content - focus on company history and mission
     extractedContent.value = {
       ...baseContent,
-      tagline: "Global FMCG import, export, and distribution company",
-      certification: "ISO 9001:2015",
-      mission: "We are committed to be your reliable source for authentic products.",
-      vision: "To enhance the lives of human beings by picking the best products from this planet hence creating a better world.",
-      statistics: [
-        { label: "Global Partners", value: "200+" },
-        { label: "FMCG Brands", value: "500+" },
-        { label: "Warehouse Capacity", value: "5,000+ m²" },
-        { label: "Monthly Containers", value: "25+" }
-      ],
-      globalPresence: [
-        "Netherlands", "Saudi Arabia", "Jordan", "Turkey", "Lebanon",
-        "Palestine", "China", "India", "Singapore", "Hong Kong"
-      ],
-      services: [
-        "FMCG Import/Export",
-        "Global Distribution",
-        "Trading Services",
-        "Shipping & Logistics"
-      ]
+      tagline: props.business.description || "Professional business services",
+      certification: props.business.certification,
+      mission: props.business.mission,
+      vision: props.business.vision,
+      statistics: props.business.statistics || [],
+      globalPresence: props.business.locations || props.business.serviceAreas || [],
+      services: props.business.services?.map(s => s.name || s) || []
     }
-  } else if (url === 'https://farwaycompany.com' || url.endsWith('farwaycompany.com')) {
+  } else if (isHomepage.value) {
     // Homepage content - focus on business scale and offerings
     extractedContent.value = {
       ...baseContent,
-      tagline: "Your Global Partner in Excellence",
-      // No mission/vision on homepage
-      statistics: [
-        { label: "Years in Business", value: "23" },
-        { label: "Team of Experts", value: "100+" },
-        { label: "Global Brands", value: "500+" },
-        { label: "Happy Customers", value: "20,000+" },
-        { label: "HACCP Warehouses", value: "5+" },
-        { label: "Fleet Vehicles", value: "20+" }
-      ],
-      services: [
-        "FMCG Import/Export",
-        "Distribution & Shipping",
-        "Trading in 40+ Countries",
-        "Exclusive Agency Rights",
-        "One-stop FMCG Solution"
-      ],
-      globalPresence: [
-        "Confectionaries", "Beverages", "Snacks",
-        "Cleaning & Household", "Personal Care", "Beauty Equipment"
-      ]
+      tagline: props.business.tagline || props.business.description || "Your trusted business partner",
+      statistics: props.business.statistics || [],
+      services: props.business.services?.map(s => s.name || s) || [],
+      globalPresence: props.business.categories || props.business.specialties || []
     }
   }
 }

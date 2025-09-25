@@ -4,10 +4,14 @@
     <Suspense v-if="isWidgetMode">
       <WidgetApp />
       <template #fallback>
-        <div class="flex items-center justify-center min-h-screen">
+        <div class="flex items-center justify-center min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
           <div class="text-center">
-            <div class="w-8 h-8 border-2 border-primary-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-            <p class="text-gray-600">Loading widget...</p>
+            <div class="flex gap-1 justify-center mb-4">
+              <div class="w-2 h-2 bg-blue-500 rounded-full animate-pulse [animation-delay:-0.3s]"></div>
+              <div class="w-2 h-2 bg-blue-500 rounded-full animate-pulse [animation-delay:-0.15s]"></div>
+              <div class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+            </div>
+            <p class="text-gray-600 text-sm font-medium">Loading widget</p>
           </div>
         </div>
       </template>
@@ -19,7 +23,11 @@
       <template #fallback>
         <div class="flex items-center justify-center min-h-screen bg-gradient-to-br from-gray-50 via-blue-50/30 to-indigo-50/20">
           <div class="text-center">
-            <div class="w-12 h-12 border-3 border-primary-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+            <div class="flex gap-1 justify-center mb-4">
+              <div class="w-2 h-2 bg-blue-500 rounded-full animate-pulse [animation-delay:-0.3s]"></div>
+              <div class="w-2 h-2 bg-blue-500 rounded-full animate-pulse [animation-delay:-0.15s]"></div>
+              <div class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+            </div>
             <p class="text-gray-700 font-medium">Loading application...</p>
           </div>
         </div>
@@ -29,9 +37,12 @@
     <!-- Loading State -->
     <div v-else-if="appStore.isLoading" class="flex items-center justify-center min-h-screen bg-gradient-to-br from-gray-50 via-blue-50/30 to-indigo-50/20">
       <div class="text-center glass-morphism p-8 rounded-2xl shadow-glass border border-white/20 backdrop-blur-md animate-scale-in">
-        <div class="glass-spinner mx-auto mb-6"></div>
+        <div class="flex gap-1 justify-center mb-6">
+          <div class="w-3 h-3 bg-blue-500 rounded-full animate-pulse [animation-delay:-0.3s]"></div>
+          <div class="w-3 h-3 bg-blue-500 rounded-full animate-pulse [animation-delay:-0.15s]"></div>
+          <div class="w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
+        </div>
         <p class="text-gray-700 font-semibold text-lg">Loading AI Receptionist...</p>
-        <div class="mt-4 w-32 h-1 bg-gradient-to-r from-primary-500 to-purple-500 rounded-full mx-auto animate-pulse"></div>
       </div>
     </div>
 

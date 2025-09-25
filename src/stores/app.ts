@@ -3,6 +3,7 @@ import { ref, computed } from 'vue'
 import type { BusinessConfig, AppState } from '@/types'
 import { useKnowledgeStore } from '@/stores/knowledge'
 import { contentScheduler } from '@/services/contentScheduler'
+import { businessIntelligenceService } from '@/services/businessIntelligenceService'
 
 export const useAppStore = defineStore('app', () => {
   // State
@@ -31,6 +32,11 @@ export const useAppStore = defineStore('app', () => {
       // Initialize knowledge store with business data
       const knowledgeStore = useKnowledgeStore()
       knowledgeStore.initialize(currentBusiness.value)
+
+      // Auto-enhance knowledge base using business intelligence
+      if (currentBusiness.value) {
+        await enhanceBusinessKnowledge(currentBusiness.value)
+      }
 
       // Start automated scraping if business is loaded and has scraping config
       if (currentBusiness.value?.scrapingConfig?.enabled) {
@@ -125,12 +131,69 @@ export const useAppStore = defineStore('app', () => {
 
   async function forceScrape() {
     if (!currentBusiness.value) return false
-    
+
     try {
       return await contentScheduler.forceScrapeBusiness(currentBusiness.value)
     } catch (error) {
       console.error('Force scrape failed:', error)
       return false
+    }
+  }
+
+  /**
+   * Enhance business knowledge base using AI intelligence
+   */
+  async function enhanceBusinessKnowledge(business: BusinessConfig) {
+    try {
+      console.log('🤖 Analyzing business configuration for knowledge enhancement...')
+
+      const analysis = businessIntelligenceService.analyzeBusinessConfig(business)
+      console.log(`📊 Business analysis complete:
+        - ${analysis.suggestedKnowledge.length} knowledge suggestions
+        - ${analysis.missingInformation.length} missing information items
+        - ${analysis.optimizationRecommendations.length} optimization recommendations`)
+
+      // Log business readiness score
+      const readiness = businessIntelligenceService.getBusinessReadinessScore(business)
+      console.log(`📈 Business readiness score: ${readiness.score}/100`)
+
+      // Auto-add suggested knowledge items if knowledge base is sparse
+      const knowledgeStore = useKnowledgeStore()
+      const currentKnowledge = business.knowledgeBase || []
+
+      if (currentKnowledge.length < 5 && analysis.suggestedKnowledge.length > 0) {
+        console.log('📚 Auto-enhancing sparse knowledge base...')
+
+        // Add the most important suggested knowledge items
+        const topSuggestions = analysis.suggestedKnowledge
+          .sort((a, b) => b.priority - a.priority)
+          .slice(0, Math.min(10, analysis.suggestedKnowledge.length))
+
+        topSuggestions.forEach(suggestion => {
+          knowledgeStore.addKnowledgeItem(suggestion)
+        })
+
+        console.log(`✅ Added ${topSuggestions.length} knowledge items to enhance business intelligence`)
+      }
+
+      // Log actionable insights
+      if (analysis.missingInformation.length > 0) {
+        console.log('⚠️ Missing business information:')
+        analysis.missingInformation.forEach(info => console.log(`  • ${info}`))
+      }
+
+      if (analysis.optimizationRecommendations.length > 0) {
+        console.log('💡 Optimization recommendations:')
+        analysis.optimizationRecommendations.forEach(rec => console.log(`  • ${rec}`))
+      }
+
+      if (analysis.industryInsights.length > 0) {
+        console.log('🎯 Industry insights:')
+        analysis.industryInsights.forEach(insight => console.log(`  • ${insight}`))
+      }
+
+    } catch (error) {
+      console.error('Failed to enhance business knowledge:', error)
     }
   }
 
@@ -152,6 +215,7 @@ export const useAppStore = defineStore('app', () => {
     clearError,
     initializeBusinessScraping,
     getScrapingStatus,
-    forceScrape
+    forceScrape,
+    enhanceBusinessKnowledge
   }
 })
